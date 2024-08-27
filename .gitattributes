@@ -37,3 +37,20 @@ Form.bin binary
 *.epf binary
 *.erf binary
 ParentConfigurations.bin binary
+
+
+# LFS settings
+*.cf filter=lfs diff=lfs merge=lfs -text
+*.cfe filter=lfs diff=lfs merge=lfs -text
+*.erf filter=lfs diff=lfs merge=lfs -text
+*.epf filter=lfs diff=lfs merge=lfs -text
+*.mxl filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.ico filter=lfs diff=lfs merge=lfs -text
+
+**/XDTOPackages/*/Ext/Package.bin filter diff merge text
