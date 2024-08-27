@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаНастройки" id="28">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Настройки</CommandName>
+				<ExtendedTooltip name="ФормаНастройкиРасширеннаяПодсказка" id="29"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="13">
+			<DataPath>Объект.Code</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификато потока</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ИдентификаторПотока" id="7">
+			<DataPath>1/0:bb2f8f76-1475-4ff5-833e-31b7cf62a2de</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИдентификаторПотокаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИдентификаторПотокаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НаправлениеПотока" id="10">
+			<DataPath>Объект.НаправлениеПотока</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаправлениеПотокаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НаправлениеПотокаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="КоличествоПопытокОтправки" id="16">
+			<DataPath>Объект.КоличествоПопытокОтправки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоПопытокОтправкиКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КоличествоПопытокОтправкиРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ПаузаМеждуПопыткамиОбработки" id="19">
+			<DataPath>Объект.ПаузаМеждуПопыткамиОбработки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПаузаМеждуПопыткамиОбработкиКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ПаузаМеждуПопыткамиОбработкиРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="УдалятьОбработанныеСообщенияЧерез" id="22">
+			<DataPath>Объект.УдалятьОбработанныеСообщенияЧерез</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<HTMLDocumentField name="РедакторКода" id="25">
+			<DataPath>РедакторКода</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст обработчика</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="27"/>
+		</HTMLDocumentField>
+		<Table name="ПодписчикиПотока" id="30">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПодписчикиПотока</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПодписчикиПотокаКонтекстноеМеню" id="31"/>
+			<AutoCommandBar name="ПодписчикиПотокаКоманднаяПанель" id="32"/>
+			<ExtendedTooltip name="ПодписчикиПотокаРасширеннаяПодсказка" id="33"/>
+			<SearchStringAddition name="ПодписчикиПотокаСтрокаПоиска" id="34">
+				<AdditionSource>
+					<Item>ПодписчикиПотока</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодписчикиПотокаСтрокаПоискаКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="ПодписчикиПотокаСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПодписчикиПотокаСостояниеПросмотра" id="37">
+				<AdditionSource>
+					<Item>ПодписчикиПотока</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодписчикиПотокаСостояниеПросмотраКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="ПодписчикиПотокаСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПодписчикиПотокаУправлениеПоиском" id="40">
+				<AdditionSource>
+					<Item>ПодписчикиПотока</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодписчикиПотокаУправлениеПоискомКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ПодписчикиПотокаУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПодписчикиПотокаНомерСтроки" id="43">
+					<DataPath>Объект.ПодписчикиПотока.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодписчикиПотокаНомерСтрокиКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ПодписчикиПотокаНомерСтрокиРасширеннаяПодсказка" id="45"/>
+				</LabelField>
+				<InputField name="ПодписчикиПотокаПодписчик" id="46">
+					<DataPath>Объект.ПодписчикиПотока.Подписчик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПодписчикиПотокаПодписчикКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПодписчикиПотокаПодписчикРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<LabelField name="ПодписчикиПотокаПодписчикТипПодписчика" id="49">
+					<DataPath>Объект.ПодписчикиПотока.Подписчик.ТипПодписчика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодписчикиПотокаПодписчикТипПодписчикаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПодписчикиПотокаПодписчикТипПодписчикаРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="14">
+			<Type>
+				<v8:Type>cfg:CatalogObject.инт_ПотокиДанных</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.ПодписчикиПотока"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="РедакторКода" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор кода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Настройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Настройки</Action>
+		</Command>
+	</Commands>
+</Form>

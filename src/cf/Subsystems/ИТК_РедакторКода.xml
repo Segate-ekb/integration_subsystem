@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Subsystem uuid="46e5dddf-7023-46ea-a834-a2a0923fd9ef">
+		<Properties>
+			<Name>ИТК_РедакторКода</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИТК редактор кода</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ИТК_Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСПВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСПКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСПКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСПКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСППовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БСППодключаемыеКоманды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_БуферОбменаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ВременноеХранилище</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ВременноеХранилищеВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Запрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ЗапросВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ЗапросКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ЗапросКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Код</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КодВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КодКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонсольРазработчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонсольРазработчикаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонсольРазработчикаДанныеКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонсольРазработчикаДанныеКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонсольРазработчикаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонсольРазработчикаЭкспортДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторЗапросовВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторЗапросовКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторЗапросовКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторЗапросовПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_КонструкторСКДКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Метаданные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_МетаданныеВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_МетаданныеКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_МетаданныеКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_МетаданныеПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_НастройкиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_НастройкиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_НастройкиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_НастройкиКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбработкаРезультата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбработкаРезультатаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Общий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбщийВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбщийКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбщийКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбщийКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ОбщийПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Перечисления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ПодключениеКСерверам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ПодключениеКСерверамКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_РедакторКода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_РедакторКодаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_РедакторКодаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_РедакторКодаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_РедакторКодаКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_РедакторКодаПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_СКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_СКДВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_СКДКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_СКДКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Строки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Типы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТипыВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТипыКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТипыПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Туллкит</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТуллкитВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТуллкитКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТуллкитКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ТуллкитКлиентСерверПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ФайлыКонфигурацииВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ФайлыКонфигурацииКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_Форма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ФормаВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ФормаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИТК_ФормаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Excel</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ВариантОтчетаСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Вопрос64</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ВставитьИзБуфераОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Выделенный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ВыполнениеНаКлиенте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ВыполнитьЗапросСВременнымиТаблицами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ВырезатьВБуферОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ДлительнаяОперацияАнимация16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ДлительнаяОперацияАнимация48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ДобавитьПереносыСтрок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ДополнительноеСведение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ДополнительныйРеквизит</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ЗакомментироватьТекст</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Заменить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ЗаписатьВНастройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Запрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Запуск1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Информация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Код</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_КопироватьВБуферОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Найти</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_НайтиПоНомеру</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Обменять</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОбработанныеУспешно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОбщийМодуль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Объединение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОтборУстановлен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОткрытьПапку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Отладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОтправитьПисьмо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОшибкаВТексте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ОшибкаПриВыполнении</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Папка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Параметры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПерейтиКСтроке</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПодпискаНаСобытие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Подсистема</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПолеВводаОткрыть</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Пользователь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПользовательскаяНастройкаСКД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Последовательность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПредопределенныйЭлемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Предупреждение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Предупреждение32</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПредупреждениеВажное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПредыдущаяЗакладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ПреобразоватьВоВложенный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Процедура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Сервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьМакетГруппировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьМакетЗаголовкаГруппировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьМакетПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьМакетРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьНаборДанныхЗапрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьНаборДанныхОбъединение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьНаборДанныхОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДДобавитьПолеНаборВНаборДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДМакетГруппировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДМакетЗаголовкаГруппировки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДМакетПоля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДМакетРесурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДНаборДанныхЗапрос</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДНаборДанныхОбъединение</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СКДНаборДанныхОбъект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СкрытьПоказатьНастройкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СледующаяЗакладка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Сравнить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Сумма</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_СхемаКомпоновкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипБулево</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипВидДвиженияБухгалтерии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипВидДвиженияНакопления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипВидСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипВремя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипГраница</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипДата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипДвоичныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипМоментВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипОписаниеТипов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипПолнаяДата</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипСоставной</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипСтандартныйПериод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипСтрока</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипТип</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипУникальныйИдентификатор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипФиксированнаяКоллекция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипХраненияДанныхНастройка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипХраненияДанныхФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипХранилищеЗначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТипЧисло</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ТочкаМаршрутаБизнессПроцесса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_УбратьКомментарииВТексте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_УбратьПереносыСтрок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_УдалитьВсеЗакладки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_УспешноПроверено</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_УстановитьСнятьЗакладку</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ФлагВеликобритании</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_ФлагРоссии</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИТК_Форматировать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ИТК_РедакторКодаMonaco</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
