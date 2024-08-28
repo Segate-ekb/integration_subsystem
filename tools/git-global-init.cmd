@@ -1,37 +1,85 @@
-@chcp 65001
+@echo off
+setlocal enabledelayedexpansion
+chcp 65001 >nul
 
-@rem for current user
+set "CHECK_MARK=✔️"
+set "CROSS_MARK=❌"
+set "INFO=ℹ️"
 
-git config --global user.name "Your Name"
-git config --global user.email your@email
+REM Запрос имени пользователя и email
+set "user_name="
+set "user_email="
 
-@rem global
+echo %INFO% Введите имя пользователя для Git:
+set /p user_name="> "
 
-git config --global core.quotePath false
+echo %INFO% Введите email для Git:
+set /p user_email="> "
 
-@rem https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
+REM Запрос установки для текущего проекта или глобально
+:ask_scope
+set "response="
+set /p response="%INFO% Хотите установить настройки Git для текущего проекта или глобально? (p/g): "
 
-git config --global alias.co checkout
-git config --global alias.br branch
-git config --global alias.ci commit
-git config --global alias.st status
+if /i "%response%"=="p" (
+    echo %INFO% Установка настроек Git для текущего проекта...
 
-git config --global alias.unstage "reset HEAD --"
-git config --global alias.last "log -1 HEAD"
+    git config user.name "%user_name%"
+    if %ERRORLEVEL% neq 0 (
+        echo %CROSS_MARK% Ошибка установки имени пользователя для текущего проекта.
+        exit /b 1
+    )
+    git config user.email "%user_email%"
+    if %ERRORLEVEL% neq 0 (
+        echo %CROSS_MARK% Ошибка установки email для текущего проекта.
+        exit /b 1
+    )
+    
+    git config core.quotePath false
+    git config alias.co checkout
+    git config alias.br branch
+    git config alias.ci commit
+    git config alias.st status
+    git config alias.unstage "reset HEAD --"
+    git config alias.last "log -1 HEAD"
+    git config core.autocrlf true
+    git config core.safecrlf false
+    git config http.postBuffer 1048576000
+    
+    echo %CHECK_MARK% Настройки Git для текущего проекта успешно применены.
 
-@rem for Windows
+) else if /i "%response%"=="g" (
+    echo %INFO% Установка глобальных настроек Git...
 
-git config --global core.autocrlf true
-git config --global core.safecrlf false
+    git config --global user.name "%user_name%"
+    if %ERRORLEVEL% neq 0 (
+        echo %CROSS_MARK% Ошибка установки имени пользователя глобально.
+        exit /b 1
+    )
+    git config --global user.email "%user_email%"
+    if %ERRORLEVEL% neq 0 (
+        echo %CROSS_MARK% Ошибка установки email глобально.
+        exit /b 1
+    )
 
-@rem for Linux and MacOS
-@rem git config --global core.autocrlf input
-@rem git config --global core.safecrlf true
+    git config --global core.quotePath false
+    git config --global alias.co checkout
+    git config --global alias.br branch
+    git config --global alias.ci commit
+    git config --global alias.st status
+    git config --global alias.unstage "reset HEAD --"
+    git config --global alias.last "log -1 HEAD"
+    git config --global core.autocrlf true
+    git config --global core.safecrlf false
+    git config --global http.postBuffer 1048576000
 
-git config --global http.postBuffer 1048576000
+    echo %CHECK_MARK% Глобальные настройки Git успешно применены.
+
+) else (
+    echo %CROSS_MARK% Некорректный ввод. Пожалуйста, введите p или g.
+    goto ask_scope
+)
 
 @echo
-@echo do it only for administrator mode
-
-@rem git config --system core.longpaths true
-@rem SET LC_ALL=C.UTF-8
+@echo %INFO% Настройки Git завершены.
+exit /b 0

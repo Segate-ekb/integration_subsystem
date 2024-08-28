@@ -1,13 +1,33 @@
 @echo off
 setlocal enabledelayedexpansion
-
-REM Установка UTF-8 для консоли
 chcp 65001 >nul
 
 set "CHECK_MARK=✔️"
 set "CROSS_MARK=❌"
 set "INFO=ℹ️"
 set "WARNING=⚠️"
+
+REM Вопрос пользователю о настройке Git
+:ask_git
+set "response_git="
+set /p response_git="%INFO% Хотите выполнить настройку Git? (y/n): "
+
+if /i "%response_git%"=="y" (
+    echo %INFO% Запуск настройки Git...
+    call tools\git-global-init.cmd
+    if %ERRORLEVEL% neq 0 (
+        echo %CROSS_MARK% Ошибка настройки Git.
+        exit /b 1
+    )
+    echo %CHECK_MARK% Настройка Git выполнена успешно.
+) else if /i "%response_git%"=="n" (
+    echo %INFO% Настройка Git пропущена.
+) else (
+    echo %WARNING% Некорректный ввод. Пожалуйста, введите y или n.
+    goto ask_git
+)
+
+REM Далее выполняется основная настройка окружения
 
 REM Проверяем наличие oscript
 where oscript >nul 2>&1
@@ -104,41 +124,64 @@ if not exist "%oscript_path%\vrunner.bat" (
     echo %CHECK_MARK% vrunner установлен успешно.
 )
 
-REM Вопрос пользователю о настройке файла окружения
-:ask_again
-set "response="
-set /p response="%INFO% Хотите настроить файл окружения? (y/n): "
+REM Цикл для запроса у пользователя о настройке файла окружения
+:ask_user
+set "response_env="
+set /p response_env="%INFO% Хотите настроить файл окружения? (y/n): "
 
-if /i "%response%"=="y" (
+if /i "%response_env%"=="y" (
     echo %INFO% Настраиваем файл окружения...
 
-    REM Переименовываем env.json.example в env.json
-    if exist env.json.example (
-        ren env.json.example env.json
-        echo %CHECK_MARK% Файл env.json настроен.
+    REM Копирование и переименование env.json.example в env.json
+    if exist "env.json.example" (
+        copy "env.json.example" "env.json"
+        if %ERRORLEVEL% neq 0 (
+            echo %CROSS_MARK% Ошибка копирования файла env.json.example.
+            exit /b 1
+        )
+        echo %CHECK_MARK% Файл env.json создан.
     ) else (
         echo %CROSS_MARK% Файл env.json.example не найден.
         exit /b 1
     )
 
-    REM Запускаем oscript tools/init_project.os
-    if exist "%oscript_path%\oscript.exe" (
-        "%oscript_path%\oscript.exe" tools/init_project.os
+    REM Запуск oscript tools/init-project.os
+    if exist "tools\init-project.os" (
+        "%oscript_path%\oscript.exe" "tools\init-project.os"
         if %ERRORLEVEL% neq 0 (
-            echo %CROSS_MARK% Ошибка выполнения oscript tools/init_project.os.
+            echo %CROSS_MARK% Ошибка при выполнении tools\init-project.os.
             exit /b 1
         )
-        echo %CHECK_MARK% Проект успешно инициализирован.
+        echo %CHECK_MARK% Проект инициализирован успешно.
     ) else (
-        echo %CROSS_MARK% oscript не найден.
+        echo %CROSS_MARK% Скрипт tools\init-project.os не найден.
         exit /b 1
     )
 
-) else if /i "%response%"=="n" (
+) else if /i "%response_env%"=="n" (
     echo %INFO% Настройка файла окружения пропущена.
 ) else (
-    echo %WARNING% Некорректный ввод. Пожалуйста, введите 'y' или 'n'.
-    goto ask_again
+    echo %WARNING% Некорректный ввод. Пожалуйста, введите y или n.
+    goto ask_user
+)
+
+REM Вопрос о первоначальной загрузке базы
+:ask_prepare
+set "response_prepare="
+set /p response_prepare="%INFO% Хотите выполнить первоначальную загрузку базы? (y/n): "
+if /i "%response_prepare%"=="y" (
+    echo %INFO% Выполняем первоначальную загрузку базы...
+    call prepare.cmd
+    if %ERRORLEVEL% neq 0 (
+        echo %CROSS_MARK% Ошибка выполнения prepare.cmd.
+        exit /b 1
+    )
+    echo %CHECK_MARK% Первоначальная загрузка базы выполнена успешно.
+) else if /i "%response_prepare%"=="n" (
+    echo %INFO% Первоначальная загрузка базы пропущена.
+) else (
+    echo %WARNING% Некорректный ввод. Пожалуйста, введите y или n.
+    goto ask_prepare
 )
 
 echo %CHECK_MARK% Настройка тестового окружения завершена успешно.
