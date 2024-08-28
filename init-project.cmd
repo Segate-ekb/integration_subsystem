@@ -90,8 +90,8 @@ if !oscript_installed! neq 1 (
 )
 
 REM Устанавливаем пакеты
-echo %INFO% Устанавливаем пакеты precommit4onec и vanessa-runner...
-call "%oscript_path%\opm.bat" install precommit4onec vanessa-runner > install_log.txt 2>&1
+echo %INFO% Устанавливаем пакеты зависимостей.
+call "%oscript_path%\opm.bat" install -l --dev > install_log.txt 2>&1
 if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% Ошибка установки пакетов.
     type install_log.txt
