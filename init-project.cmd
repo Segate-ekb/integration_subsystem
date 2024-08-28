@@ -15,7 +15,7 @@ set /p response_git="%INFO% Хотите выполнить настройку G
 if /i "%response_git%"=="y" (
     echo %INFO% Запуск настройки Git...
     call tools\git-global-init.cmd
-    if %ERRORLEVEL% neq 0 (
+    if !ERRORLEVEL! neq 0 (
         echo %CROSS_MARK% Ошибка настройки Git.
         exit /b 1
     )
@@ -31,7 +31,7 @@ REM Далее выполняется основная настройка окр
 
 REM Проверяем наличие oscript
 where oscript >nul 2>&1
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% oscript не найден.
     set oscript_installed=0
 ) else (
@@ -41,7 +41,7 @@ if %ERRORLEVEL% neq 0 (
 
 REM Проверяем наличие opm
 where opm >nul 2>&1
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% opm не найден.
     set opm_installed=0
 ) else (
@@ -53,19 +53,20 @@ set oscript_path=%localappdata%\ovm\current\bin
 
 REM Если oscript не установлен, загружаем и устанавливаем ovm
 if !oscript_installed! neq 1 (
+    
     echo %INFO% Загружаем ovm...
     powershell -Command "Invoke-WebRequest -Uri https://github.com/oscript-library/ovm/releases/latest/download/ovm.exe -OutFile ovm.exe"
 
     if exist ovm.exe (
         echo %INFO% Устанавливаем oscript и opm через ovm...
         ovm.exe install stable
-        if %ERRORLEVEL% neq 0 (
+        if !ERRORLEVEL! neq 0 (
             echo %CROSS_MARK% Ошибка установки oscript и opm через ovm.
             exit /b 1
         )
         ovm.exe use stable
 
-        set PATH=%PATH%;%oscript_path%
+        set "PATH=!PATH!;%oscript_path%"
 
         REM Повторная проверка oscript после установки
         if not exist "%oscript_path%\oscript.exe" (
@@ -91,7 +92,7 @@ if !oscript_installed! neq 1 (
 REM Устанавливаем пакеты
 echo %INFO% Устанавливаем пакеты precommit4onec и vanessa-runner...
 call "%oscript_path%\opm.bat" install precommit4onec vanessa-runner > install_log.txt 2>&1
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% Ошибка установки пакетов.
     type install_log.txt
     exit /b 1
@@ -110,7 +111,7 @@ if not exist "%oscript_path%\precommit4onec.bat" (
 REM Установка precommit hook
 echo %INFO% Устанавливаем precommit hook...
 call "%oscript_path%\precommit4onec.bat" install . > precommit_log.txt 2>&1
-if %ERRORLEVEL% neq 0 (
+if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% Ошибка установки precommit hook.
     type precommit_log.txt
     exit /b 1
@@ -131,13 +132,13 @@ REM Цикл для запроса у пользователя о настрой
 set "response_env="
 set /p response_env="%INFO% Хотите настроить файл окружения? (y/n): "
 
-if /i "%response_env%"=="y" (
+if /i "!response_env!"=="y" (
     echo %INFO% Настраиваем файл окружения...
 
     REM Копирование и переименование env.json.example в env.json
     if exist "env.json.example" (
         copy "env.json.example" "env.json"
-        if %ERRORLEVEL% neq 0 (
+        if !ERRORLEVEL! neq 0 (
             echo %CROSS_MARK% Ошибка копирования файла env.json.example.
             exit /b 1
         )
@@ -150,7 +151,7 @@ if /i "%response_env%"=="y" (
     REM Запуск oscript tools/init-project.os
     if exist "tools\init-project.os" (
         "%oscript_path%\oscript.exe" "tools\init-project.os"
-        if %ERRORLEVEL% neq 0 (
+        if !ERRORLEVEL! neq 0 (
             echo %CROSS_MARK% Ошибка при выполнении tools\init-project.os.
             exit /b 1
         )
@@ -160,7 +161,7 @@ if /i "%response_env%"=="y" (
         exit /b 1
     )
 
-) else if /i "%response_env%"=="n" (
+) else if /i "!response_env!"=="n" (
     echo %INFO% Настройка файла окружения пропущена.
 ) else (
     echo %WARNING% Некорректный ввод. Пожалуйста, введите y или n.
@@ -171,15 +172,15 @@ REM Вопрос о первоначальной загрузке базы
 :ask_prepare
 set "response_prepare="
 set /p response_prepare="%INFO% Хотите выполнить первоначальную загрузку базы? (y/n): "
-if /i "%response_prepare%"=="y" (
+if /i "!response_prepare!"=="y" (
     echo %INFO% Выполняем первоначальную загрузку базы...
     call prepare.cmd
-    if %ERRORLEVEL% neq 0 (
+    if !ERRORLEVEL! neq 0 (
         echo %CROSS_MARK% Ошибка выполнения prepare.cmd.
         exit /b 1
     )
     echo %CHECK_MARK% Первоначальная загрузка базы выполнена успешно.
-) else if /i "%response_prepare%"=="n" (
+) else if /i "!response_prepare!"=="n" (
     echo %INFO% Первоначальная загрузка базы пропущена.
 ) else (
     echo %WARNING% Некорректный ввод. Пожалуйста, введите y или n.
