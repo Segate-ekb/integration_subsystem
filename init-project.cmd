@@ -65,6 +65,8 @@ if !oscript_installed! neq 1 (
         )
         ovm.exe use stable
 
+        set PATH=%PATH%;%oscript_path%
+
         REM Повторная проверка oscript после установки
         if not exist "%oscript_path%\oscript.exe" (
             echo %CROSS_MARK% oscript все еще не найден.

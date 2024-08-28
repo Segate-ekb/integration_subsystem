@@ -1,7 +1,7 @@
 @chcp 65001
 
 @rem Сборка основной разработческой ИБ. по умолчанию в каталоге build/ib
-call vrunner init-dev --src src/cf %*
+call vrunner init-dev --src src/cf --nocacheuse %*
 
 @rem обновление конфигурации основной разработческой ИБ из хранилища. для включения раскомментируйте код ниже
 @rem call vrunner loadrepo %*
