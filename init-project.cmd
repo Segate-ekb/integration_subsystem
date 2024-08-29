@@ -91,7 +91,7 @@ if !oscript_installed! neq 1 (
 
 REM Устанавливаем пакеты
 echo %INFO% Устанавливаем пакеты зависимостей.
-call "%oscript_path%\opm.bat" install -l --dev > install_log.txt 2>&1
+call "%oscript_path%\opm.bat" install --dev > install_log.txt 2>&1
 if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% Ошибка установки пакетов.
     type install_log.txt
