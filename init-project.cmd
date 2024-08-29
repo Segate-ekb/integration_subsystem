@@ -100,17 +100,10 @@ if !ERRORLEVEL! neq 0 (
 del install_log.txt
 echo %CHECK_MARK% Пакеты установлены успешно.
 
-REM Проверяем, установился ли precommit4onec
-if not exist "%oscript_path%\precommit4onec.bat" (
-    echo %CROSS_MARK% precommit4onec не установлен.
-    exit /b 1
-) else (
-    echo %CHECK_MARK% precommit4onec установлен успешно.
-)
 
 REM Установка precommit hook
 echo %INFO% Устанавливаем precommit hook...
-call "%oscript_path%\precommit4onec.bat" install . > precommit_log.txt 2>&1
+call precommit4onec install . > precommit_log.txt 2>&1
 if !ERRORLEVEL! neq 0 (
     echo %CROSS_MARK% Ошибка установки precommit hook.
     type precommit_log.txt
@@ -119,13 +112,6 @@ if !ERRORLEVEL! neq 0 (
 del precommit_log.txt
 echo %CHECK_MARK% precommit hook установлен успешно.
 
-REM Проверяем, установился ли vanessa-runner
-if not exist "%oscript_path%\vrunner.bat" (
-    echo %CROSS_MARK% vrunner не установлен.
-    exit /b 1
-) else (
-    echo %CHECK_MARK% vrunner установлен успешно.
-)
 
 REM Цикл для запроса у пользователя о настройке файла окружения
 :ask_user
