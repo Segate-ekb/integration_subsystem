@@ -173,11 +173,11 @@
 			</Attribute>
 			<Attribute uuid="6f097e06-9d7f-476a-848d-ca70ee3d8886">
 				<Properties>
-					<Name>КоличествоПопытокОтправки</Name>
+					<Name>КоличествоПопытокФормирования</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Количество попыток отправки</v8:content>
+							<v8:content>Количество попыток формирования</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройкиФормированияСообщений" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки формирования сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки формирования сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаНастройкиФормированияСообщенийРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<InputField name="инт_КоличествоПотоковФормированияСообщений" id="20">
+					<DataPath>НаборКонстант.инт_КоличествоПотоковФормированияСообщений</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="инт_КоличествоПотоковФормированияСообщенийКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="инт_КоличествоПотоковФормированияСообщенийРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="инт_РазмерПачкиФормированияСообщений" id="4">
+					<DataPath>НаборКонстант.инт_РазмерПачкиФормированияСообщений</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="инт_РазмерПачкиФормированияСообщенийКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="инт_РазмерПачкиФормированияСообщенийРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкиОтправкиСообщений" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки отправки сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки отправки сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаНастройкиОтправкиСообщенийРасширеннаяПодсказка" id="19"/>
+			<ChildItems>
+				<InputField name="инт_КоличествоПотоковОтправкиСообщений" id="7">
+					<DataPath>НаборКонстант.инт_КоличествоПотоковОтправкиСообщений</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="инт_КоличествоПотоковОтправкиСообщенийКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="инт_КоличествоПотоковОтправкиСообщенийРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<CheckBoxField name="инт_РазделятьПотокиОтправкиПоТипамПодписчиков" id="10">
+					<DataPath>НаборКонстант.инт_РазделятьПотокиОтправкиПоТипамПодписчиков</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="инт_РазделятьПотокиОтправкиПоТипамПодписчиковКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="инт_РазделятьПотокиОтправкиПоТипамПодписчиковРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+				<InputField name="инт_РазмерПачкиОтправкиСообщений" id="13">
+					<DataPath>НаборКонстант.инт_РазмерПачкиОтправкиСообщений</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="инт_РазмерПачкиОтправкиСообщенийКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="инт_РазмерПачкиОтправкиСообщенийРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

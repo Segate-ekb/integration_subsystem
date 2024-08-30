@@ -10,7 +10,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<MethodName>CommonModule.инт_ФормированиеИсходящихСообщений.СформироватьСообщения</MethodName>
+			<MethodName>CommonModule.инт_ФормированиеИсходящихСообщений.ЗапускМенеджераПотоков</MethodName>
 			<Description/>
 			<Key/>
 			<Use>true</Use>
