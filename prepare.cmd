@@ -12,7 +12,6 @@ call vrunner init-dev --src src/cf %*
 @rem call vrunner compileepf src/erf/МойВнешнийОтчет build %*
 
 @rem собрать расширения конфигурации внутри ИБ
-@REM call vrunner compileext src/cfe/YAXUnit YAXUnit %*
 call vrunner compileexttocfe --src src/cfe/YAXUNIT --out build/YAXUNIT.cfe %*
 
 call vrunner run --command "Путь=build/YAXUNIT.cfe;ЗавершитьРаботуСистемы;" --execute $runnerRoot\epf\ЗагрузитьРасширениеВРежимеПредприятия.epf %*
