@@ -12,7 +12,7 @@ call vrunner init-dev --src src/cf %*
 @rem call vrunner compileepf src/erf/МойВнешнийОтчет build %*
 
 @rem собрать расширения конфигурации внутри ИБ
-@rem call vrunner compileext src/cfe/МоеРасширение МоеРасширение %*
+call vrunner compileext src/cfe/YAXUnit YAXUnit %*
 
 @rem Обновление в режиме Предприятия
 call vrunner run --command "ЗапуститьОбновлениеИнформационнойБазы;ЗавершитьРаботуСистемы;" --execute $runnerRoot\epf\ЗакрытьПредприятие.epf %*

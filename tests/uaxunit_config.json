@@ -1,0 +1,23 @@
+{
+  "reportPath": "",
+  "closeAfterTests": false,
+  "filter": {
+    "extensions": [
+      "YAXUNIT"
+    ]
+  },
+  "settings": {
+    "ВТранзакции": false
+  },
+  "reportFormat": "allure",
+  "showReport": true,
+  "logging": {
+    "file": "",
+    "console": false,
+    "enable": null,
+    "level": "debug"
+  },
+  "exitCode": "",
+  "projectPath": "",
+  "ПодключатьВнешниеКомпоненты": true
+}
