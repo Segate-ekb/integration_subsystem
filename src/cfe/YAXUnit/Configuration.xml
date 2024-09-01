@@ -81,11 +81,14 @@
 			<CommonTemplate>ЮТYaxUnitAddIn</CommonTemplate>
 			<CommonTemplate>ЮТИнформацияОбОшибке</CommonTemplate>
 			<CommonTemplate>ЮТОписаниеМетаданных</CommonTemplate>
+			<CommonModule>ГенераторТестовыхДанных</CommonModule>
 			<CommonModule>Мокито</CommonModule>
 			<CommonModule>МокитоОбучение</CommonModule>
 			<CommonModule>МокитоПерехват</CommonModule>
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
+			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
+			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТест</CommonModule>
 			<CommonModule>ЮТЗависимости</CommonModule>
