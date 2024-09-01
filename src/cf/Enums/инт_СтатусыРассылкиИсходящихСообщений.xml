@@ -64,11 +64,11 @@
 			</EnumValue>
 			<EnumValue uuid="d22c54ce-3e88-4dcb-bd27-6c0452009311">
 				<Properties>
-					<Name>ОшибкаОтправки</Name>
+					<Name>ОшибкаОбработки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ошибка отправки</v8:content>
+							<v8:content>Ошибка обработки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

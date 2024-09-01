@@ -17,6 +17,12 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<CheckBoxField name="Активен" id="52">
+			<DataPath>Объект.Активен</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="АктивенКонтекстноеМеню" id="53"/>
+			<ExtendedTooltip name="АктивенРасширеннаяПодсказка" id="54"/>
+		</CheckBoxField>
 		<InputField name="Код" id="13">
 			<DataPath>Объект.Code</DataPath>
 			<Title>
@@ -52,7 +58,7 @@
 			<ExtendedTooltip name="НаправлениеПотокаРасширеннаяПодсказка" id="12"/>
 		</InputField>
 		<InputField name="КоличествоПопытокОтправки" id="16">
-			<DataPath>Объект.КоличествоПопытокФормирования</DataPath>
+			<DataPath>Объект.КоличествоПопытокОбработки</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КоличествоПопытокОтправкиКонтекстноеМеню" id="17"/>

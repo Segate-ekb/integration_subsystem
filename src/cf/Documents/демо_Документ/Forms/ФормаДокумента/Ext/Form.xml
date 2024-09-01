@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<AutoCommandBar name="" id="-1"/>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="Номер" id="10">
 			<DataPath>Объект.Number</DataPath>
@@ -23,6 +26,69 @@
 			<ContextMenu name="ДемоРеквизитСтрокаКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ДемоРеквизитСтрокаРасширеннаяПодсказка" id="9"/>
 		</InputField>
+		<Table name="Тест" id="11">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Тест</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТестКонтекстноеМеню" id="12"/>
+			<AutoCommandBar name="ТестКоманднаяПанель" id="13"/>
+			<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="14"/>
+			<SearchStringAddition name="ТестСтрокаПоиска" id="15">
+				<AdditionSource>
+					<Item>Тест</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТестСтрокаПоискаКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТестСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТестСостояниеПросмотра" id="18">
+				<AdditionSource>
+					<Item>Тест</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТестСостояниеПросмотраКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ТестСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТестУправлениеПоиском" id="21">
+				<AdditionSource>
+					<Item>Тест</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТестУправлениеПоискомКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ТестУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТестНомерСтроки" id="24">
+					<DataPath>Объект.Тест.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТестНомерСтрокиКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТестНомерСтрокиРасширеннаяПодсказка" id="26"/>
+				</LabelField>
+				<InputField name="ТестНазвание" id="27">
+					<DataPath>Объект.Тест.Название</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТестНазваниеКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТестНазваниеРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ТестКоличество" id="30">
+					<DataPath>Объект.Тест.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТестКоличествоКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТестКоличествоРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="Тестцена" id="33">
+					<DataPath>Объект.Тест.цена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТестценаКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ТестценаРасширеннаяПодсказка" id="35"/>
+				</InputField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
