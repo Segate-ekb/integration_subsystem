@@ -4,5 +4,5 @@
 call vrunner decompile --out src/cf --current
 
 @rem запустить выгрузку исходников расширения ИмяРасширения
-call vrunner decompileext YAXUNIT src/cfe/YAXUnit
+call vrunner decompileext YAXUnit src/cfe/YAXUnit
 
