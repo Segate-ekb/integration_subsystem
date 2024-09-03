@@ -76,11 +76,11 @@
 			</EnumValue>
 			<EnumValue uuid="ba627523-7927-4453-bc7c-06ab0b180dc5">
 				<Properties>
-					<Name>Отправлено</Name>
+					<Name>ПомещеноВОчередьОтправки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отправлено</v8:content>
+							<v8:content>Помещено в очередь отправки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

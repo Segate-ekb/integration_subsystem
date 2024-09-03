@@ -59,6 +59,7 @@
 			<Subsystem>ЮТДвижок</Subsystem>
 			<Subsystem>ЮТПодключаемыеМодули</Subsystem>
 			<Subsystem>ЮТПубличный</Subsystem>
+			<Subsystem>инт_Тесты</Subsystem>
 			<CommonPicture>ЮТЗапустить</CommonPicture>
 			<CommonPicture>ЮТНеизвестный</CommonPicture>
 			<CommonPicture>ЮТОшибка</CommonPicture>
@@ -87,7 +88,10 @@
 			<CommonModule>МокитоПерехват</CommonModule>
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
+			<CommonModule>РС_инт_ОчередьИсходящихСообщений_ММ</CommonModule>
+			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
+			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТест</CommonModule>
@@ -175,12 +179,15 @@
 			<CommonModule>ЮТФильтрацияСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
+			<Catalog>инт_Подписчики</Catalog>
+			<Catalog>инт_ПотокиДанных</Catalog>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
 			<DataProcessor>ЮТКонструкторОбъектаXDTO</DataProcessor>
 			<DataProcessor>ЮТКонструкторТестовыхДанных</DataProcessor>
 			<DataProcessor>ЮТЮнитТесты</DataProcessor>
+			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

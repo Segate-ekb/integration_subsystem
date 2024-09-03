@@ -78,6 +78,15 @@
 			<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
 			<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
 		</InputField>
+		<InputField name="Пример" id="55">
+			<DataPath>Объект.Пример</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
+			<Events>
+				<Event name="OnChange">ПримерПриИзменении</Event>
+			</Events>
+		</InputField>
 		<HTMLDocumentField name="РедакторКода" id="25">
 			<DataPath>РедакторКода</DataPath>
 			<Title>

@@ -19,6 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.ПодсистемаИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Подписчики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПотокиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.инт_НастройкиОбщихПараметровИнтеграций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_КоличествоПотоковОтправкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_КоличествоПотоковФормированияСообщений</xr:Item>
