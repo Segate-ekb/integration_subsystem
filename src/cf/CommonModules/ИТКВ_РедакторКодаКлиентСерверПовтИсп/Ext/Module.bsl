@@ -3,7 +3,7 @@
 Функция СоответствиеИменКоллекцийИТипов() Экспорт
 	
 	Результат = Новый Соответствие;
-	Результат.Вставить("справочники", "catalogs");
+	Результат.Вставить("справочники", "catalogs"); 
     Результат.Вставить("справочник", "catalogs");
 	Результат.Вставить("catalogs", "catalogs");
 	Результат.Вставить("документы", "documents");
@@ -37,7 +37,7 @@
 	Результат.Вставить("планыобмена", "exchangePlans");
     Результат.Вставить("планобмена", "exchangePlans");
 	Результат.Вставить("exchangeplans", "exchangePlans");
-	Результат.Вставить("планывидовхарактеристик", "chartsOfCharacteristicTypes");
+	Результат.Вставить("планывидовхарактеристик", "chartsOfCharacteristicTypes"); 
     Результат.Вставить("планывидовхарактеристик", "chartsOfCharacteristicTypes");
 	Результат.Вставить("chartsofcharacteristictypes", "chartsOfCharacteristicTypes");
 	Результат.Вставить("планывидоврасчета", "chartsOfCalculationTypes");

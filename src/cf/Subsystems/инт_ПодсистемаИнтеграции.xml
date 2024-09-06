@@ -16,25 +16,48 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.ПодсистемаИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Подписчики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПотокиДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.инт_НастройкиОбщихПараметровИнтеграций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторПодсистемыИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОбработкаВходящихОбращенийHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОбработкаВходящихПотоков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОбработкаВходящихПотоковПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщенийПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщенийСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_СтатусыИсходящихСообщенийПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_КоличествоПотоковОтправкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_КоличествоПотоковФормированияСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазделятьПотокиОтправкиПоТипамПодписчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиОбработкиВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиОтправкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиФормированияСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.инт_ИсходныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_НаправлениеПотокаДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СпособыПередачиПараметровПоHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СтатусыВходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СтатусыИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СтатусыРассылкиИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_ТипыПодписчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИсторияСтатусовВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИсторияСтатусовИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИсторияСтатусовРассылкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_МенеджерПотоковОтправкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_МенеджерПотоковФормированияСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ОчередьВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ОчередьИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ОчередьОтправкиИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ТекущийСтатусВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ТекущийСтатусИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ТекущийСтатусРассылкиСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_МенеджерПотоковРассылкиСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_МенеджерПотоковФормированияИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_ОбработкаВходящейОчереди</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

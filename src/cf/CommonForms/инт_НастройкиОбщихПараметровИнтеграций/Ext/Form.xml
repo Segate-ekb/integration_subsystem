@@ -74,6 +74,29 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкиОбработкиВходящихСообщений" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки обработки входящих сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки обработки входящих сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаНастройкиОбработкиВходящихСообщенийРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<InputField name="инт_РазмерПачкиОбработкиВходящихСообщений" id="21">
+					<DataPath>НаборКонстант.инт_РазмерПачкиОбработкиВходящихСообщений</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="инт_РазмерПачкиОбработкиВходящихСообщенийКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="инт_РазмерПачкиОбработкиВходящихСообщенийРасширеннаяПодсказка" id="23"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НаборКонстант" id="1">

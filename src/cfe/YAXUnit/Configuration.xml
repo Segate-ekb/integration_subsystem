@@ -88,6 +88,9 @@
 			<CommonModule>МокитоПерехват</CommonModule>
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
+			<CommonModule>ОМ_инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
+			<CommonModule>ОМ_инт_ОбработкаВходящихПотоков</CommonModule>
+			<CommonModule>РС_инт_ОчередьВходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
@@ -179,6 +182,7 @@
 			<CommonModule>ЮТФильтрацияСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
+			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
@@ -187,6 +191,7 @@
 			<DataProcessor>ЮТКонструкторОбъектаXDTO</DataProcessor>
 			<DataProcessor>ЮТКонструкторТестовыхДанных</DataProcessor>
 			<DataProcessor>ЮТЮнитТесты</DataProcessor>
+			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>

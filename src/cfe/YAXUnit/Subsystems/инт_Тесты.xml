@@ -11,13 +11,18 @@
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
-			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ГенераторТестовыхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОМ_инт_ОбработкаВходящихОбращенийHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РС_инт_ОчередьВходящихСообщений_ММ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РС_инт_ОчередьИсходящихСообщений_ММ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РС_инт_ТекущийСтатусРассылкиСообщений_ММ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПР_инт_Подписчики_ММ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПР_инт_ПотокиДанных_ММ</xr:Item>
 			</Content>
 		</Properties>
