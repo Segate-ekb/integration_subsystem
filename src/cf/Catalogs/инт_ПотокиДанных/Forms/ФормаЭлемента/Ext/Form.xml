@@ -57,6 +57,43 @@
 			<ContextMenu name="НаправлениеПотокаКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="НаправлениеПотокаРасширеннаяПодсказка" id="12"/>
 		</InputField>
+		<UsualGroup name="ГруппаВалидация" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валидация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валидация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаВалидацияРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<CheckBoxField name="Валидация" id="74">
+					<DataPath>Объект.Валидация</DataPath>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ВалидацияКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ВалидацияРасширеннаяПодсказка" id="76"/>
+				</CheckBoxField>
+				<InputField name="СхемаДанных" id="79">
+					<DataPath>Объект.СхемаДанных</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СхемаДанныхКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="СхемаДанныхРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="ИмяСхемыПакета" id="82">
+					<DataPath>Объект.ИмяСхемыПакета</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяСхемыПакетаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ИмяСхемыПакетаРасширеннаяПодсказка" id="84"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаРедакторКода" id="68">
 			<Title>
 				<v8:item>
@@ -73,26 +110,6 @@
 			<Group>Vertical</Group>
 			<ExtendedTooltip name="ГруппаРедакторКодаРасширеннаяПодсказка" id="69"/>
 			<ChildItems>
-				<InputField name="Пример" id="55">
-					<DataPath>Объект.Пример</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
-					<Events>
-						<Event name="OnChange">ПримерПриИзменении</Event>
-					</Events>
-				</InputField>
-				<HTMLDocumentField name="РедакторКода" id="25">
-					<DataPath>РедакторКода</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текст обработчика</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="РедакторКодаКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="27"/>
-				</HTMLDocumentField>
 				<UsualGroup name="ГруппаПример" id="70">
 					<Title>
 						<v8:item>
@@ -109,7 +126,78 @@
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПримерРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<InputField name="Пример" id="55">
+							<DataPath>Объект.Пример</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
+							<Events>
+								<Event name="OnChange">ПримерПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="ПроверитьПоПримеру" id="72">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПроверитьПоПримеру</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПроверитьПоПримеруРасширеннаяПодсказка" id="73"/>
+						</Button>
+					</ChildItems>
 				</UsualGroup>
+				<HTMLDocumentField name="РедакторКода" id="25">
+					<DataPath>РедакторКода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст обработчика</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РедакторКодаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="27"/>
+				</HTMLDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметры" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<InputField name="КоличествоПопытокОбработки" id="62">
+					<DataPath>Объект.КоличествоПопытокОбработки</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоПопытокОбработкиКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="КоличествоПопытокОбработкиРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ПаузаМеждуПопыткамиОбработки" id="65">
+					<DataPath>Объект.ПаузаМеждуПопыткамиОбработки</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПаузаМеждуПопыткамиОбработкиКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПаузаМеждуПопыткамиОбработкиРасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="УдалятьОбработанныеСообщенияЧерез" id="22">
+					<DataPath>Объект.УдалятьОбработанныеСообщенияЧерез</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаПодписчики" id="58">
@@ -186,44 +274,6 @@
 				</Table>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаПараметры" id="60">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа параметры</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Behavior>Collapsible</Behavior>
-			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="61"/>
-			<ChildItems>
-				<InputField name="КоличествоПопытокОбработки" id="62">
-					<DataPath>Объект.КоличествоПопытокОбработки</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КоличествоПопытокОбработкиКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="КоличествоПопытокОбработкиРасширеннаяПодсказка" id="64"/>
-				</InputField>
-				<InputField name="ПаузаМеждуПопыткамиОбработки" id="65">
-					<DataPath>Объект.ПаузаМеждуПопыткамиОбработки</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПаузаМеждуПопыткамиОбработкиКонтекстноеМеню" id="66"/>
-					<ExtendedTooltip name="ПаузаМеждуПопыткамиОбработкиРасширеннаяПодсказка" id="67"/>
-				</InputField>
-				<InputField name="УдалятьОбработанныеСообщенияЧерез" id="22">
-					<DataPath>Объект.УдалятьОбработанныеСообщенияЧерез</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="14">
@@ -236,7 +286,7 @@
 				<AdditionalColumns table="Объект.ПодписчикиПотока"/>
 			</Columns>
 		</Attribute>
-		<Attribute name="РедакторКода" id="2">
+		<Attribute name="РедакторКода" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -267,6 +317,26 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Настройки</Action>
+		</Command>
+		<Command name="ПроверитьПоПримеру" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить по примеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataHistory</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПоПримеру</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>
