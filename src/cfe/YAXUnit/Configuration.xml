@@ -47,7 +47,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>24.05</Version>
+			<Version>24.08</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -61,12 +61,16 @@
 			<Subsystem>ЮТПубличный</Subsystem>
 			<Subsystem>инт_Тесты</Subsystem>
 			<CommonPicture>ЮТЗапустить</CommonPicture>
+			<CommonPicture>ЮТИмпорт</CommonPicture>
+			<CommonPicture>ЮТНастройки</CommonPicture>
 			<CommonPicture>ЮТНеизвестный</CommonPicture>
 			<CommonPicture>ЮТОшибка</CommonPicture>
 			<CommonPicture>ЮТПерезапуститьУпавшие</CommonPicture>
 			<CommonPicture>ЮТПодсистема</CommonPicture>
 			<CommonPicture>ЮТПропущен</CommonPicture>
+			<CommonPicture>ЮТРедактировать</CommonPicture>
 			<CommonPicture>ЮТСравнить</CommonPicture>
+			<CommonPicture>ЮТСтруктура</CommonPicture>
 			<CommonPicture>ЮТУпал</CommonPicture>
 			<CommonPicture>ЮТУспешно</CommonPicture>
 			<CommonPicture>ЮТЭлементыТестов</CommonPicture>
@@ -97,6 +101,10 @@
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
+			<CommonModule>ЮТДымовыеТесты</CommonModule>
+			<CommonModule>ЮТДымовыеТестыСлужебныйВызовСервера</CommonModule>
+			<CommonModule>ЮТДымовыеТестыСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ЮТДымовыеТестыСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТест</CommonModule>
 			<CommonModule>ЮТЗависимости</CommonModule>
 			<CommonModule>ЮТЗависимостиСлужебный</CommonModule>
@@ -132,6 +140,7 @@
 			<CommonModule>ЮТМетаданныеСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ЮТМетоды</CommonModule>
 			<CommonModule>ЮТМетодыСлужебный</CommonModule>
+			<CommonModule>ЮТМетодыСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТНастройкиВыполнения</CommonModule>
 			<CommonModule>ЮТОбщий</CommonModule>
 			<CommonModule>ЮТОбщийСлужебный</CommonModule>
@@ -153,6 +162,7 @@
 			<CommonModule>ЮТПодражательСлужебный</CommonModule>
 			<CommonModule>ЮТПодражательСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТПодражательСлужебныйПовтИсп</CommonModule>
+			<CommonModule>ЮТПользовательскийИнтерфейсСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТПредикаты</CommonModule>
 			<CommonModule>ЮТПредикатыСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТПреобразованияСлужебный</CommonModule>
@@ -166,11 +176,12 @@
 			<CommonModule>ЮТСообщенияСлужебный</CommonModule>
 			<CommonModule>ЮТСравнениеСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТСравнениеСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ЮТСравнениеСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТСтроки</CommonModule>
 			<CommonModule>ЮТТестовыеДанные</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебный</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйВызовСервера</CommonModule>
-			<CommonModule>ЮТТестовыеДанныеСлужебныйТаблицыЗначений</CommonModule>
+			<CommonModule>ЮТТестовыеДанныеСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТТесты</CommonModule>
 			<CommonModule>ЮТТестыСлужебный</CommonModule>
 			<CommonModule>ЮТТипыДанныхСлужебный</CommonModule>

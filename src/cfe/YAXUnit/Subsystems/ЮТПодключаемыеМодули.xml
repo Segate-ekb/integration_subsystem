@@ -23,6 +23,7 @@
 			<Content/>
 		</Properties>
 		<ChildObjects>
+			<Subsystem>ДымовыеТесты</Subsystem>
 			<Subsystem>ОбработчикиСобытий</Subsystem>
 			<Subsystem>ФормированиеОтчета</Subsystem>
 		</ChildObjects>

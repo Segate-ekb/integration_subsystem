@@ -52,6 +52,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТОтчетСлужебныйКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТПодключаемыеМодулиСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТПодключаемыеМодулиСлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТПользовательскийИнтерфейсСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТПроверкиСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРазрешениеЗависимостейСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРазрешениеЗависимостейСлужебныйКлиент</xr:Item>

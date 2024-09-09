@@ -23,6 +23,7 @@
 			<Content/>
 		</Properties>
 		<ChildObjects>
+			<Subsystem>ПоддержкаДымовыхТестов</Subsystem>
 			<Subsystem>ЮТИсполнитель</Subsystem>
 			<Subsystem>ЮТКонтекст</Subsystem>
 			<Subsystem>ЮТМокирование</Subsystem>
