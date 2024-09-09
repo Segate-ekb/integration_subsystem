@@ -359,6 +359,9 @@
 			<CommonModule>инт_ОтправкаИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийСлужебный</CommonModule>
+			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
+			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
+			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>
 			<CommonModule>инт_СтатусыИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийПовтИсп</CommonModule>
