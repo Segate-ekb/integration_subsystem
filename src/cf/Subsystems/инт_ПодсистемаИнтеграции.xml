@@ -27,7 +27,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщенийПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщенийСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_СтатусыИсходящихСообщенийПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_СтатусыСообщенийПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийСлужебный</xr:Item>
