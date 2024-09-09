@@ -351,6 +351,8 @@
 			<CommonPicture>ИТКВ_ФлагРоссии</CommonPicture>
 			<CommonPicture>ИТКВ_Форматировать</CommonPicture>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
+			<CommonModule>инт_ВалидаторПакетов</CommonModule>
+			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
 			<CommonModule>инт_КоннекторПодсистемыИнтеграции</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
@@ -458,6 +460,7 @@
 			<CommonForm>ИТКВ_Настройки</CommonForm>
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
+			<Catalog>инт_Схемы</Catalog>
 			<Document>демо_Документ</Document>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
 			<Enum>инт_СпособыПередачиПараметровПоHTTP</Enum>
@@ -468,6 +471,7 @@
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовРассылкиСообщений</InformationRegister>
+			<InformationRegister>инт_КэшированиеСхемOpenApi</InformationRegister>
 			<InformationRegister>инт_МенеджерПотоковОтправкиСообщений</InformationRegister>
 			<InformationRegister>инт_МенеджерПотоковФормированияСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
