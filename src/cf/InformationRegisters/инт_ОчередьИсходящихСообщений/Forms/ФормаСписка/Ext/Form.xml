@@ -54,7 +54,6 @@
 					<ChildItems>
 						<Table name="Список" id="29">
 							<Representation>List</Representation>
-							<CommandBarLocation>None</CommandBarLocation>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<InitialTreeView>ExpandTopLevel</InitialTreeView>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -76,7 +75,20 @@
 							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
 							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 							<ContextMenu name="СписокКонтекстноеМеню" id="30"/>
-							<AutoCommandBar name="СписокКоманднаяПанель" id="31"/>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="31">
+								<ChildItems>
+									<Button name="СписокОткрытьДетальнуюИнформацию" id="95">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ОткрытьДетальнуюИнформацию</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.DialogInformation</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СписокОткрытьДетальнуюИнформациюРасширеннаяПодсказка" id="96"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
 							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
 							<SearchStringAddition name="СписокСтрокаПоиска" id="7">
 								<AdditionSource>
@@ -113,12 +125,6 @@
 									<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="17"/>
 									<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="18"/>
 								</LabelField>
-								<LabelField name="ИсходныеДанные" id="19">
-									<DataPath>Список.ИсходныеДанные</DataPath>
-									<DefaultItem>true</DefaultItem>
-									<ContextMenu name="ИсходныеДанныеКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="ИсходныеДанныеРасширеннаяПодсказка" id="21"/>
-								</LabelField>
 								<LabelField name="ПотокДанных" id="22">
 									<DataPath>Список.ПотокДанных</DataPath>
 									<DefaultItem>true</DefaultItem>
@@ -139,24 +145,24 @@
 						</Table>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ПриВыбореСтрокиВсплывающий" id="55">
+				<UsualGroup name="ГруппаДетальнаяИнформация" id="55">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>При выборе строки всплывающий</v8:content>
+							<v8:content>Группа детальная информация</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>При выборе строки всплывающий</v8:content>
+							<v8:content>Группа детальная информация</v8:content>
 						</v8:item>
 					</ToolTip>
 					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<Group>Vertical</Group>
 					<HorizontalAlign>Left</HorizontalAlign>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ПриВыбореСтрокиВсплывающийРасширеннаяПодсказка" id="56"/>
+					<ExtendedTooltip name="ГруппаДетальнаяИнформацияРасширеннаяПодсказка" id="56"/>
 					<ChildItems>
 						<TextDocumentField name="ПолеТекстОшибки" id="50">
 							<DataPath>Items.Список.CurrentData.ТекстОшибки</DataPath>
@@ -165,14 +171,54 @@
 							<ContextMenu name="ПолеТекстОшибкиКонтекстноеМеню" id="51"/>
 							<ExtendedTooltip name="ПолеТекстОшибкиРасширеннаяПодсказка" id="52"/>
 						</TextDocumentField>
-						<LabelField name="ПолеСтатусСообщения" id="57">
-							<DataPath>Items.Список.CurrentData.СтатусСообщения</DataPath>
-							<ContextMenu name="ПолеСтатусСообщенияКонтекстноеМеню" id="58"/>
-							<ExtendedTooltip name="ПолеСтатусСообщенияРасширеннаяПодсказка" id="59"/>
-							<Events>
-								<Event name="OnChange">ПолеСтатусСообщенияПриИзменении</Event>
-							</Events>
-						</LabelField>
+						<UsualGroup name="ГруппаСтатусы" id="93">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа статусы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа статусы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтатусыРасширеннаяПодсказка" id="94"/>
+							<ChildItems>
+								<Button name="ИсторияСтатусов" id="89">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ИсторияСтатусов</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.History</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ИсторияСтатусовРасширеннаяПодсказка" id="90"/>
+								</Button>
+								<Button name="ИзменитьСтатус" id="87">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<CommandName>Form.Command.ИзменитьСтатус</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Change</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ИзменитьСтатусРасширеннаяПодсказка" id="88"/>
+								</Button>
+								<LabelField name="ПолеСтатусСообщения" id="57">
+									<DataPath>Items.Список.CurrentData.СтатусСообщения</DataPath>
+									<ContextMenu name="ПолеСтатусСообщенияКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ПолеСтатусСообщенияРасширеннаяПодсказка" id="59"/>
+									<Events>
+										<Event name="OnChange">ПолеСтатусСообщенияПриИзменении</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
 						<Table name="СписокОтправка" id="62">
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
@@ -195,18 +241,6 @@
 							<ContextMenu name="СписокОтправкаКонтекстноеМеню" id="63"/>
 							<AutoCommandBar name="СписокОтправкаКоманднаяПанель" id="64">
 								<Autofill>false</Autofill>
-								<ChildItems>
-									<Button name="ИзменитьСтатус" id="87">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ИзменитьСтатус</CommandName>
-										<ExtendedTooltip name="ИзменитьСтатусРасширеннаяПодсказка" id="88"/>
-									</Button>
-									<Button name="ИсторияСтатусов" id="89">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ИсторияСтатусов</CommandName>
-										<ExtendedTooltip name="ИсторияСтатусовРасширеннаяПодсказка" id="90"/>
-									</Button>
-								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="СписокОтправкаРасширеннаяПодсказка" id="65"/>
 							<SearchStringAddition name="СписокОтправкаСтрокаПоиска" id="66">
@@ -249,11 +283,6 @@
 									<ContextMenu name="СтатусСообщенияОтправкаКонтекстноеМеню" id="82"/>
 									<ExtendedTooltip name="СтатусСообщенияОтправкаРасширеннаяПодсказка" id="83"/>
 								</LabelField>
-								<LabelField name="СформированноеСообщениеОтправка" id="84">
-									<DataPath>СписокОтправка.СформированноеСообщение</DataPath>
-									<ContextMenu name="СформированноеСообщениеОтправкаКонтекстноеМеню" id="85"/>
-									<ExtendedTooltip name="СформированноеСообщениеОтправкаРасширеннаяПодсказка" id="86"/>
-								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -271,7 +300,6 @@
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	РегистрСведенийинт_ОчередьИсходящихСообщений.ИдентификаторСообщения КАК ИдентификаторСообщения,
-	РегистрСведенийинт_ОчередьИсходящихСообщений.ИсходныеДанные КАК ИсходныеДанные,
 	РегистрСведенийинт_ОчередьИсходящихСообщений.СформированноеСообщение КАК СформированноеСообщение,
 	РегистрСведенийинт_ОчередьИсходящихСообщений.ПотокДанных КАК ПотокДанных,
 	инт_ТекущийСтатусИсходящихСообщений.СтатусСообщения КАК СтатусСообщения,
@@ -343,7 +371,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТекущийСтатусИсходящихСообщенийЗапись" id="3">
+		<Attribute name="ТекущийСтатусИсходящихСообщенийЗапись" id="19">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -476,6 +504,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ИсторияСтатусов</Action>
+		</Command>
+		<Command name="ОткрытьДетальнуюИнформацию" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть детальную информацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть детальную информацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьДетальнуюИнформацию</Action>
 		</Command>
 	</Commands>
 </Form>
