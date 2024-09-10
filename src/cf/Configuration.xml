@@ -249,6 +249,7 @@
 			<Subsystem>инт_ПодсистемаИнтеграции</Subsystem>
 			<Subsystem>Демо</Subsystem>
 			<Subsystem>ИТКВ_РедакторКода</Subsystem>
+			<CommonPicture>инт_лого</CommonPicture>
 			<CommonPicture>ИТКВ_Excel</CommonPicture>
 			<CommonPicture>ИТКВ_ВариантОтчетаСКД</CommonPicture>
 			<CommonPicture>ИТКВ_Вопрос64</CommonPicture>
@@ -450,6 +451,7 @@
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
+			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>
 			<Constant>инт_РазделятьПотокиОтправкиПоТипамПодписчиков</Constant>

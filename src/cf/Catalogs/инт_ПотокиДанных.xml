@@ -62,7 +62,7 @@
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.инт_ПотокиДанных.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
-			<DefaultListForm/>
+			<DefaultListForm>Catalog.инт_ПотокиДанных.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -112,7 +112,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -615,6 +615,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

@@ -14,11 +14,15 @@
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.инт_лого</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Подписчики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПотокиДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Схемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.инт_ОткрытьФормуНастроек</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.инт_НастройкиОбщихПараметровИнтеграций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторПодсистемыИнтеграции</xr:Item>
@@ -32,6 +36,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.инт_лого</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_КоличествоПотоковОтправкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_КоличествоПотоковФормированияСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазделятьПотокиОтправкиПоТипамПодписчиков</xr:Item>

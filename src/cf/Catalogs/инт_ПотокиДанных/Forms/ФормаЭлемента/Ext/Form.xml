@@ -19,6 +19,7 @@
 	<ChildItems>
 		<CheckBoxField name="Активен" id="52">
 			<DataPath>Объект.Активен</DataPath>
+			<TitleLocation>Right</TitleLocation>
 			<CheckBoxType>Switcher</CheckBoxType>
 			<ContextMenu name="АктивенКонтекстноеМеню" id="53"/>
 			<ExtendedTooltip name="АктивенРасширеннаяПодсказка" id="54"/>
@@ -56,44 +57,10 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаправлениеПотокаКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="НаправлениеПотокаРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">НаправлениеПотокаПриИзменении</Event>
+			</Events>
 		</InputField>
-		<UsualGroup name="ГруппаВалидация" id="77">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Валидация</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа валидация</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Behavior>Collapsible</Behavior>
-			<ExtendedTooltip name="ГруппаВалидацияРасширеннаяПодсказка" id="78"/>
-			<ChildItems>
-				<CheckBoxField name="Валидация" id="74">
-					<DataPath>Объект.Валидация</DataPath>
-					<CheckBoxType>Switcher</CheckBoxType>
-					<ContextMenu name="ВалидацияКонтекстноеМеню" id="75"/>
-					<ExtendedTooltip name="ВалидацияРасширеннаяПодсказка" id="76"/>
-				</CheckBoxField>
-				<InputField name="СхемаДанных" id="79">
-					<DataPath>Объект.СхемаДанных</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="СхемаДанныхКонтекстноеМеню" id="80"/>
-					<ExtendedTooltip name="СхемаДанныхРасширеннаяПодсказка" id="81"/>
-				</InputField>
-				<InputField name="ИмяСхемыПакета" id="82">
-					<DataPath>Объект.ИмяСхемыПакета</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ИмяСхемыПакетаКонтекстноеМеню" id="83"/>
-					<ExtendedTooltip name="ИмяСхемыПакетаРасширеннаяПодсказка" id="84"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
 		<UsualGroup name="ГруппаРедакторКода" id="68">
 			<Title>
 				<v8:item>
@@ -162,6 +129,48 @@
 				</HTMLDocumentField>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаВалидация" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валидация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валидация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаВалидацияРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<CheckBoxField name="Валидация" id="74">
+					<DataPath>Объект.Валидация</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ВалидацияКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ВалидацияРасширеннаяПодсказка" id="76"/>
+				</CheckBoxField>
+				<InputField name="СхемаДанных" id="79">
+					<DataPath>Объект.СхемаДанных</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СхемаДанныхКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="СхемаДанныхРасширеннаяПодсказка" id="81"/>
+					<Events>
+						<Event name="OnChange">СхемаДанныхПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ИмяСхемыПакета" id="82">
+					<DataPath>Объект.ИмяСхемыПакета</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяСхемыПакетаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ИмяСхемыПакетаРасширеннаяПодсказка" id="84"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаПараметры" id="60">
 			<Title>
 				<v8:item>
@@ -198,6 +207,13 @@
 					<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
 				</InputField>
+				<CheckBoxField name="АсинхроннаяОбработка" id="85">
+					<DataPath>Объект.АсинхроннаяОбработка</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="АсинхроннаяОбработкаКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="АсинхроннаяОбработкаРасширеннаяПодсказка" id="87"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаПодписчики" id="58">
@@ -301,6 +317,31 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СхемаДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИмяСхемыПакета</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Валидация</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Настройки" id="1">
