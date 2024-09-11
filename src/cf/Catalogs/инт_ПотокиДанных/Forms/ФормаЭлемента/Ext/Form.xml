@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -19,7 +20,8 @@
 	<ChildItems>
 		<CheckBoxField name="Активен" id="52">
 			<DataPath>Объект.Активен</DataPath>
-			<CheckBoxType>Auto</CheckBoxType>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Switcher</CheckBoxType>
 			<ContextMenu name="АктивенКонтекстноеМеню" id="53"/>
 			<ExtendedTooltip name="АктивенРасширеннаяПодсказка" id="54"/>
 		</CheckBoxField>
@@ -28,7 +30,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Идентификато потока</v8:content>
+					<v8:content>Идентификатор потока</v8:content>
 				</v8:item>
 			</Title>
 			<EditMode>EnterOnInput</EditMode>
@@ -56,103 +58,265 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаправлениеПотокаКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="НаправлениеПотокаРасширеннаяПодсказка" id="12"/>
-		</InputField>
-		<InputField name="КоличествоПопытокОтправки" id="16">
-			<DataPath>Объект.КоличествоПопытокОбработки</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КоличествоПопытокОтправкиКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="КоличествоПопытокОтправкиРасширеннаяПодсказка" id="18"/>
-		</InputField>
-		<InputField name="ПаузаМеждуПопыткамиОбработки" id="19">
-			<DataPath>Объект.ПаузаМеждуПопыткамиОбработки</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПаузаМеждуПопыткамиОбработкиКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="ПаузаМеждуПопыткамиОбработкиРасширеннаяПодсказка" id="21"/>
-		</InputField>
-		<InputField name="УдалятьОбработанныеСообщенияЧерез" id="22">
-			<DataPath>Объект.УдалятьОбработанныеСообщенияЧерез</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
-		</InputField>
-		<InputField name="Пример" id="55">
-			<DataPath>Объект.Пример</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
-			<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
 			<Events>
-				<Event name="OnChange">ПримерПриИзменении</Event>
+				<Event name="OnChange">НаправлениеПотокаПриИзменении</Event>
 			</Events>
 		</InputField>
-		<HTMLDocumentField name="РедакторКода" id="25">
-			<DataPath>РедакторКода</DataPath>
+		<UsualGroup name="ГруппаРедакторКода" id="68">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Текст обработчика</v8:content>
+					<v8:content>Редактор кода</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="26"/>
-			<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="27"/>
-		</HTMLDocumentField>
-		<Table name="ПодписчикиПотока" id="30">
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.ПодписчикиПотока</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ПодписчикиПотокаКонтекстноеМеню" id="31"/>
-			<AutoCommandBar name="ПодписчикиПотокаКоманднаяПанель" id="32"/>
-			<ExtendedTooltip name="ПодписчикиПотокаРасширеннаяПодсказка" id="33"/>
-			<SearchStringAddition name="ПодписчикиПотокаСтрокаПоиска" id="34">
-				<AdditionSource>
-					<Item>ПодписчикиПотока</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ПодписчикиПотокаСтрокаПоискаКонтекстноеМеню" id="35"/>
-				<ExtendedTooltip name="ПодписчикиПотокаСтрокаПоискаРасширеннаяПодсказка" id="36"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ПодписчикиПотокаСостояниеПросмотра" id="37">
-				<AdditionSource>
-					<Item>ПодписчикиПотока</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ПодписчикиПотокаСостояниеПросмотраКонтекстноеМеню" id="38"/>
-				<ExtendedTooltip name="ПодписчикиПотокаСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ПодписчикиПотокаУправлениеПоиском" id="40">
-				<AdditionSource>
-					<Item>ПодписчикиПотока</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ПодписчикиПотокаУправлениеПоискомКонтекстноеМеню" id="41"/>
-				<ExtendedTooltip name="ПодписчикиПотокаУправлениеПоискомРасширеннаяПодсказка" id="42"/>
-			</SearchControlAddition>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа редактор кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРедакторКодаРасширеннаяПодсказка" id="69"/>
 			<ChildItems>
-				<LabelField name="ПодписчикиПотокаНомерСтроки" id="43">
-					<DataPath>Объект.ПодписчикиПотока.LineNumber</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПодписчикиПотокаНомерСтрокиКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="ПодписчикиПотокаНомерСтрокиРасширеннаяПодсказка" id="45"/>
-				</LabelField>
-				<InputField name="ПодписчикиПотокаПодписчик" id="46">
-					<DataPath>Объект.ПодписчикиПотока.Подписчик</DataPath>
+				<UsualGroup name="ГруппаПример" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пример</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пример</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПримерРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<InputField name="Пример" id="55">
+							<DataPath>Объект.Пример</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
+							<Events>
+								<Event name="OnChange">ПримерПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Button name="ПроверитьПоПримеру" id="72">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПроверитьПоПримеру</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПроверитьПоПримеруРасширеннаяПодсказка" id="73"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаТестовыеДанные" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тестовые данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тестовые данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТестовыеДанныеРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<HTMLDocumentField name="РедакторКода" id="25">
+							<DataPath>РедакторКода</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текст обработчика</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РедакторКодаКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="27"/>
+						</HTMLDocumentField>
+						<InputField name="ТестовыеДанные" id="90">
+							<DataPath>ТестовыеДанные</DataPath>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТестовыеДанныеКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ТестовыеДанныеРасширеннаяПодсказка" id="92"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВалидация" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валидация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа валидация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаВалидацияРасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<CheckBoxField name="Валидация" id="74">
+					<DataPath>Объект.Валидация</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ВалидацияКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ВалидацияРасширеннаяПодсказка" id="76"/>
+				</CheckBoxField>
+				<InputField name="СхемаДанных" id="79">
+					<DataPath>Объект.СхемаДанных</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СхемаДанныхКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="СхемаДанныхРасширеннаяПодсказка" id="81"/>
+					<Events>
+						<Event name="OnChange">СхемаДанныхПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ИмяСхемыПакета" id="82">
+					<DataPath>Объект.ИмяСхемыПакета</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяСхемыПакетаКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ИмяСхемыПакетаРасширеннаяПодсказка" id="84"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметры" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<InputField name="КоличествоПопытокОбработки" id="62">
+					<DataPath>Объект.КоличествоПопытокОбработки</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоПопытокОбработкиКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="КоличествоПопытокОбработкиРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ПаузаМеждуПопыткамиОбработки" id="65">
+					<DataPath>Объект.ПаузаМеждуПопыткамиОбработки</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПаузаМеждуПопыткамиОбработкиКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПаузаМеждуПопыткамиОбработкиРасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="УдалятьОбработанныеСообщенияЧерез" id="22">
+					<DataPath>Объект.УдалятьОбработанныеСообщенияЧерез</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПодписчикиПотокаПодписчикКонтекстноеМеню" id="47"/>
-					<ExtendedTooltip name="ПодписчикиПотокаПодписчикРасширеннаяПодсказка" id="48"/>
+					<ContextMenu name="УдалятьОбработанныеСообщенияЧерезКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="УдалятьОбработанныеСообщенияЧерезРасширеннаяПодсказка" id="24"/>
 				</InputField>
-				<LabelField name="ПодписчикиПотокаПодписчикТипПодписчика" id="49">
-					<DataPath>Объект.ПодписчикиПотока.Подписчик.ТипПодписчика</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ПодписчикиПотокаПодписчикТипПодписчикаКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ПодписчикиПотокаПодписчикТипПодписчикаРасширеннаяПодсказка" id="51"/>
-				</LabelField>
+				<CheckBoxField name="АсинхроннаяОбработка" id="85">
+					<DataPath>Объект.АсинхроннаяОбработка</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="АсинхроннаяОбработкаКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="АсинхроннаяОбработкаРасширеннаяПодсказка" id="87"/>
+				</CheckBoxField>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодписчики" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписчики</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подписчики</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="ГруппаПодписчикиРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Table name="ПодписчикиПотока" id="30">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ПодписчикиПотока</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПодписчикиПотокаКонтекстноеМеню" id="31"/>
+					<AutoCommandBar name="ПодписчикиПотокаКоманднаяПанель" id="32"/>
+					<ExtendedTooltip name="ПодписчикиПотокаРасширеннаяПодсказка" id="33"/>
+					<SearchStringAddition name="ПодписчикиПотокаСтрокаПоиска" id="34">
+						<AdditionSource>
+							<Item>ПодписчикиПотока</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодписчикиПотокаСтрокаПоискаКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="ПодписчикиПотокаСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодписчикиПотокаСостояниеПросмотра" id="37">
+						<AdditionSource>
+							<Item>ПодписчикиПотока</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодписчикиПотокаСостояниеПросмотраКонтекстноеМеню" id="38"/>
+						<ExtendedTooltip name="ПодписчикиПотокаСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодписчикиПотокаУправлениеПоиском" id="40">
+						<AdditionSource>
+							<Item>ПодписчикиПотока</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодписчикиПотокаУправлениеПоискомКонтекстноеМеню" id="41"/>
+						<ExtendedTooltip name="ПодписчикиПотокаУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ПодписчикиПотокаНомерСтроки" id="43">
+							<DataPath>Объект.ПодписчикиПотока.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПодписчикиПотокаНомерСтрокиКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ПодписчикиПотокаНомерСтрокиРасширеннаяПодсказка" id="45"/>
+						</LabelField>
+						<InputField name="ПодписчикиПотокаПодписчик" id="46">
+							<DataPath>Объект.ПодписчикиПотока.Подписчик</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПодписчикиПотокаПодписчикКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ПодписчикиПотокаПодписчикРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<LabelField name="ПодписчикиПотокаПодписчикТипПодписчика" id="49">
+							<DataPath>Объект.ПодписчикиПотока.Подписчик.ТипПодписчика</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПодписчикиПотокаПодписчикТипПодписчикаКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ПодписчикиПотокаПодписчикТипПодписчикаРасширеннаяПодсказка" id="51"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="14">
@@ -165,7 +329,7 @@
 				<AdditionalColumns table="Объект.ПодписчикиПотока"/>
 			</Columns>
 		</Attribute>
-		<Attribute name="РедакторКода" id="2">
+		<Attribute name="РедакторКода" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -180,6 +344,50 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ТестовыеДанные" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тестовые данные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ТестовыеДанные</Field>
+			</Save>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СхемаДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ИмяСхемыПакета</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Валидация</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Настройки" id="1">
@@ -196,6 +404,26 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Настройки</Action>
+		</Command>
+		<Command name="ПроверитьПоПримеру" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить по примеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataHistory</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПоПримеру</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

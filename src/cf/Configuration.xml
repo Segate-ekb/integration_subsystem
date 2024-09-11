@@ -249,6 +249,7 @@
 			<Subsystem>инт_ПодсистемаИнтеграции</Subsystem>
 			<Subsystem>Демо</Subsystem>
 			<Subsystem>ИТКВ_РедакторКода</Subsystem>
+			<CommonPicture>инт_лого</CommonPicture>
 			<CommonPicture>ИТКВ_Excel</CommonPicture>
 			<CommonPicture>ИТКВ_ВариантОтчетаСКД</CommonPicture>
 			<CommonPicture>ИТКВ_Вопрос64</CommonPicture>
@@ -351,6 +352,8 @@
 			<CommonPicture>ИТКВ_ФлагРоссии</CommonPicture>
 			<CommonPicture>ИТКВ_Форматировать</CommonPicture>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
+			<CommonModule>инт_ВалидаторПакетов</CommonModule>
+			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
 			<CommonModule>инт_КоннекторПодсистемыИнтеграции</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
@@ -448,6 +451,7 @@
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
+			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>
 			<Constant>инт_РазделятьПотокиОтправкиПоТипамПодписчиков</Constant>
@@ -458,6 +462,7 @@
 			<CommonForm>ИТКВ_Настройки</CommonForm>
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
+			<Catalog>инт_Схемы</Catalog>
 			<Document>демо_Документ</Document>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
 			<Enum>инт_СпособыПередачиПараметровПоHTTP</Enum>
@@ -468,6 +473,7 @@
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовРассылкиСообщений</InformationRegister>
+			<InformationRegister>инт_КэшированиеСхемOpenApi</InformationRegister>
 			<InformationRegister>инт_МенеджерПотоковОтправкиСообщений</InformationRegister>
 			<InformationRegister>инт_МенеджерПотоковФормированияСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
