@@ -463,7 +463,6 @@
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
-			<Document>демо_Документ</Document>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
 			<Enum>инт_СпособыПередачиПараметровПоHTTP</Enum>
 			<Enum>инт_СтатусыВходящихСообщений</Enum>
@@ -482,6 +481,7 @@
 			<InformationRegister>инт_ТекущийСтатусВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
+			<InformationRegister>ИТКВ_БезопасноеХранилищеДанных</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

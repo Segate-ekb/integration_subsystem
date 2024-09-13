@@ -5,6 +5,8 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаОбщаяИнформация" id="28">
@@ -33,7 +35,7 @@
 					<DataPath>Объект.Code</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ContextMenu name="КодКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
 				</InputField>
 				<CheckBoxField name="Активен" id="22">
@@ -59,6 +61,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаПараметрыОбщиеРасширеннаяПодсказка" id="33"/>
 			<ChildItems>
 				<InputField name="ТипПодписчика" id="13">
@@ -71,13 +74,70 @@
 						<Event name="OnChange">ТипПодписчикаПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="СсылкаНаСервис" id="19">
-					<DataPath>Объект.СсылкаНаСервис</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="СсылкаНаСервисКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="СсылкаНаСервисРасширеннаяПодсказка" id="21"/>
-				</InputField>
+				<UsualGroup name="ГруппаАутентификация" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аутентификация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа аутентификация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаАутентификацияРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<InputField name="СсылкаНаСервис" id="19">
+							<DataPath>Объект.СсылкаНаСервис</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СсылкаНаСервисКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СсылкаНаСервисРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<UsualGroup name="ГруппаПользовательИПароль" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователь и пароль</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователь и пароль</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПользовательИПарольРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<InputField name="Пользователь" id="37">
+									<DataPath>Объект.Пользователь</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПользовательКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="Пароль" id="40">
+									<DataPath>Пароль</DataPath>
+									<PasswordMode>true</PasswordMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПарольКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="42"/>
+									<Events>
+										<Event name="OnChange">ПарольПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
 				<InputField name="КоличествоПопытокОтправки" id="16">
 					<DataPath>Объект.КоличествоПопытокОтправки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -137,6 +197,21 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Пароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

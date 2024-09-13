@@ -1,46 +1,46 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<InformationRegister uuid="f8dff5d4-022d-4bde-be48-149daaf96224">
+	<InformationRegister uuid="338eacde-5c3d-4586-8374-b655ea7291b4">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.инт_ИсторияСтатусовВходящихСообщений" category="Record">
-				<xr:TypeId>5c6f72e6-c8fc-445e-88d3-278b368e004f</xr:TypeId>
-				<xr:ValueId>d69669ae-f26c-41d9-871c-15fea76ddfeb</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ИТКВ_БезопасноеХранилищеДанных" category="Record">
+				<xr:TypeId>182f9e75-7440-42a8-971c-4fbd020342ba</xr:TypeId>
+				<xr:ValueId>4bb21458-1ed8-45ea-a315-51f2d2a04299</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.инт_ИсторияСтатусовВходящихСообщений" category="Manager">
-				<xr:TypeId>5b7f7a6e-0227-4b0a-a7c7-d183dcbe1692</xr:TypeId>
-				<xr:ValueId>820318c1-a6d6-4f46-85d1-e9de3174f4a4</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ИТКВ_БезопасноеХранилищеДанных" category="Manager">
+				<xr:TypeId>be7513f0-6915-408e-b3d6-ca7a85a053c0</xr:TypeId>
+				<xr:ValueId>a0e3213e-f531-4f0e-9e3f-b9cac75326b7</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.инт_ИсторияСтатусовВходящихСообщений" category="Selection">
-				<xr:TypeId>43751a27-39f6-4b2c-8fc9-f71a24ead45e</xr:TypeId>
-				<xr:ValueId>b16faa0a-4aa3-4300-95ed-2067ebf475e8</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ИТКВ_БезопасноеХранилищеДанных" category="Selection">
+				<xr:TypeId>c9070945-abe0-46c7-a237-1325b0449b98</xr:TypeId>
+				<xr:ValueId>8d68e4b4-f67e-42ec-b2a0-8c2c24ca6584</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.инт_ИсторияСтатусовВходящихСообщений" category="List">
-				<xr:TypeId>4f48c7e0-38a9-4976-bbfa-88e3a6a59bcf</xr:TypeId>
-				<xr:ValueId>41d24c71-79fa-487f-bd7a-b4f5e07fd97d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ИТКВ_БезопасноеХранилищеДанных" category="List">
+				<xr:TypeId>c418143e-bc64-4717-963d-648cf0c20caa</xr:TypeId>
+				<xr:ValueId>9dcd31e0-9b62-4ac1-91ac-61cf50078eaf</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.инт_ИсторияСтатусовВходящихСообщений" category="RecordSet">
-				<xr:TypeId>84a027ae-361a-416b-959d-a62835f57a33</xr:TypeId>
-				<xr:ValueId>62d2603c-9447-4d9d-9f73-ee84d04ea105</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ИТКВ_БезопасноеХранилищеДанных" category="RecordSet">
+				<xr:TypeId>7831cad0-27b6-4761-936c-fd2a41850203</xr:TypeId>
+				<xr:ValueId>1ba2b7d3-9e54-4d2d-88af-32c386edb318</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.инт_ИсторияСтатусовВходящихСообщений" category="RecordKey">
-				<xr:TypeId>def14502-885f-4cea-8855-d6a7eb739979</xr:TypeId>
-				<xr:ValueId>e8cde051-0026-48ab-bee5-a61c196d6194</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ИТКВ_БезопасноеХранилищеДанных" category="RecordKey">
+				<xr:TypeId>750e159f-ebb5-418e-b487-8d218b4be820</xr:TypeId>
+				<xr:ValueId>71b8a646-f054-494f-86c4-93bb63445c51</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.инт_ИсторияСтатусовВходящихСообщений" category="RecordManager">
-				<xr:TypeId>6bf5e42e-36da-4ff1-828a-c7d51d8e977c</xr:TypeId>
-				<xr:ValueId>e0084e75-82e1-4cb2-bc7d-50286e87f58d</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ИТКВ_БезопасноеХранилищеДанных" category="RecordManager">
+				<xr:TypeId>7dad9e90-8b48-4f3c-ad22-5299188e6a39</xr:TypeId>
+				<xr:ValueId>4c675b25-31fa-46f4-ac66-bdd0687560a2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>инт_ИсторияСтатусовВходящихСообщений</Name>
+			<Name>ИТКВ_БезопасноеХранилищеДанных</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>(инт) История статусов входящих сообщений</v8:content>
+					<v8:content>ИТКВ безопасное хранилище данных</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<EditType>InDialog</EditType>
 			<DefaultRecordForm/>
 			<DefaultListForm/>
@@ -152,9 +152,9 @@
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
 			</StandardAttributes>
-			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
-			<MainFilterOnPeriod>true</MainFilterOnPeriod>
+			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>DontUse</FullTextSearch>
@@ -170,18 +170,18 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="c203a9e5-cb31-4158-9ef0-654f448f78cf">
+			<Resource uuid="40490c13-2310-44a8-a493-f03c8cc494cd">
 				<Properties>
-					<Name>СтатусСообщения</Name>
+					<Name>Данные</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Статус сообщения</v8:content>
+							<v8:content>Данные</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.инт_СтатусыВходящихСообщений</v8:Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -195,49 +195,6 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Resource uuid="5810e81c-967b-4e8c-ade6-9582426d846d">
-				<Properties>
-					<Name>ТекстОшибки</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текст ошибки</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -252,18 +209,24 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Dimension uuid="dfe8bc3f-e5fc-4fb9-9cb0-5de87fffdb4b">
+			<Dimension uuid="ca085552-ea47-4d37-8d2c-f3bf525920a6">
 				<Properties>
-					<Name>ИдентификаторСообщения</Name>
+					<Name>Владелец</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор сообщения</v8:content>
+							<v8:content>Владелец</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>v8:UUID</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:TypeSet>cfg:ExchangePlanRef</v8:TypeSet>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+						<v8:StringQualifiers>
+							<v8:Length>128</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -275,9 +238,9 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillFromFillingValue>true</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
+					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -289,7 +252,7 @@
 					<Master>false</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
