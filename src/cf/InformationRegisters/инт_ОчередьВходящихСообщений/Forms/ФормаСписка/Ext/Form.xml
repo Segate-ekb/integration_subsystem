@@ -220,11 +220,11 @@
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	РегистрСведенийинт_ОчередьВходящихСообщений.ИдентификаторСообщения КАК ИдентификаторСообщения,
-	РегистрСведенийинт_ОчередьВходящихСообщений.ВходящееСообщение КАК ВходящееСообщение,
 	РегистрСведенийинт_ОчередьВходящихСообщений.ПотокДанных КАК ПотокДанных,
 	инт_ТекущийСтатусВходящихСообщений.СтатусСообщения КАК СтатусСообщения,
 	инт_ТекущийСтатусВходящихСообщений.КоличествоПопыток КАК КоличествоПопыток,
-	инт_ТекущийСтатусВходящихСообщений.ТекстОшибки КАК ТекстОшибки
+	инт_ТекущийСтатусВходящихСообщений.ТекстОшибки КАК ТекстОшибки,
+	РегистрСведенийинт_ОчередьВходящихСообщений.ВходящееСообщение КАК ВходящееСообщение
 ИЗ
 	РегистрСведений.инт_ОчередьВходящихСообщений КАК РегистрСведенийинт_ОчередьВходящихСообщений
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.инт_ТекущийСтатусВходящихСообщений КАК инт_ТекущийСтатусВходящихСообщений
@@ -242,16 +242,16 @@
 					<dcssch:field>ВходящееСообщение</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекстОшибки</dcssch:dataPath>
+					<dcssch:field>ТекстОшибки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>СтатусСообщения</dcssch:dataPath>
 					<dcssch:field>СтатусСообщения</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КоличествоПопыток</dcssch:dataPath>
 					<dcssch:field>КоличествоПопыток</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ТекстОшибки</dcssch:dataPath>
-					<dcssch:field>ТекстОшибки</dcssch:field>
 				</Field>
 				<MainTable>InformationRegister.инт_ОчередьВходящихСообщений</MainTable>
 				<ListSettings>
