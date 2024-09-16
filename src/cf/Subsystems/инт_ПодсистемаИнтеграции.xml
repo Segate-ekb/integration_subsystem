@@ -50,6 +50,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СтатусыИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СтатусыРассылкиИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_ТипыПодписчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИдентификаторыВнешнихСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИсторияСтатусовВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИсторияСтатусовИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ИсторияСтатусовРассылкиСообщений</xr:Item>

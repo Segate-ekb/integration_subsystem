@@ -469,6 +469,7 @@
 			<Enum>инт_СтатусыИсходящихСообщений</Enum>
 			<Enum>инт_СтатусыРассылкиИсходящихСообщений</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
+			<InformationRegister>инт_ИдентификаторыВнешнихСистем</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовРассылкиСообщений</InformationRegister>
