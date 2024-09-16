@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройкиЭкспортаPushgateway" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки экспорта в pushgateway</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНастройкиЭкспортаPushgatewayРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАдресШлюза" id="44">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдресШлюзаРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="пэ_АдресШлюза" id="1">
+							<DataPath>НаборКонстант.пэ_АдресШлюза</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес сервера и порт с настроенным prometheus pushgateway
+https://github.com/prometheus/pushgateway/</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>http://&lt;ip&gt;:&lt;port&gt;/</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="пэ_АдресШлюзаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="пэ_АдресШлюзаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияАдресШлюза" id="29">
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес в сети с запущенной службой prometheus pushgateway</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияАдресШлюзаКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ДекорацияАдресШлюзаРасширеннаяПодсказка" id="31"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИмяЗадачи" id="46">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаИмяЗадачиРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<InputField name="пэ_ИмяЗадачи" id="4">
+							<DataPath>НаборКонстант.пэ_ИмяЗадачи</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя задачи (exported_job)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1С</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="пэ_ИмяЗадачиКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="пэ_ИмяЗадачиРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияИмяЗадачи" id="38">
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Соответствует выгружаемой метке exported_job</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияИмяЗадачиКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ДекорацияИмяЗадачиРасширеннаяПодсказка" id="40"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИмяИнстанса" id="48">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаИмяИнстансаРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<InputField name="пэ_ИмяИнстанса" id="7">
+							<DataPath>НаборКонстант.пэ_ИмяИнстанса</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя инстанса (exported_instance)</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>SSL</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="пэ_ИмяИнстансаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="пэ_ИмяИнстансаРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияИмяИнстанса" id="50">
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Соответствует выгружаемой метке exported_instance</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияИмяИнстансаКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ДекорацияИмяИнстансаРасширеннаяПодсказка" id="52"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнтервалСбораПоказателей" id="53">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаИнтервалСбораПоказателейРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<InputField name="ИнтервалСбораПоказателей" id="61">
+							<DataPath>ИнтервалСбораПоказателей</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИнтервалСбораПоказателейКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ИнтервалСбораПоказателейРасширеннаяПодсказка" id="63"/>
+						</InputField>
+						<LabelDecoration name="ДекорацияИнтервалСбораПоказателей" id="55">
+							<TextColor>style:FieldSelectionBackColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Интервал времени, за который собираются данные для расчета APDEX</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияИнтервалСбораПоказателейКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ДекорацияИнтервалСбораПоказателейРасширеннаяПодсказка" id="57"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастроитьРасписаниеВертикальная" id="23">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ExtendedTooltip name="ГруппаНастроитьРасписаниеВертикальнаяРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастроитьРасписаниеЭкспорта" id="25">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастроитьРасписаниеЭкспортаРасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<CheckBoxField name="пэ_ОтправлятьДанныеПоРасписанию" id="15">
+									<DataPath>НаборКонстант.пэ_ОтправлятьДанныеПоРасписанию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправлять данные по расписанию:</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="пэ_ОтправлятьДанныеПоРасписаниюКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="пэ_ОтправлятьДанныеПоРасписаниюРасширеннаяПодсказка" id="17"/>
+									<Events>
+										<Event name="OnChange">пэ_ОтправлятьДанныеПоРасписаниюПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<LabelField name="РасписаниеРегламентногоЗадания" id="58">
+							<DataPath>РасписаниеРегламентногоЗадания</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="РасписаниеРегламентногоЗаданияКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="РасписаниеРегламентногоЗаданияРасширеннаяПодсказка" id="60"/>
+							<Events>
+								<Event name="Click">РасписаниеРегламентногоЗаданияНажатие</Event>
+							</Events>
+						</LabelField>
+						<LabelDecoration name="ДекорацияРасписание" id="20">
+							<TextColor>style:ButtonBorderColor</TextColor>
+							<ContextMenu name="ДекорацияРасписаниеКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ДекорацияРасписаниеРасширеннаяПодсказка" id="22"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗадания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИнтервалСбораПоказателей" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал сбора показателей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

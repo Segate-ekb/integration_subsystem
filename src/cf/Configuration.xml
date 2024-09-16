@@ -249,6 +249,7 @@
 			<Subsystem>инт_ПодсистемаИнтеграции</Subsystem>
 			<Subsystem>Демо</Subsystem>
 			<Subsystem>ИТКВ_РедакторКода</Subsystem>
+			<Subsystem>пэ_PrometheusExporter</Subsystem>
 			<CommonPicture>инт_лого</CommonPicture>
 			<CommonPicture>ИТКВ_Excel</CommonPicture>
 			<CommonPicture>ИТКВ_ВариантОтчетаСКД</CommonPicture>
@@ -351,6 +352,8 @@
 			<CommonPicture>ИТКВ_ФлагВеликобритании</CommonPicture>
 			<CommonPicture>ИТКВ_ФлагРоссии</CommonPicture>
 			<CommonPicture>ИТКВ_Форматировать</CommonPicture>
+			<CommonPicture>пэ_ПодсистемаPrometheusExporter</CommonPicture>
+			<Role>пэ_ОсновнаяРоль</Role>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
@@ -446,29 +449,43 @@
 			<CommonModule>ИТКВ_ФормаВызовСервера</CommonModule>
 			<CommonModule>ИТКВ_ФормаКлиент</CommonModule>
 			<CommonModule>ИТКВ_ФормаКлиентСервер</CommonModule>
+			<CommonModule>пэ_Коннектор</CommonModule>
+			<CommonModule>пэ_Метрики</CommonModule>
+			<CommonModule>пэ_Служебный</CommonModule>
 			<HTTPService>integration</HTTPService>
+			<HTTPService>пэ_Метрики</HTTPService>
 			<ScheduledJob>инт_МенеджерПотоковРассылкиСообщений</ScheduledJob>
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
+			<ScheduledJob>пэ_ОтправкаДанныхВШлюзPrometheus</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
 			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
+			<CommonCommand>пэ_Настройки</CommonCommand>
+			<CommandGroup>пэ_Справочники</CommandGroup>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>
 			<Constant>инт_РазделятьПотокиОтправкиПоТипамПодписчиков</Constant>
 			<Constant>инт_РазмерПачкиОбработкиВходящихСообщений</Constant>
 			<Constant>инт_РазмерПачкиОтправкиСообщений</Constant>
 			<Constant>инт_РазмерПачкиФормированияСообщений</Constant>
+			<Constant>пэ_АдресШлюза</Constant>
+			<Constant>пэ_ИмяЗадачи</Constant>
+			<Constant>пэ_ИмяИнстанса</Constant>
+			<Constant>пэ_ОтправлятьДанныеПоРасписанию</Constant>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>ИТКВ_Настройки</CommonForm>
+			<CommonForm>пэ_ФормаКонстант</CommonForm>
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
+			<Catalog>ПрофилиКлючевыхОпераций</Catalog>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
 			<Enum>инт_СпособыПередачиПараметровПоHTTP</Enum>
 			<Enum>инт_СтатусыВходящихСообщений</Enum>
 			<Enum>инт_СтатусыИсходящихСообщений</Enum>
 			<Enum>инт_СтатусыРассылкиИсходящихСообщений</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
+			<DataProcessor>пэ_ОтправкаДанныхВШлюз</DataProcessor>
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовРассылкиСообщений</InformationRegister>
@@ -482,6 +499,8 @@
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
 			<InformationRegister>ИТКВ_БезопасноеХранилищеДанных</InformationRegister>
+			<InformationRegister>пэ_ИнтервалыСбораПоказателей</InformationRegister>
+			<InformationRegister>пэ_ПрофилиКлючевыхОпераций</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

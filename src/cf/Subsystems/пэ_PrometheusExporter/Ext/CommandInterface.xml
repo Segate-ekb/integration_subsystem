@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<CommandsVisibility>
+		<Command name="0:519694d0-b40a-4494-827e-2952339c78d8">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:4c2de6ba-7a37-4de0-8778-6a3fca01cec6">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.пэ_АдресШлюза.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.пэ_ИмяЗадачи.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.пэ_ИмяИнстанса.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="100:00090644-4e54-4f3d-b810-9dbcdda24dec">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.пэ_ФормаКонстант.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.пэ_ОтправлятьДанныеПоРасписанию.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="0:519694d0-b40a-4494-827e-2952339c78d8">
+			<CommandGroup>CommandGroup.пэ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:4c2de6ba-7a37-4de0-8778-6a3fca01cec6">
+			<CommandGroup>CommandGroup.пэ_Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:519694d0-b40a-4494-827e-2952339c78d8">
+			<CommandGroup>CommandGroup.пэ_Справочники</CommandGroup>
+		</Command>
+		<Command name="0:4c2de6ba-7a37-4de0-8778-6a3fca01cec6">
+			<CommandGroup>CommandGroup.пэ_Справочники</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.пэ_Справочники</Group>
+	</GroupsOrder>
+</CommandInterface>
