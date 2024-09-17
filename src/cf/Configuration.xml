@@ -351,6 +351,8 @@
 			<CommonPicture>ИТКВ_ФлагВеликобритании</CommonPicture>
 			<CommonPicture>ИТКВ_ФлагРоссии</CommonPicture>
 			<CommonPicture>ИТКВ_Форматировать</CommonPicture>
+			<Role>инт_Администрирование</Role>
+			<Role>инт_ИзменениеДанных</Role>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
