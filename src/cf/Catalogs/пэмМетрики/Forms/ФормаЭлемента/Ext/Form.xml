@@ -19,6 +19,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
@@ -52,7 +53,7 @@
 						<CheckBoxField name="Активность" id="25">
 							<DataPath>Объект.Активность</DataPath>
 							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
+							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="АктивностьКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="АктивностьРасширеннаяПодсказка" id="27"/>
 							<Events>
@@ -69,11 +70,11 @@
 					<ThroughAlign>Use</ThroughAlign>
 					<ExtendedTooltip name="ГруппаШапкаОписаниеРасширеннаяПодсказка" id="61"/>
 					<ChildItems>
-						<InputField name="Наименование" id="10">
+						<InputField name="Наименование" id="12">
 							<DataPath>Объект.Description</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
-							<ContextMenu name="НаименованиеКонтекстноеМеню" id="11"/>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="13"/>
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 						</InputField>
 						<InputField name="ТипМетрики" id="7">
@@ -170,20 +171,23 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Алгоритм" id="33">
-			<DataPath>Объект.Алгоритм</DataPath>
+		<HTMLDocumentField name="РедакторКода" id="73">
+			<DataPath>РедакторКода</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<AutoMaxHeight>false</AutoMaxHeight>
-			<HorizontalStretch>true</HorizontalStretch>
-			<VerticalStretch>true</VerticalStretch>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="АлгоритмКонтекстноеМеню" id="34"/>
-			<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="35"/>
-		</InputField>
+			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="74">
+				<ChildItems>
+					<Button name="РедакторКодаКонтекстноеМенюНастройки" id="76">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Настройки</CommandName>
+						<ExtendedTooltip name="РедакторКодаКонтекстноеМенюНастройкиРасширеннаяПодсказка" id="77"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="75"/>
+		</HTMLDocumentField>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Объект" id="2">
+		<Attribute name="Объект" id="10">
 			<Type>
 				<v8:Type>cfg:CatalogObject.пэмМетрики</v8:Type>
 			</Type>
@@ -225,6 +229,21 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="РедакторКода" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактор кода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьПроверкуАлгоритма" id="1">
@@ -241,6 +260,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьПроверкуАлгоритма</Action>
+		</Command>
+		<Command name="Настройки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Настройки</Action>
 		</Command>
 	</Commands>
 </Form>
