@@ -376,6 +376,7 @@
 			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>
+			<CommonModule>инт_СервисныеДействия</CommonModule>
 			<CommonModule>инт_СтатусыСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийПовтИсп</CommonModule>
@@ -464,6 +465,7 @@
 			<ScheduledJob>инт_МенеджерПотоковРассылкиСообщений</ScheduledJob>
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
+			<ScheduledJob>инт_ОчисткаУстаревшихСообщений</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
 			<CommonCommand>пэмНастройки</CommonCommand>
 			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
@@ -506,6 +508,7 @@
 			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьОтправкиИсходящихСообщений</InformationRegister>
+			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>

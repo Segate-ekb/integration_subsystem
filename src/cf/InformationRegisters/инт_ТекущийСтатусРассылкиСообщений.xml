@@ -43,7 +43,7 @@
 			<UseStandardCommands>true</UseStandardCommands>
 			<EditType>InDialog</EditType>
 			<DefaultRecordForm/>
-			<DefaultListForm/>
+			<DefaultListForm>InformationRegister.инт_ТекущийСтатусРассылкиСообщений.Form.ФормаСписка</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
@@ -316,6 +316,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
+			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
