@@ -5,6 +5,7 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -15,103 +16,10 @@
 		</LabelField>
 		<LabelField name="ПотокДанных" id="7">
 			<DataPath>Запись.ПотокДанных</DataPath>
+			<Hiperlink>true</Hiperlink>
 			<ContextMenu name="ПотокДанныхКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ПотокДанныхРасширеннаяПодсказка" id="9"/>
 		</LabelField>
-		<LabelField name="СформированноеСообщение" id="49">
-			<DataPath>СформированноеСообщение</DataPath>
-			<ContextMenu name="СформированноеСообщениеКонтекстноеМеню" id="50"/>
-			<ExtendedTooltip name="СформированноеСообщениеРасширеннаяПодсказка" id="51"/>
-		</LabelField>
-		<UsualGroup name="ГруппаДетальнаяИнформация" id="41">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа детальная информация</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа детальная информация</v8:content>
-				</v8:item>
-			</ToolTip>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаДетальнаяИнформацияРасширеннаяПодсказка" id="42"/>
-			<ChildItems>
-				<TextDocumentField name="ЗаписьРСТекущийСтатусИсходящихТекстОшибки" id="38">
-					<DataPath>ЗаписьРСТекущийСтатусИсходящих.ТекстОшибки</DataPath>
-					<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихТекстОшибкиКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихТекстОшибкиРасширеннаяПодсказка" id="40"/>
-				</TextDocumentField>
-				<Table name="СписокОтправка" id="10">
-					<UseAlternationRowColor>true</UseAlternationRowColor>
-					<EnableStartDrag>true</EnableStartDrag>
-					<DataPath>СписокОтправка</DataPath>
-					<RowPictureDataPath>~СписокОтправка.DefaultPicture</RowPictureDataPath>
-					<AutoRefresh>false</AutoRefresh>
-					<AutoRefreshPeriod>60</AutoRefreshPeriod>
-					<Period>
-						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-					</Period>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<RestoreCurrentRow>false</RestoreCurrentRow>
-					<TopLevelParent xsi:nil="true"/>
-					<ShowRoot>true</ShowRoot>
-					<AllowRootChoice>false</AllowRootChoice>
-					<UpdateOnDataChange>Auto</UpdateOnDataChange>
-					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-					<ContextMenu name="СписокОтправкаКонтекстноеМеню" id="11"/>
-					<AutoCommandBar name="СписокОтправкаКоманднаяПанель" id="12">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="СписокОтправкаРасширеннаяПодсказка" id="13"/>
-					<SearchStringAddition name="СписокОтправкаСтрокаПоиска" id="14">
-						<AdditionSource>
-							<Item>СписокОтправка</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="СписокОтправкаСтрокаПоискаКонтекстноеМеню" id="15"/>
-						<ExtendedTooltip name="СписокОтправкаСтрокаПоискаРасширеннаяПодсказка" id="16"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="СписокОтправкаСостояниеПросмотра" id="17">
-						<AdditionSource>
-							<Item>СписокОтправка</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="СписокОтправкаСостояниеПросмотраКонтекстноеМеню" id="18"/>
-						<ExtendedTooltip name="СписокОтправкаСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="СписокОтправкаУправлениеПоиском" id="20">
-						<AdditionSource>
-							<Item>СписокОтправка</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="СписокОтправкаУправлениеПоискомКонтекстноеМеню" id="21"/>
-						<ExtendedTooltip name="СписокОтправкаУправлениеПоискомРасширеннаяПодсказка" id="22"/>
-					</SearchControlAddition>
-					<ChildItems>
-						<LabelField name="СписокОтправкаИдентификаторСообщения" id="23">
-							<DataPath>СписокОтправка.ИдентификаторСообщения</DataPath>
-							<ContextMenu name="СписокОтправкаИдентификаторСообщенияКонтекстноеМеню" id="24"/>
-							<ExtendedTooltip name="СписокОтправкаИдентификаторСообщенияРасширеннаяПодсказка" id="25"/>
-						</LabelField>
-						<LabelField name="СписокОтправкаПодписчик" id="26">
-							<DataPath>СписокОтправка.Подписчик</DataPath>
-							<ContextMenu name="СписокОтправкаПодписчикКонтекстноеМеню" id="27"/>
-							<ExtendedTooltip name="СписокОтправкаПодписчикРасширеннаяПодсказка" id="28"/>
-						</LabelField>
-						<LabelField name="СписокОтправкаСтатусСообщения" id="29">
-							<DataPath>СписокОтправка.СтатусСообщения</DataPath>
-							<ContextMenu name="СписокОтправкаСтатусСообщенияКонтекстноеМеню" id="30"/>
-							<ExtendedTooltip name="СписокОтправкаСтатусСообщенияРасширеннаяПодсказка" id="31"/>
-						</LabelField>
-					</ChildItems>
-				</Table>
-			</ChildItems>
-		</UsualGroup>
 		<UsualGroup name="ГруппаСтатусы" id="43">
 			<Title>
 				<v8:item>
@@ -128,16 +36,11 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСтатусыРасширеннаяПодсказка" id="44"/>
 			<ChildItems>
-				<Button name="ИсторияСтатусов" id="47">
-					<Type>UsualButton</Type>
-					<Representation>Picture</Representation>
-					<CommandName>Form.Command.ИсторияСтатусов</CommandName>
-					<Picture>
-						<xr:Ref>StdPicture.History</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</Picture>
-					<ExtendedTooltip name="ИсторияСтатусовРасширеннаяПодсказка" id="48"/>
-				</Button>
+				<LabelField name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщения" id="32">
+					<DataPath>ЗаписьРСТекущийСтатусИсходящих.СтатусСообщения</DataPath>
+					<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияРасширеннаяПодсказка" id="34"/>
+				</LabelField>
 				<Button name="ИзменитьСтатус" id="45">
 					<Type>UsualButton</Type>
 					<Representation>Picture</Representation>
@@ -148,16 +51,227 @@
 					</Picture>
 					<ExtendedTooltip name="ИзменитьСтатусРасширеннаяПодсказка" id="46"/>
 				</Button>
-				<LabelField name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщения" id="32">
-					<DataPath>ЗаписьРСТекущийСтатусИсходящих.СтатусСообщения</DataPath>
-					<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияРасширеннаяПодсказка" id="34"/>
-				</LabelField>
-				<LabelField name="ЗаписьРСТекущийСтатусИсходящихКоличествоПопыток" id="35">
-					<DataPath>ЗаписьРСТекущийСтатусИсходящих.КоличествоПопыток</DataPath>
-					<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихКоличествоПопытокКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихКоличествоПопытокРасширеннаяПодсказка" id="37"/>
-				</LabelField>
+				<Button name="ИсторияСтатусов" id="47">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.ИсторияСтатусов</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.History</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ИсторияСтатусовРасширеннаяПодсказка" id="48"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="ЗаписьРСТекущийСтатусИсходящихКоличествоПопыток" id="35">
+			<DataPath>ЗаписьРСТекущийСтатусИсходящих.КоличествоПопыток</DataPath>
+			<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихКоличествоПопытокКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихКоличествоПопытокРасширеннаяПодсказка" id="37"/>
+		</LabelField>
+		<UsualGroup name="ГруппаДетальнаяИнформация" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа детальная информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа детальная информация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДетальнаяИнформацияРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСформированноеСообщение" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сформированное сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сформированное сообщение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ExtendedTooltip name="ГруппаСформированноеСообщениеРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<Table name="СформированноеСообщение" id="61">
+							<Representation>Tree</Representation>
+							<ReadOnly>true</ReadOnly>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СформированноеСообщение</DataPath>
+							<ContextMenu name="СформированноеСообщениеКонтекстноеМеню" id="62"/>
+							<AutoCommandBar name="СформированноеСообщениеКоманднаяПанель" id="63">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СформированноеСообщениеРасширеннаяПодсказка" id="64"/>
+							<SearchStringAddition name="СформированноеСообщениеСтрокаПоиска" id="65">
+								<AdditionSource>
+									<Item>СформированноеСообщение</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СформированноеСообщениеСтрокаПоискаКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="СформированноеСообщениеСтрокаПоискаРасширеннаяПодсказка" id="67"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СформированноеСообщениеСостояниеПросмотра" id="68">
+								<AdditionSource>
+									<Item>СформированноеСообщение</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СформированноеСообщениеСостояниеПросмотраКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="СформированноеСообщениеСостояниеПросмотраРасширеннаяПодсказка" id="70"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СформированноеСообщениеУправлениеПоиском" id="71">
+								<AdditionSource>
+									<Item>СформированноеСообщение</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СформированноеСообщениеУправлениеПоискомКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="СформированноеСообщениеУправлениеПоискомРасширеннаяПодсказка" id="73"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СформированноеСообщениеКлюч" id="74">
+									<DataPath>СформированноеСообщение.Ключ</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СформированноеСообщениеКлючКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="СформированноеСообщениеКлючРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="СформированноеСообщениеЗначение" id="77">
+									<DataPath>СформированноеСообщение.Значение</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СформированноеСообщениеЗначениеКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СформированноеСообщениеЗначениеРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаТекстОшибки" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа текст ошибки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ExtendedTooltip name="ГруппаТекстОшибкиРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<TextDocumentField name="ЗаписьРСТекущийСтатусИсходящихТекстОшибки" id="38">
+							<DataPath>ЗаписьРСТекущийСтатусИсходящих.ТекстОшибки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихТекстОшибкиКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихТекстОшибкиРасширеннаяПодсказка" id="40"/>
+						</TextDocumentField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСписокОтправка" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очередь отправки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список отправка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ExtendedTooltip name="ГруппаСписокОтправкаРасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<Table name="СписокОтправка" id="10">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокОтправка</DataPath>
+							<RowPictureDataPath>~СписокОтправка.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокОтправкаКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="СписокОтправкаКоманднаяПанель" id="12">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокОтправкаРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="СписокОтправкаСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>СписокОтправка</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОтправкаСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="СписокОтправкаСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокОтправкаСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>СписокОтправка</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОтправкаСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="СписокОтправкаСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокОтправкаУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>СписокОтправка</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокОтправкаУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="СписокОтправкаУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокОтправкаИдентификаторСообщения" id="23">
+									<DataPath>СписокОтправка.ИдентификаторСообщения</DataPath>
+									<ContextMenu name="СписокОтправкаИдентификаторСообщенияКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="СписокОтправкаИдентификаторСообщенияРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<LabelField name="СписокОтправкаПодписчик" id="26">
+									<DataPath>СписокОтправка.Подписчик</DataPath>
+									<ContextMenu name="СписокОтправкаПодписчикКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СписокОтправкаПодписчикРасширеннаяПодсказка" id="28"/>
+								</LabelField>
+								<LabelField name="СписокОтправкаСтатусСообщения" id="29">
+									<DataPath>СписокОтправка.СтатусСообщения</DataPath>
+									<ContextMenu name="СписокОтправкаСтатусСообщенияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="СписокОтправкаСтатусСообщенияРасширеннаяПодсказка" id="31"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -258,7 +372,41 @@
 					<v8:content>Сформированное сообщение</v8:content>
 				</v8:item>
 			</Title>
-			<Type/>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ключ" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
