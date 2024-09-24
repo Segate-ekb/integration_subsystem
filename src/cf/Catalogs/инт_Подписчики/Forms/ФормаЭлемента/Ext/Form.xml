@@ -235,13 +235,19 @@
 					<ContextMenu name="ПостПроцессингКодОтветаКонтекстноеМеню" id="63"/>
 					<ExtendedTooltip name="ПостПроцессингКодОтветаРасширеннаяПодсказка" id="64"/>
 				</InputField>
-				<LabelField name="ПостПроцессингОбработчик" id="65">
+				<InputField name="ПостПроцессингОбработчик" id="65">
 					<DataPath>Объект.ПостПроцессинг.Обработчик</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<Hiperlink>true</Hiperlink>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<TextEdit>false</TextEdit>
 					<ContextMenu name="ПостПроцессингОбработчикКонтекстноеМеню" id="66"/>
 					<ExtendedTooltip name="ПостПроцессингОбработчикРасширеннаяПодсказка" id="67"/>
-				</LabelField>
+					<Events>
+						<Event name="StartChoice">ПостПроцессингОбработчикНачалоВыбора</Event>
+						<Event name="ChoiceProcessing">ПостПроцессингОбработчикОбработкаВыбора</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

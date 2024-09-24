@@ -536,6 +536,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
+			<Form>ФормаРедактированияОбработчика</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
