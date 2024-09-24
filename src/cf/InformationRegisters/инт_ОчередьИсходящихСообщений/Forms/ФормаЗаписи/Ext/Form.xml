@@ -14,6 +14,12 @@
 			<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="52"/>
 			<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="54"/>
 		</LabelField>
+		<LabelField name="ИсходныеДанные" id="80">
+			<DataPath>Запись.ИсходныеДанные</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ИсходныеДанныеКонтекстноеМеню" id="81"/>
+			<ExtendedTooltip name="ИсходныеДанныеРасширеннаяПодсказка" id="82"/>
+		</LabelField>
 		<LabelField name="ПотокДанных" id="7">
 			<DataPath>Запись.ПотокДанных</DataPath>
 			<Hiperlink>true</Hiperlink>
@@ -36,10 +42,10 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСтатусыРасширеннаяПодсказка" id="44"/>
 			<ChildItems>
-				<LabelField name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщения" id="32">
+				<LabelField name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщения" id="83">
 					<DataPath>ЗаписьРСТекущийСтатусИсходящих.СтатусСообщения</DataPath>
-					<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияРасширеннаяПодсказка" id="34"/>
+					<ContextMenu name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ЗаписьРСТекущийСтатусИсходящихСтатусСообщенияРасширеннаяПодсказка" id="85"/>
 				</LabelField>
 				<Button name="ИзменитьСтатус" id="45">
 					<Type>UsualButton</Type>
@@ -208,7 +214,7 @@
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>СписокОтправка</DataPath>
-							<RowPictureDataPath>~СписокОтправка.DefaultPicture</RowPictureDataPath>
+							<RowPictureDataPath>СписокОтправка.DefaultPicture</RowPictureDataPath>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -280,6 +286,7 @@
 			<Type>
 				<v8:Type>cfg:InformationRegisterRecordManager.инт_ОчередьИсходящихСообщений</v8:Type>
 			</Type>
+			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
 		<Attribute name="СписокОтправка" id="3">
@@ -322,6 +329,10 @@
 					<dcssch:dataPath>Подписчик</dcssch:dataPath>
 					<dcssch:field>Подписчик</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СформированноеСообщение</dcssch:dataPath>
+					<dcssch:field>СформированноеСообщение</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>ИдентификаторСообщения</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -336,6 +347,7 @@
 					<dcssch:value xsi:type="v8:UUID">00000000-0000-0000-0000-000000000000</dcssch:value>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
+				<MainTable>InformationRegister.инт_ОчередьОтправкиИсходящихСообщений</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -376,7 +388,7 @@
 				<v8:Type>v8:ValueTree</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Ключ" id="49">
+				<Column name="Ключ" id="32">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -391,7 +403,7 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="Значение" id="50">
+				<Column name="Значение" id="33">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
