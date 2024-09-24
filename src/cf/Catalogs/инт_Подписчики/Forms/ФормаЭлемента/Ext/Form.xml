@@ -155,7 +155,6 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаПараметрыПроизвольногоHTTP" id="30">
-			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -189,6 +188,62 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<Table name="ПостПроцессинг" id="46">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПостПроцессинг</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПостПроцессингКонтекстноеМеню" id="47"/>
+			<AutoCommandBar name="ПостПроцессингКоманднаяПанель" id="48"/>
+			<ExtendedTooltip name="ПостПроцессингРасширеннаяПодсказка" id="49"/>
+			<SearchStringAddition name="ПостПроцессингСтрокаПоиска" id="50">
+				<AdditionSource>
+					<Item>ПостПроцессинг</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПостПроцессингСтрокаПоискаКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ПостПроцессингСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПостПроцессингСостояниеПросмотра" id="53">
+				<AdditionSource>
+					<Item>ПостПроцессинг</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПостПроцессингСостояниеПросмотраКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="ПостПроцессингСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПостПроцессингУправлениеПоиском" id="56">
+				<AdditionSource>
+					<Item>ПостПроцессинг</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПостПроцессингУправлениеПоискомКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="ПостПроцессингУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПостПроцессингНомерСтроки" id="59">
+					<DataPath>Объект.ПостПроцессинг.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПостПроцессингНомерСтрокиКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ПостПроцессингНомерСтрокиРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<InputField name="ПостПроцессингКодОтвета" id="62">
+					<DataPath>Объект.ПостПроцессинг.КодСостояния</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПостПроцессингКодОтветаКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПостПроцессингКодОтветаРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<LabelField name="ПостПроцессингОбработчик" id="65">
+					<DataPath>Объект.ПостПроцессинг.Обработчик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ПостПроцессингОбработчикКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ПостПроцессингОбработчикРасширеннаяПодсказка" id="67"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
