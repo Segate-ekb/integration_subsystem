@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="ИдентификаторСообщения" id="7">
+			<DataPath>Запись.ИдентификаторСообщения</DataPath>
+			<ContextMenu name="ИдентификаторСообщенияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИдентификаторСообщенияРасширеннаяПодсказка" id="9"/>
+		</LabelField>
+		<LabelField name="Подписчик" id="4">
+			<DataPath>Запись.Подписчик</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ПодписчикКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ПодписчикРасширеннаяПодсказка" id="35"/>
+		</LabelField>
+		<LabelField name="СтатусСообщения" id="31">
+			<DataPath>СтатусСообщения</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="СтатусСообщенияКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="СтатусСообщенияРасширеннаяПодсказка" id="33"/>
+		</LabelField>
+		<UsualGroup name="ГруппаСформированноеСообщение" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформированное сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сформированное сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="ГруппаСформированноеСообщениеРасширеннаяПодсказка" id="11"/>
+			<ChildItems>
+				<Table name="СформированноеСообщение" id="12">
+					<Representation>Tree</Representation>
+					<ReadOnly>true</ReadOnly>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СформированноеСообщение</DataPath>
+					<ContextMenu name="СформированноеСообщениеКонтекстноеМеню" id="13"/>
+					<AutoCommandBar name="СформированноеСообщениеКоманднаяПанель" id="14">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СформированноеСообщениеРасширеннаяПодсказка" id="15"/>
+					<SearchStringAddition name="СформированноеСообщениеСтрокаПоиска" id="16">
+						<AdditionSource>
+							<Item>СформированноеСообщение</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СформированноеСообщениеСтрокаПоискаКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="СформированноеСообщениеСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СформированноеСообщениеСостояниеПросмотра" id="19">
+						<AdditionSource>
+							<Item>СформированноеСообщение</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СформированноеСообщениеСостояниеПросмотраКонтекстноеМеню" id="20"/>
+						<ExtendedTooltip name="СформированноеСообщениеСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СформированноеСообщениеУправлениеПоиском" id="22">
+						<AdditionSource>
+							<Item>СформированноеСообщение</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СформированноеСообщениеУправлениеПоискомКонтекстноеМеню" id="23"/>
+						<ExtendedTooltip name="СформированноеСообщениеУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СформированноеСообщениеКлюч" id="25">
+							<DataPath>СформированноеСообщение.Ключ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СформированноеСообщениеКлючКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СформированноеСообщениеКлючРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="СформированноеСообщениеЗначение" id="28">
+							<DataPath>СформированноеСообщение.Значение</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СформированноеСообщениеЗначениеКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="СформированноеСообщениеЗначениеРасширеннаяПодсказка" id="30"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="5">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.инт_ОчередьОтправкиИсходящихСообщений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтатусСообщения" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.инт_СтатусыРассылкиИсходящихСообщений</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СформированноеСообщение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформированное сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ключ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+</Form>
