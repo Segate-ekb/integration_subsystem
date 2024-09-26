@@ -512,6 +512,7 @@
 			<InformationRegister>инт_ТекущийСтатусВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
+			<InformationRegister>инт_ХешиОбъектов</InformationRegister>
 			<InformationRegister>ИТКВ_БезопасноеХранилищеДанных</InformationRegister>
 		</ChildObjects>
 	</Configuration>

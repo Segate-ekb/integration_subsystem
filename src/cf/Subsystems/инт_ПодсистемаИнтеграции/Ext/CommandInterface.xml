@@ -11,6 +11,11 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="InformationRegister.инт_ИдентификаторыВнешнихСистем.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="InformationRegister.инт_ИсторияСтатусовВходящихСообщений.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -47,6 +52,16 @@
 			</Visibility>
 		</Command>
 		<Command name="InformationRegister.инт_ТекущийСтатусРассылкиСообщений.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.инт_ХешиОбъектов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.инт_СообщенияКУдалению.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
