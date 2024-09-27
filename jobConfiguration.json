@@ -4,6 +4,7 @@
   "secrets": {},
   "stages": {
     "sonarqube": true,
+    "syntaxCheck": true,
     "initSteps": true
   },
   "initInfobase": {
