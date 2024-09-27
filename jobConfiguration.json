@@ -1,0 +1,26 @@
+{
+  "$schema": "https://raw.githubusercontent.com/firstBitSemenovskaya/jenkins-lib/master/resources/schema.json",
+  "v8version": "8.3.24.1548",
+  "secrets": {},
+  "stages": {
+    "sonarqube": true,
+    "initSteps": true
+  },
+  "initInfobase": {
+    "initMethod": "fromSource",
+    "runMigration": true
+  },
+  "syntaxCheck": {
+    "groupErrorsByMetadata": true,
+    "pathToJUnitReport": "./build/out/jUnit/syntax.xml",
+    "exceptionFile": "./tools/syntax-check-exception-file.txt",
+    "checkModes": [
+      "-ThinClient",
+      "-Server",
+      "-ExtendedModulesCheck"
+    ]
+  },
+  "smoke": {
+    "publishToAllureReport": true
+  }
+}
