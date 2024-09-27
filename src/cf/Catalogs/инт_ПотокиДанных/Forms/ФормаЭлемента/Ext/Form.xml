@@ -16,6 +16,7 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<CheckBoxField name="Активен" id="52">
@@ -36,7 +37,7 @@
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КодКонтекстноеМеню" id="15"/>
-			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="7"/>
 		</InputField>
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
@@ -44,13 +45,6 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
-		<InputField name="ИдентификаторПотока" id="7">
-			<DataPath>1/0:bb2f8f76-1475-4ff5-833e-31b7cf62a2de</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ИдентификаторПотокаКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ИдентификаторПотокаРасширеннаяПодсказка" id="9"/>
 		</InputField>
 		<InputField name="НаправлениеПотока" id="10">
 			<DataPath>Объект.НаправлениеПотока</DataPath>
@@ -91,32 +85,68 @@
 							<v8:content>Группа пример</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПримерРасширеннаяПодсказка" id="71"/>
 					<ChildItems>
-						<InputField name="Пример" id="55">
-							<DataPath>Объект.Пример</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
-							<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
-							<Events>
-								<Event name="OnChange">ПримерПриИзменении</Event>
-							</Events>
-						</InputField>
-						<Button name="ПроверитьПоПримеру" id="72">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ПроверитьПоПримеру</CommandName>
+						<LabelDecoration name="ПредупреждениеОбОтслеживаемыхРеквизитах" id="95">
+							<TextColor>style:AccentColor</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Внимание! Отслеживается изменение только части реквизитов!</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПредупреждениеОбОтслеживаемыхРеквизитахКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ПредупреждениеОбОтслеживаемыхРеквизитахРасширеннаяПодсказка" id="97"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаПримерБезДекораций" id="98">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Проверить</v8:content>
+									<v8:content>Группа пример без декораций</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ПроверитьПоПримеруРасширеннаяПодсказка" id="73"/>
-						</Button>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пример без декораций</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПримерБезДекорацийРасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<InputField name="Пример" id="55">
+									<DataPath>Объект.Пример</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПримерКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="57"/>
+									<Events>
+										<Event name="OnChange">ПримерПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="ОпределитьОтслеживаемыеРеквизиты" id="93">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОпределитьОтслеживаемыеРеквизиты</CommandName>
+									<ExtendedTooltip name="ОпределитьОтслеживаемыеРеквизитыРасширеннаяПодсказка" id="94"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
+				<Button name="ПроверитьПоПримеру" id="72">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПроверитьПоПримеру</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПроверитьПоПримеруРасширеннаяПодсказка" id="73"/>
+				</Button>
 				<UsualGroup name="ГруппаТестовыеДанные" id="88">
 					<Title>
 						<v8:item>
@@ -412,6 +442,49 @@
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Пример</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.НаправлениеПотока</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.инт_НаправлениеПотокаДанных.Исходящий</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Пример</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОпределитьОтслеживаемыеРеквизиты</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Пример</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
@@ -448,6 +521,22 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПроверитьПоПримеру</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОпределитьОтслеживаемыеРеквизиты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить отслеживаемые реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Определить отслеживаемые реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОпределитьОтслеживаемыеРеквизиты</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>

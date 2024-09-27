@@ -59,9 +59,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ОчередьВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ОчередьИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ОчередьОтправкиИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_СообщенияКУдалению</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ТекущийСтатусВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ТекущийСтатусИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ТекущийСтатусРассылкиСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.инт_ХешиОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_МенеджерПотоковРассылкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_МенеджерПотоковФормированияИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_ОбработкаВходящейОчереди</xr:Item>
