@@ -488,6 +488,7 @@
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
+			<Document>демо_Документ</Document>
 			<Enum>пэмМетодыПолученияМетрик</Enum>
 			<Enum>пэмТипыМетрик</Enum>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
