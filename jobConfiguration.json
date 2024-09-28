@@ -5,11 +5,22 @@
   "stages": {
     "sonarqube": true,
     "syntaxCheck": true,
-    "initSteps": true
+    "initSteps": true,
+    "yaxunit": true
   },
   "initInfobase": {
     "initMethod": "fromSource",
-    "runMigration": true
+    "runMigration": true,
+    "extensions": [
+      {
+        "name": "YAXUNIT",
+        "initMethod": "fromSource",
+        "path": "src/cfe/YAXUNIT",
+        "stages": [
+          "yaxunit"
+        ]
+      }
+    ]
   },
   "syntaxCheck": {
     "groupErrorsByMetadata": true,
@@ -22,6 +33,10 @@
     ]
   },
   "smoke": {
+    "publishToAllureReport": true
+  },
+  "yaxunit": {
+    "configPath": "tests/uaxunit_config.json",
     "publishToAllureReport": true
   }
 }
