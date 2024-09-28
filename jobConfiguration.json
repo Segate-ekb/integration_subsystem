@@ -2,7 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/firstBitSemenovskaya/jenkins-lib/master/resources/schema.json",
   "v8version": "8.3.24.1548",
   "secrets": {},
-  "logosConfig": "logger.rootLogger=DEBUG",
   "stages": {
     "sonarqube": true,
     "syntaxCheck": true,
@@ -37,7 +36,6 @@
     "publishToAllureReport": true
   },
   "yaxunit": {
-    "configPath": "tests/uaxunit_config.json",
     "publishToAllureReport": true
   }
 }
