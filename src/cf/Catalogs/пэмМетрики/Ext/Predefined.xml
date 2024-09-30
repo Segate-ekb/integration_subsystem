@@ -12,4 +12,10 @@
 		<Description/>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="fb1a7788-1641-4346-a07f-3253f1cdd5ef">
+		<Name>pde_queue_length</Name>
+		<Code>pde_queue_length</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>
