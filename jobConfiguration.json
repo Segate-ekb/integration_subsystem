@@ -10,7 +10,8 @@
     "sonarqube": true,
     "syntaxCheck": true,
     "initSteps": true,
-    "yaxunit": true
+    "yaxunit": true,
+    "edtValidate": true
   },
   "initInfobase": {
     "initMethod": "fromSource",
