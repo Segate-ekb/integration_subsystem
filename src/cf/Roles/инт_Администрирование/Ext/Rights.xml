@@ -4,6 +4,100 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Constant.пэмАдресСервераPushgateway</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.пэмПервоначальноеЗаполнениеВыполнено</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.инт_РазмерПачкиОтправкиСообщений</name>
 		<right>
 			<name>Read</name>
@@ -88,10 +182,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDelete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
@@ -100,27 +190,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeleteMarked</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InputByString</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -161,9 +231,60 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.пэмПутьНаСервереPushgateway</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.инт_ОчередьОтправкиИсходящихСообщений</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -202,10 +323,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDelete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
@@ -214,27 +331,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeleteMarked</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InputByString</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -281,6 +378,25 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ИТКВ_БезопасноеХранилищеДанных</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -298,6 +414,17 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonCommand.пэмНастройки</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -351,9 +478,140 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.пэмМногопоточныйРасчетМетрик</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.пэмСостояниеМетрик</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CommonForm.ИТКВ_Настройки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.пэмИспользоватьPushgateway</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.инт_СообщенияКУдалению</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.инт_ТекущийСтатусРассылкиСообщений</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -416,7 +674,76 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.пэмНастройкиМетрик</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.инт_РазмерПачкиОбработкиВходящихСообщений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.инт_КэшированиеСхемOpenApi</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.пэмПортСервераPushgateway</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -469,6 +796,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -504,10 +835,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDelete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
@@ -516,27 +843,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDeleteMarked</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InputByString</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeletePredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -577,9 +884,28 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.инт_ИдентификаторыВнешнихСистем</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.инт_ОчередьВходящихСообщений</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -635,9 +961,28 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.пэмСостояниеМетрик</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.инт_ИсторияСтатусовРассылкиСообщений</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -699,6 +1044,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -707,6 +1056,25 @@
 		<name>InformationRegister.инт_ТекущийСтатусИсходящихСообщений</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.инт_ХешиОбъектов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -768,6 +1136,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -776,6 +1148,10 @@
 		<name>InformationRegister.инт_ИсторияСтатусовВходящихСообщений</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
