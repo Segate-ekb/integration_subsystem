@@ -1,16 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/firstBitSemenovskaya/jenkins-lib/master/resources/schema.json",
   "v8version": "8.3.24.1548",
-  "resultsTransform": {
-    "transformer": "edt-ripper"
-  },
   "secrets": {},
   "stages": {
     "sonarqube": true,
     "syntaxCheck": true,
     "initSteps": true,
-    "yaxunit": true,
-    "edtValidate": true
+    "yaxunit": true
   },
   "initInfobase": {
     "initMethod": "fromSource",
