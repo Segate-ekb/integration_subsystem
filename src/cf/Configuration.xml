@@ -247,8 +247,13 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>инт_ПодсистемаИнтеграции</Subsystem>
-			<Subsystem>Демо</Subsystem>
 			<Subsystem>ИТКВ_РедакторКода</Subsystem>
+			<Subsystem>Prometheus</Subsystem>
+			<CommonPicture>пэмPrometheusLogo</CommonPicture>
+			<CommonPicture>пэмPullGreen</CommonPicture>
+			<CommonPicture>пэмPullRed</CommonPicture>
+			<CommonPicture>пэмPushGreen</CommonPicture>
+			<CommonPicture>пэмPushRed</CommonPicture>
 			<CommonPicture>инт_лого</CommonPicture>
 			<CommonPicture>ИТКВ_Excel</CommonPicture>
 			<CommonPicture>ИТКВ_ВариантОтчетаСКД</CommonPicture>
@@ -351,9 +356,15 @@
 			<CommonPicture>ИТКВ_ФлагВеликобритании</CommonPicture>
 			<CommonPicture>ИТКВ_ФлагРоссии</CommonPicture>
 			<CommonPicture>ИТКВ_Форматировать</CommonPicture>
+			<Role>пэмНастройкаМетрик</Role>
+			<Role>пэмПолучениеМетрик</Role>
 			<Role>инт_Администрирование</Role>
 			<Role>инт_ИзменениеДанных</Role>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
+			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
+			<CommonModule>пэмМетрикиКлиент</CommonModule>
+			<CommonModule>пэмМетрикиСервер</CommonModule>
+			<CommonModule>пэмМетрикиСерверПовтИсп</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
@@ -367,6 +378,7 @@
 			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>
+			<CommonModule>инт_СервисныеДействия</CommonModule>
 			<CommonModule>инт_СтатусыСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийПовтИсп</CommonModule>
@@ -449,28 +461,47 @@
 			<CommonModule>ИТКВ_ФормаКлиент</CommonModule>
 			<CommonModule>ИТКВ_ФормаКлиентСервер</CommonModule>
 			<HTTPService>integration</HTTPService>
+			<HTTPService>Prometheus</HTTPService>
+			<ScheduledJob>пэмВыполнитьРасчетМетрик</ScheduledJob>
+			<ScheduledJob>пэмРегламентныеОперации</ScheduledJob>
 			<ScheduledJob>инт_МенеджерПотоковРассылкиСообщений</ScheduledJob>
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
+			<ScheduledJob>инт_ОчисткаУстаревшихСообщений</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
+			<CommonCommand>пэмНастройки</CommonCommand>
 			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
+			<Constant>пэмАдресСервераPushgateway</Constant>
+			<Constant>пэмИспользоватьPushgateway</Constant>
+			<Constant>пэмМногопоточныйРасчетМетрик</Constant>
+			<Constant>пэмПервоначальноеЗаполнениеВыполнено</Constant>
+			<Constant>пэмПортСервераPushgateway</Constant>
+			<Constant>пэмПутьНаСервереPushgateway</Constant>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>
 			<Constant>инт_РазделятьПотокиОтправкиПоТипамПодписчиков</Constant>
 			<Constant>инт_РазмерПачкиОбработкиВходящихСообщений</Constant>
 			<Constant>инт_РазмерПачкиОтправкиСообщений</Constant>
 			<Constant>инт_РазмерПачкиФормированияСообщений</Constant>
+			<CommonForm>пэмНастройкиМетрик</CommonForm>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>ИТКВ_Настройки</CommonForm>
+			<Catalog>пэмМетрики</Catalog>
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
+			<Document>демо_Документ</Document>
+			<Enum>пэмМетодыПолученияМетрик</Enum>
+			<Enum>пэмТипыМетрик</Enum>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
 			<Enum>инт_СпособыПередачиПараметровПоHTTP</Enum>
 			<Enum>инт_СтатусыВходящихСообщений</Enum>
 			<Enum>инт_СтатусыИсходящихСообщений</Enum>
 			<Enum>инт_СтатусыРассылкиИсходящихСообщений</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
+			<Report>пэмСостояниеМетрик</Report>
+			<InformationRegister>пэмСостояниеМетрик</InformationRegister>
+			<InformationRegister>инт_ИдентификаторыВнешнихСистем</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовРассылкиСообщений</InformationRegister>
@@ -480,9 +511,11 @@
 			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьОтправкиИсходящихСообщений</InformationRegister>
+			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
+			<InformationRegister>инт_ХешиОбъектов</InformationRegister>
 			<InformationRegister>ИТКВ_БезопасноеХранилищеДанных</InformationRegister>
 		</ChildObjects>
 	</Configuration>
