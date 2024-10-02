@@ -165,6 +165,7 @@
 								</InputField>
 								<InputField name="СформированноеСообщениеТипЗначения" id="86">
 									<DataPath>СформированноеСообщение.ТипЗначения</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="СформированноеСообщениеТипЗначенияКонтекстноеМеню" id="87"/>
