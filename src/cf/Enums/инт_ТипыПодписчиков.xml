@@ -74,6 +74,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="7a67330f-1086-4817-9aa0-8173ed5262f5">
+				<Properties>
+					<Name>JRPC2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>JSON-RPC 2.0</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>https://tracker.yandex.ru/ODINSDEV-11583</Comment>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>
