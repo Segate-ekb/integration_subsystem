@@ -376,6 +376,7 @@
 			<CommonModule>инт_ОтправкаИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийСлужебный</CommonModule>
 			<CommonModule>инт_ПреобразованиеДанных</CommonModule>
+			<CommonModule>инт_РаботаССообщениямиJRPC2</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>
