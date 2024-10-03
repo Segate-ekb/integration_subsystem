@@ -38,5 +38,7 @@
   "yaxunit": {
     "publishToAllureReport": true
   },
-  "sonarqube": {"waitForQualityGate": true}
+  "sonarqube": {
+    "waitForQualityGate": true
+  }
 }
