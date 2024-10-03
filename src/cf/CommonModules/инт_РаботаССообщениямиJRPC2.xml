@@ -9,7 +9,7 @@
 					<v8:content>Инт работа с сообщениями JSON-RPC 2.0</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>https://tracker.yandex.ru/ODINSDEV-11583</Comment>
+			<Comment>Модуль для работы с сообщениями JSON-RPC 2.0</Comment>
 			<Global>false</Global>
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>
