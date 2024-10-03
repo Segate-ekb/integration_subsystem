@@ -6,13 +6,7 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>инт_ОбработкаВходящихПотоков</Name>
 			<Comment/>
-			<ExtendedConfigurationObject>a9e6e84a-a8b6-4142-9f69-09771fdcc038</ExtendedConfigurationObject>
-			<Global>false</Global>
-			<ClientManagedApplication>false</ClientManagedApplication>
-			<Server>true</Server>
-			<ExternalConnection>false</ExternalConnection>
 			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
-			<ServerCall>false</ServerCall>
 		</Properties>
 	</CommonModule>
 </MetaDataObject>
