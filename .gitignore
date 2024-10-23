@@ -5,7 +5,10 @@ allure-report/
 oscript_modules/
 
 ConfigDumpInfo.xml
+lastUploadedCommit.txt
+lastUploadedConfigDumpInfo.xml
 build
 out
 .scannerwork
 .sonarlint/
+.idea/
