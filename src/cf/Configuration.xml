@@ -367,6 +367,7 @@
 			<CommonModule>пэмМетрикиСерверПовтИсп</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
+			<CommonModule>инт_ДинамическоеФормированиеИнтерфейса</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
 			<CommonModule>инт_КоннекторПодсистемыИнтеграции</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
@@ -384,6 +385,8 @@
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийСлужебный</CommonModule>
+			<CommonModule>инт_ЭндпоинтыКлиент</CommonModule>
+			<CommonModule>инт_ЭндпоинтыКлиентСервер</CommonModule>
 			<CommonModule>ИТКВ_БСП</CommonModule>
 			<CommonModule>ИТКВ_БСПВызовСервера</CommonModule>
 			<CommonModule>ИТКВ_БСПКлиент</CommonModule>
@@ -491,6 +494,7 @@
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
+			<Catalog>инт_Эндпоинты</Catalog>
 			<Document>демо_Документ</Document>
 			<Enum>пэмМетодыПолученияМетрик</Enum>
 			<Enum>пэмТипыМетрик</Enum>
@@ -499,6 +503,7 @@
 			<Enum>инт_СтатусыВходящихСообщений</Enum>
 			<Enum>инт_СтатусыИсходящихСообщений</Enum>
 			<Enum>инт_СтатусыРассылкиИсходящихСообщений</Enum>
+			<Enum>инт_ТипыАвторизации</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>

@@ -3,6 +3,10 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="22">
 			<Title>
@@ -58,6 +62,8 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаJsonРасширеннаяПодсказка" id="19"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаСсылка" id="20">
@@ -77,13 +83,6 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСсылкаРасширеннаяПодсказка" id="21"/>
 					<ChildItems>
-						<InputField name="СсылкаНаСхему" id="10">
-							<DataPath>Объект.СсылкаНаСхему</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="СсылкаНаСхемуКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="СсылкаНаСхемуРасширеннаяПодсказка" id="12"/>
-						</InputField>
 						<Button name="ОбновитьJsonИзУдаленногоИсточника" id="16">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ОбновитьJsonИзУдаленногоИсточника</CommandName>
