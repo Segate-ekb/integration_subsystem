@@ -14,7 +14,7 @@
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>
 			<ExternalConnection>false</ExternalConnection>
-			<ClientOrdinaryApplication>true</ClientOrdinaryApplication>
+			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
 			<ServerCall>true</ServerCall>
 			<Privileged>false</Privileged>
 			<ReturnValuesReuse>DontUse</ReturnValuesReuse>
