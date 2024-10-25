@@ -25,7 +25,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.инт_ОткрытьФормуНастроек</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.инт_НастройкиОбщихПараметровИнтеграций</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторHTTP</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_КоннекторПодсистемыИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОбработкаВходящихОбращенийHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОбработкаВходящихПотоков</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОбработкаВходящихПотоковПовтИсп</xr:Item>

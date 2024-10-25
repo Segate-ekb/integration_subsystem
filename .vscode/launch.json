@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Отладка 1С (присоединение)",
+            "type": "onec",
+            "request": "attach",
+            "rootProject": "${workspaceFolder}/src/cf",
+            "infoBase": "test",
+            "debugServerHost": "mainframe",
+            "debugServerPort": 1550
+        },
+        {
+            "name": "Отладка 1С (запуск)",
+            "type": "onec",
+            "request": "launch",
+            "platformPath": "${env:PROGRAMFILES}/1cv8",
+            "platformVersion": "8.3.24.1548",
+            "rootProject": "${workspaceFolder}/src/cf",
+            "autoAttachTypes": [
+                "Client",
+                "Server"
+            ],
+            "infoBase": "test"
+        }
+    ]
+}

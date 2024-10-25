@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>12Storeez</Vendor>
-			<Version>0.0.0.1</Version>
+			<Version>0.9.0.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -358,6 +358,8 @@
 			<CommonPicture>ИТКВ_Форматировать</CommonPicture>
 			<Role>пэмНастройкаМетрик</Role>
 			<Role>пэмПолучениеМетрик</Role>
+			<Role>инт_Администрирование</Role>
+			<Role>инт_ИзменениеДанных</Role>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
 			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
@@ -365,14 +367,16 @@
 			<CommonModule>пэмМетрикиСерверПовтИсп</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
+			<CommonModule>инт_ДинамическоеФормированиеИнтерфейса</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
-			<CommonModule>инт_КоннекторПодсистемыИнтеграции</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоковПовтИсп</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийСлужебный</CommonModule>
+			<CommonModule>инт_ПреобразованиеДанных</CommonModule>
+			<CommonModule>инт_РаботаССообщениямиJRPC2</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>
@@ -381,6 +385,8 @@
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийСлужебный</CommonModule>
+			<CommonModule>инт_ЭндпоинтыКлиент</CommonModule>
+			<CommonModule>инт_ЭндпоинтыКлиентСервер</CommonModule>
 			<CommonModule>ИТКВ_БСП</CommonModule>
 			<CommonModule>ИТКВ_БСПВызовСервера</CommonModule>
 			<CommonModule>ИТКВ_БСПКлиент</CommonModule>
@@ -488,6 +494,8 @@
 			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
+			<Catalog>инт_Эндпоинты</Catalog>
+			<Document>демо_Документ</Document>
 			<Enum>пэмМетодыПолученияМетрик</Enum>
 			<Enum>пэмТипыМетрик</Enum>
 			<Enum>инт_НаправлениеПотокаДанных</Enum>
@@ -495,6 +503,7 @@
 			<Enum>инт_СтатусыВходящихСообщений</Enum>
 			<Enum>инт_СтатусыИсходящихСообщений</Enum>
 			<Enum>инт_СтатусыРассылкиИсходящихСообщений</Enum>
+			<Enum>инт_ТипыАвторизации</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>

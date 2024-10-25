@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="is_docs"
+                 name="Подсистема интеграции"
+                 start-page="starter-topic.md">
+
+    <toc-element topic="starter-topic.md"/>
+    <toc-element topic="firstSteps.md">
+        <toc-element topic="setup.md"/>
+        <toc-element topic="preconfig.md">
+        </toc-element>
+        <toc-element topic="first_data_flow.md"/>
+    </toc-element>
+    <toc-element topic="dataflow.md">
+        <toc-element topic="new_outcome_flow.md"/>
+        <toc-element topic="codeEditor.md"/>
+    </toc-element>
+    <toc-element topic="subscribers.md"/>
+    <toc-element topic="schemas.md">
+        <toc-element topic="validation.md"/>
+    </toc-element>
+</instance-profile>
