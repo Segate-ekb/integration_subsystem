@@ -6,7 +6,6 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>инт_ОбработкаВходящихПотоков</Name>
 			<Comment/>
-			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
 		</Properties>
 	</CommonModule>
 </MetaDataObject>

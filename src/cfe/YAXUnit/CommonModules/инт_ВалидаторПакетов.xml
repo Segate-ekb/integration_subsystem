@@ -6,7 +6,6 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>инт_ВалидаторПакетов</Name>
 			<Comment/>
-			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
 		</Properties>
 	</CommonModule>
 </MetaDataObject>

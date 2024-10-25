@@ -39,14 +39,20 @@
 			<PasswordMode>false</PasswordMode>
 			<Format/>
 			<EditFormat/>
-			<ToolTip/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальное количество потоков отправки сообщений.
+Количество потоков может быть от 1 до 99</v8:content>
+				</v8:item>
+			</ToolTip>
 			<MarkNegatives>false</MarkNegatives>
 			<Mask/>
 			<MultiLine>false</MultiLine>
 			<ExtendedEdit>false</ExtendedEdit>
 			<MinValue xsi:type="xs:string">1</MinValue>
 			<MaxValue xsi:type="xs:string">99</MaxValue>
-			<FillChecking>DontCheck</FillChecking>
+			<FillChecking>ShowError</FillChecking>
 			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 			<ChoiceParameterLinks/>
 			<ChoiceParameters/>
