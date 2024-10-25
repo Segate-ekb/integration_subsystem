@@ -369,7 +369,6 @@
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
 			<CommonModule>инт_ДинамическоеФормированиеИнтерфейса</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
-			<CommonModule>инт_КоннекторПодсистемыИнтеграции</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоковПовтИсп</CommonModule>
