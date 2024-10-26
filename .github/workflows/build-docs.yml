@@ -9,7 +9,7 @@ permissions:
   pages: write
 
 env:
-  INSTANCE: 'is_docs'
+  INSTANCE: 'Writerside/is_docs'
   ARTIFACT: 'is_docs.zip'
   DOCKER_VERSION: '242.21870'
 
