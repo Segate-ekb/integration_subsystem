@@ -10,7 +10,7 @@ permissions:
 
 env:
   INSTANCE: 'Writerside/is_docs'
-  ARTIFACT: 'is_docs.zip'
+  ARTIFACT: 'webHelpIS_DOCS2-all.zip'
   DOCKER_VERSION: '242.21870'
 
 jobs:
@@ -37,25 +37,25 @@ jobs:
             artifacts/${{ env.ARTIFACT }}
             artifacts/report.json
           retention-days: 7
-  # test:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Download artifacts
-  #       uses: actions/download-artifact@v4
-  #       with:
-  #         name: docs
-  #         path: artifacts
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: docs
+          path: artifacts
 
-  #     - name: Test documentation
-  #       uses: JetBrains/writerside-checker-action@v1
-  #       with:
-  #         instance: ${{ env.INSTANCE }}
+      - name: Test documentation
+        uses: JetBrains/writerside-checker-action@v1
+        with:
+          instance: ${{ env.INSTANCE }}
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: [build] #, test]
+    needs: [build, test]
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
