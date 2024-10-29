@@ -25,6 +25,9 @@ jobs:
         with:
           lfs: 'true'
           fetch-depth: 0
+          
+      - name: Checkout LFS objects
+        run: git lfs checkout    
 
       - name: Build docs using Writerside Docker builder
         uses: JetBrains/writerside-github-action@v4
