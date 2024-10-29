@@ -2,6 +2,9 @@ name: Build documentation
 
 on:
   release:
+  push:
+    branches:
+      - develop
   workflow_dispatch:
 
 permissions:
@@ -20,6 +23,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          lfs: 'true'
           fetch-depth: 0
 
       - name: Build docs using Writerside Docker builder
