@@ -42,6 +42,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиОбработкиВходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиОтправкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиФормированияСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.инт_ВалидаторПакетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.инт_ИсходныеДанные</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_НаправлениеПотокаДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СпособыПередачиПараметровПоHTTP</xr:Item>

@@ -38,7 +38,8 @@
     "publishToAllureReport": true
   },
   "yaxunit": {
-    "publishToAllureReport": true
+    "publishToAllureReport": true,
+    "configPath": "./tools/yaxunit-jenkins-lib.json"
   },
   "sonarqube": {
     "waitForQualityGate": true

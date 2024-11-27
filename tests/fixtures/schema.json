@@ -1,0 +1,392 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Sample API",
+        "description": "This is a sample API",
+        "version": "1.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "simple_string": {
+                "type": "string"
+            },
+            "simple_number": {
+                "type": "number"
+            },
+            "simple_integer": {
+                "type": "integer"
+            },
+            "simple_boolean": {
+                "type": "boolean"
+            },
+            "array": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "object": {
+                "type": "object",
+                "required": [
+                    "required"
+                ],
+                "description": "object description",
+                "properties": {
+                    "ref": {
+                        "$ref": "#/components/schemas/simple_string"
+                    },
+                    "required": {
+                        "type": "string"
+                    },
+                    "nested_object": {
+                        "$ref": "#/components/schemas/object"
+                    },
+                    "nested_array": {
+                        "$ref": "#/components/schemas/array"
+                    }
+                }
+            },
+            "strings": {
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string"
+                    },
+                    "enum": {
+                        "type": "string",
+                        "enum": [
+                            "enum1",
+                            "enum2"
+                        ]
+                    },
+                    "minmax": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 10
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "date-time": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "uri": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "uuid": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "ipv4": {
+                        "type": "string",
+                        "format": "ipv4"
+                    },
+                    "ipv6": {
+                        "type": "string",
+                        "format": "ipv6"
+                    },
+                    "base64": {
+                        "type": "string",
+                        "format": "byte"
+                    },
+                    "binary": {
+                        "type": "string",
+                        "format": "binary"
+                    },
+                    "pattern": {
+                        "type": "string",
+                        "pattern": "(\\+)?([- ()]?\\d[- _():=+]?){10,14}"
+                    }
+                }
+            },
+            "numbers": {
+                "type": "object",
+                "properties": {
+                    "number": {
+                        "type": "number"
+                    },
+                    "integer": {
+                        "type": "integer"
+                    },
+                    "minmax": {
+                        "type": "number",
+                        "minimum": 1,
+                        "maximum": 10
+                    },
+                    "exclusiveminmax": {
+                        "type": "number",
+                        "minimum": 1,
+                        "maximum": 10,
+                        "exclusiveMinimum": true,
+                        "exclusiveMaximum": true
+                    },
+                    "multipleOf": {
+                        "type": "number",
+                        "multipleOf": 10
+                    }
+                }
+            },
+            "arrays": {
+                "type": "object",
+                "properties": {
+                    "simple_array": {
+                        "type": "array"
+                    },
+                    "unique": {
+                        "type": "array",
+                        "uniqueItems": true
+                    },
+                    "minmax": {
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 3
+                    },
+                    "strict_type": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "objects": {
+                "type": "object",
+                "properties": {
+                    "object": {
+                        "type": "object"
+                    },
+                    "required": {
+                        "type": "object",
+                        "required": [
+                            "required"
+                        ],
+                        "properties": {
+                            "required": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "minmax": {
+                        "type": "object",
+                        "minProperties": 2,
+                        "maxProperties": 3
+                    },
+                    "additional_false": {
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "additional_true": {
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "additional_empty": {
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {}
+                    },
+                    "additional_object": {
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    },
+                    "additional_ref": {
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {
+                            "$ref": "#/components/schemas/simple_string"
+                        }
+                    }
+                }
+            },
+            "OneOf": {
+                "oneOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "valueA": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "valueA"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "valueB": {
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "valueB"
+                        ]
+                    }
+                ]
+            },
+            "AnyOf": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "fieldA": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "fieldB": {
+                                "type": "number"
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            },
+            "AllOf": {
+                "allOf": [
+                    {
+                        "type": "object",
+                        "required": [
+                            "commonField"
+                        ],
+                        "properties": {
+                            "commonField": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "required": [
+                            "additionalField"
+                        ],
+                        "properties": {
+                            "additionalField": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                ]
+            },
+            "ComplexValidation": {
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    },
+                    {
+                        "allOf": [
+                            {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "typeA": {
+                                                "type": "string"
+                                            },
+                                            "valueA": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "required": [
+                                            "typeA",
+                                            "valueA"
+                                        ]
+                                    },
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "typeB": {
+                                                "type": "string"
+                                            },
+                                            "valueB": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "required": [
+                                            "typeB",
+                                            "valueB"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "status": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "status"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Not": {
+                "type": "string",
+                "not": {
+                    "type": "string",
+                    "enum": [
+                        "test"
+                    ]
+                }
+            }
+        }
+    }
+}

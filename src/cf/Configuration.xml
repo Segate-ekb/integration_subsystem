@@ -49,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>12Storeez</Vendor>
-			<Version>0.9.0.0</Version>
+			<Version>0.9.1.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -506,6 +506,7 @@
 			<Enum>инт_ТипыАвторизации</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
 			<Report>пэмСостояниеМетрик</Report>
+			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>
 			<InformationRegister>инт_ИдентификаторыВнешнихСистем</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>
