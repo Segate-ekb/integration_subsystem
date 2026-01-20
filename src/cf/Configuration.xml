@@ -360,6 +360,7 @@
 			<Role>пэмПолучениеМетрик</Role>
 			<Role>инт_Администрирование</Role>
 			<Role>инт_ИзменениеДанных</Role>
+			<CommonTemplate>инт_simple_kafka</CommonTemplate>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
 			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
@@ -376,7 +377,10 @@
 			<CommonModule>инт_ОтправкаИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийСлужебный</CommonModule>
 			<CommonModule>инт_ПреобразованиеДанных</CommonModule>
+			<CommonModule>инт_РаботаСКафка</CommonModule>
+			<CommonModule>инт_РаботаСКафкаПовтИсп</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиJRPC2</CommonModule>
+			<CommonModule>инт_РаботаССообщениямиKafka</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
 			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>

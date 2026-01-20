@@ -86,6 +86,18 @@
 					<Comment>Тип подписчика JSON-RPC 2.0</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="a5821412-8910-4400-8a93-ac61749eacb5">
+				<Properties>
+					<Name>Kafka</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Apache Kafka</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

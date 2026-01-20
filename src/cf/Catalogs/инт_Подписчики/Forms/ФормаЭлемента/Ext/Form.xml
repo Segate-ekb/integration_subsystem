@@ -91,40 +91,129 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаПараметрыПроизвольногоHTTP" id="30">
+		<Pages name="ГруппаПараметрыПоТипуПодписчика" id="68">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа параметры произвольного HTTP</v8:content>
+					<v8:content>Группа параметры по типу подписчика</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа параметры произвольного HTTP</v8:content>
+					<v8:content>Группа параметры по типу подписчика</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаПараметрыПроизвольногоHTTPРасширеннаяПодсказка" id="31"/>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаПараметрыПоТипуПодписчикаРасширеннаяПодсказка" id="69"/>
 			<ChildItems>
-				<InputField name="СпособПередачиИдентификатораСообщения" id="7">
-					<DataPath>Объект.СпособПередачиИдентификатораСообщения</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<AutoMarkIncomplete>true</AutoMarkIncomplete>
-					<ContextMenu name="СпособПередачиИдентификатораСообщенияКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="СпособПередачиИдентификатораСообщенияРасширеннаяПодсказка" id="9"/>
-				</InputField>
-				<InputField name="СпособПередачиИдентификатораПотока" id="10">
-					<DataPath>Объект.СпособПередачиИдентификатораПотока</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<AutoMarkIncomplete>true</AutoMarkIncomplete>
-					<ContextMenu name="СпособПередачиИдентификатораПотокаКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="СпособПередачиИдентификатораПотокаРасширеннаяПодсказка" id="12"/>
-				</InputField>
+				<Page name="ГруппаПроизвольныйHTTP" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа произвольный HTTP</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа произвольный HTTP</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПроизвольныйHTTPРасширеннаяПодсказка" id="71"/>
+					<ChildItems>
+						<InputField name="СпособПередачиИдентификатораСообщения" id="7">
+							<DataPath>Объект.СпособПередачиИдентификатораСообщения</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="СпособПередачиИдентификатораСообщенияКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СпособПередачиИдентификатораСообщенияРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="СпособПередачиИдентификатораПотока" id="10">
+							<DataPath>Объект.СпособПередачиИдентификатораПотока</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="СпособПередачиИдентификатораПотокаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СпособПередачиИдентификатораПотокаРасширеннаяПодсказка" id="12"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаKafka" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа kafka</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа kafka</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаKafkaРасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТопик" id="80">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа топик</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа топик</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТопикРасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<InputField name="ИмяТопика" id="74">
+									<DataPath>Объект.ИмяТопика</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ИмяТопикаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="ИмяТопикаРасширеннаяПодсказка" id="76"/>
+									<Events>
+										<Event name="OnChange">ИмяТопикаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<PictureDecoration name="ДекорацияСтатус" id="82">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация статус</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ИТКВ_УспешноПроверено</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияСтатусКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ДекорацияСтатусРасширеннаяПодсказка" id="84"/>
+								</PictureDecoration>
+								<Button name="СоздатьТопик" id="85">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СоздатьТопик</CommandName>
+									<ExtendedTooltip name="СоздатьТопикРасширеннаяПодсказка" id="86"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ПакетнаяОбработка" id="77">
+							<DataPath>Объект.ПакетнаяОбработка</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПакетнаяОбработкаКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="ПакетнаяОбработкаРасширеннаяПодсказка" id="79"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
+		</Pages>
 		<Table name="ПостПроцессинг" id="46">
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
@@ -189,7 +278,7 @@
 		</Table>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="Объект" id="1">
+		<Attribute name="Объект" id="2">
 			<Type>
 				<v8:Type>cfg:CatalogObject.инт_Подписчики</v8:Type>
 			</Type>
@@ -219,4 +308,21 @@
 			</dcsset:item>
 		</ConditionalAppearance>
 	</Attributes>
+	<Commands>
+		<Command name="СоздатьТопик" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать топик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТопик</Action>
+		</Command>
+	</Commands>
 </Form>
