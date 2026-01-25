@@ -20,6 +20,11 @@
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Подписчики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиJRPC</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиKafka</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиПодсистемаИнтеграции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиRabbitMQ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПотокиДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Схемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.инт_ОткрытьФормуНастроек</xr:Item>
@@ -31,6 +36,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщенийПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ОтправкаИсходящихСообщенийСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ПодписчикиОбщий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_СтатусыСообщенийПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.инт_ФормированиеИсходящихСообщенийПовтИсп</xr:Item>
@@ -44,6 +50,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.инт_РазмерПачкиФормированияСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.инт_ВалидаторПакетов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.инт_ИсходныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.инт_Подписчик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_НаправлениеПотокаДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СпособыПередачиПараметровПоHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.инт_СтатусыВходящихСообщений</xr:Item>

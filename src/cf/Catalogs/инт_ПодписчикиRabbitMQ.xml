@@ -1,81 +1,104 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<InformationRegister uuid="7759d57a-c5d3-48c9-82c9-477a093260ac">
+	<Catalog uuid="f5a6b7c8-d9e0-1234-5678-9abcdef01234">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.инт_ТекущийСтатусРассылкиСообщений" category="Record">
-				<xr:TypeId>cde87f4b-3393-4eb5-871f-e4d6576008bd</xr:TypeId>
-				<xr:ValueId>890b31ed-5b77-4a32-944a-f8a96185c44b</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.инт_ПодписчикиRabbitMQ" category="Object">
+				<xr:TypeId>f5a6b7c8-0005-0001-0001-000000000001</xr:TypeId>
+				<xr:ValueId>f5a6b7c8-0005-0001-0001-000000000002</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.инт_ТекущийСтатусРассылкиСообщений" category="Manager">
-				<xr:TypeId>698bd5c8-3462-4c9c-9832-5732410b15d2</xr:TypeId>
-				<xr:ValueId>9c750f70-18e7-446f-ae55-21a80cf226c0</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.инт_ПодписчикиRabbitMQ" category="Ref">
+				<xr:TypeId>f5a6b7c8-0005-0001-0002-000000000001</xr:TypeId>
+				<xr:ValueId>f5a6b7c8-0005-0001-0002-000000000002</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.инт_ТекущийСтатусРассылкиСообщений" category="Selection">
-				<xr:TypeId>52912691-c474-434f-a1ca-c0c380b2dddb</xr:TypeId>
-				<xr:ValueId>6c77cb04-bbbf-48c6-aa7e-2f6ee6a44c75</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.инт_ПодписчикиRabbitMQ" category="Selection">
+				<xr:TypeId>f5a6b7c8-0005-0001-0003-000000000001</xr:TypeId>
+				<xr:ValueId>f5a6b7c8-0005-0001-0003-000000000002</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.инт_ТекущийСтатусРассылкиСообщений" category="List">
-				<xr:TypeId>615dc489-ce30-4c5a-b46e-19a9dd6703f0</xr:TypeId>
-				<xr:ValueId>ba635a87-1bc2-421e-a9c3-f1607a40ce28</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.инт_ПодписчикиRabbitMQ" category="List">
+				<xr:TypeId>f5a6b7c8-0005-0001-0004-000000000001</xr:TypeId>
+				<xr:ValueId>f5a6b7c8-0005-0001-0004-000000000002</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.инт_ТекущийСтатусРассылкиСообщений" category="RecordSet">
-				<xr:TypeId>29856101-d2a9-4c3e-9ef5-5bcb16881e1c</xr:TypeId>
-				<xr:ValueId>f47b64c2-9d00-44e2-ac85-3a8beedf5764</xr:ValueId>
-			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.инт_ТекущийСтатусРассылкиСообщений" category="RecordKey">
-				<xr:TypeId>e89b5531-5cd1-4e24-964c-d9a5bd2f467d</xr:TypeId>
-				<xr:ValueId>2347ac01-3059-4aa8-8a5a-a53a1187bd44</xr:ValueId>
-			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.инт_ТекущийСтатусРассылкиСообщений" category="RecordManager">
-				<xr:TypeId>0647c9bb-b9e6-49fa-af9d-9f4e83c5689a</xr:TypeId>
-				<xr:ValueId>abe31bbb-daba-4a12-b1be-3912bb563be1</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.инт_ПодписчикиRabbitMQ" category="Manager">
+				<xr:TypeId>f5a6b7c8-0005-0001-0005-000000000001</xr:TypeId>
+				<xr:ValueId>f5a6b7c8-0005-0001-0005-000000000002</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>инт_ТекущийСтатусРассылкиСообщений</Name>
+			<Name>инт_ПодписчикиRabbitMQ</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>(инт) Текущий статус рассылки сообщений</v8:content>
+					<v8:content>(инт) Подписчики RabbitMQ</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>Подписчики для отправки в RabbitMQ (TODO: реализация)</Comment>
+			<Hierarchical>false</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<LimitLevelCount>false</LimitLevelCount>
+			<LevelCount>2</LevelCount>
+			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
+			<Owners/>
+			<SubordinationUse>ToItems</SubordinationUse>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>50</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<CodeSeries>WholeCatalog</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<Characteristics/>
+			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm/>
-			<DefaultListForm>InformationRegister.инт_ТекущийСтатусРассылкиСообщений.Form.ФормаСписка</DefaultListForm>
-			<AuxiliaryRecordForm/>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>Catalog.инт_ПодписчикиRabbitMQ.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.инт_ПодписчикиRabbitMQ.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm/>
+			<DefaultFolderForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<DefaultFolderChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryFolderForm/>
 			<AuxiliaryListForm/>
-			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
-			<WriteMode>Independent</WriteMode>
-			<MainFilterOnPeriod>false</MainFilterOnPeriod>
+			<AuxiliaryChoiceForm/>
+			<AuxiliaryFolderChoiceForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<BasedOn/>
+			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>DontUse</FullTextSearch>
-			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
-			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
-			<RecordPresentation/>
-			<ExtendedRecordPresentation/>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
 			<Explanation/>
+			<CreateOnInput>Use</CreateOnInput>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 			<DataHistory>DontUse</DataHistory>
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="056ac41d-0b4a-4ab8-aedd-5dbc665558d4">
+			<Attribute uuid="f5a6b7c8-0005-0002-0001-000000000001">
 				<Properties>
-					<Name>СтатусСообщения</Name>
+					<Name>Эндпоинт</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Статус сообщения</v8:content>
+							<v8:content>Эндпоинт</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>RabbitMQ брокер (AMQP)</Comment>
 					<Type>
-						<v8:Type>cfg:EnumRef.инт_СтатусыРассылкиИсходящихСообщений</v8:Type>
+						<v8:Type>cfg:CatalogRef.инт_Эндпоинты</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -89,7 +112,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -98,69 +121,26 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
+					<Use>ForItem</Use>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Resource>
-			<Resource uuid="d4028ab5-4596-489c-b14c-d955bbafb972">
+			</Attribute>
+			<Attribute uuid="f5a6b7c8-0005-0002-0002-000000000001">
 				<Properties>
-					<Name>КоличествоПопыток</Name>
+					<Name>ИмяОбменника</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Количество попыток</v8:content>
+							<v8:content>Имя обменника (Exchange)</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>2</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Resource uuid="0e969375-99be-4185-b09c-8d23257966e7">
-				<Properties>
-					<Name>ТекстОшибки</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текст ошибки</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
+					<Comment>Exchange name в RabbitMQ</Comment>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
+							<v8:Length>255</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -185,26 +165,28 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Resource>
-			<Resource uuid="ba389e39-39d1-4a82-9aa8-c46da0c2f1d6">
+			</Attribute>
+			<Attribute uuid="f5a6b7c8-0005-0002-0003-000000000001">
 				<Properties>
-					<Name>ДатаСледующейПопытки</Name>
+					<Name>КлючМаршрутизации</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата следующей попытки</v8:content>
+							<v8:content>Ключ маршрутизации (Routing Key)</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Routing key в RabbitMQ</Comment>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -217,7 +199,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xs:string"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -227,23 +209,24 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Resource>
-			<Dimension uuid="dff73ec6-7370-4c84-9da9-0cc7c89ea228">
+			</Attribute>
+			<Attribute uuid="f5a6b7c8-0005-0002-0004-000000000001">
 				<Properties>
-					<Name>Подписчик</Name>
+					<Name>Активен</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подписчик</v8:content>
+							<v8:content>Активен</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Признак активности подписчика</Comment>
 					<Type>
-						<v8:Type>cfg:DefinedType.инт_Подписчик</v8:Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -256,7 +239,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xs:boolean">true</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -266,26 +249,29 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<Use>ForItem</Use>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Dimension>
-			<Dimension uuid="49bf9a8f-7f68-40d9-b173-38c064086d3a">
+			</Attribute>
+			<Attribute uuid="f5a6b7c8-0005-0002-0005-000000000001">
 				<Properties>
-					<Name>ИдентификаторСообщения</Name>
+					<Name>КоличествоПопытокОтправки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор сообщения</v8:content>
+							<v8:content>Количество попыток отправки</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Количество попыток при ошибке</Comment>
 					<Type>
-						<v8:Type>v8:UUID</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -298,7 +284,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
+					<FillValue xsi:type="xs:decimal">3</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -308,15 +294,57 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Dimension>
-			<Form>ФормаСписка</Form>
+			</Attribute>
+			<Attribute uuid="f5a6b7c8-0005-0002-0006-000000000001">
+				<Properties>
+					<Name>ПаузаМеждуПопыткамиОбработки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пауза между попытками (сек)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Интервал между попытками повторной отправки</Comment>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:decimal">60</FillValue>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 		</ChildObjects>
-	</InformationRegister>
+	</Catalog>
 </MetaDataObject>

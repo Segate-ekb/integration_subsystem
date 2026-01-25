@@ -337,12 +337,6 @@
 							<ContextMenu name="ПодписчикиПотокаПодписчикКонтекстноеМеню" id="47"/>
 							<ExtendedTooltip name="ПодписчикиПотокаПодписчикРасширеннаяПодсказка" id="48"/>
 						</InputField>
-						<LabelField name="ПодписчикиПотокаПодписчикТипПодписчика" id="49">
-							<DataPath>Объект.ПодписчикиПотока.Подписчик.ТипПодписчика</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПодписчикиПотокаПодписчикТипПодписчикаКонтекстноеМеню" id="50"/>
-							<ExtendedTooltip name="ПодписчикиПотокаПодписчикТипПодписчикаРасширеннаяПодсказка" id="51"/>
-						</LabelField>
 					</ChildItems>
 				</Table>
 			</ChildItems>

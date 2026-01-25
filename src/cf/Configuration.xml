@@ -376,6 +376,8 @@
 			<CommonModule>инт_ОтправкаИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ОтправкаИсходящихСообщенийСлужебный</CommonModule>
+			<CommonModule>инт_ПодписчикиОбщий</CommonModule>
+			<CommonModule>инт_ПодписчикиОбщийПовтИсп</CommonModule>
 			<CommonModule>инт_ПреобразованиеДанных</CommonModule>
 			<CommonModule>инт_РаботаСКафка</CommonModule>
 			<CommonModule>инт_РаботаСКафкаПовтИсп</CommonModule>
@@ -477,6 +479,7 @@
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
 			<ScheduledJob>инт_ОчисткаУстаревшихСообщений</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
+			<DefinedType>инт_Подписчик</DefinedType>
 			<CommonCommand>пэмНастройки</CommonCommand>
 			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
 			<Constant>пэмАдресСервераPushgateway</Constant>
@@ -496,6 +499,11 @@
 			<CommonForm>ИТКВ_Настройки</CommonForm>
 			<Catalog>пэмМетрики</Catalog>
 			<Catalog>инт_Подписчики</Catalog>
+			<Catalog>инт_ПодписчикиHTTP</Catalog>
+			<Catalog>инт_ПодписчикиJRPC</Catalog>
+			<Catalog>инт_ПодписчикиKafka</Catalog>
+			<Catalog>инт_ПодписчикиПодсистемаИнтеграции</Catalog>
+			<Catalog>инт_ПодписчикиRabbitMQ</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<Catalog>инт_Схемы</Catalog>
 			<Catalog>инт_Эндпоинты</Catalog>
