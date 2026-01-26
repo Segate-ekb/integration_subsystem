@@ -89,16 +89,30 @@
 						<Event name="OnChange">ИмяТопикаПриИзменении</Event>
 					</Events>
 				</InputField>
-				<LabelDecoration name="ДекорацияСтатусТопика" id="60">
-					<Title formatted="false">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>⚪ Не проверено</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="ДекорацияСтатусТопикаКонтекстноеМеню" id="106"/>
-					<ExtendedTooltip name="ДекорацияСтатусТопикаРасширеннаяПодсказка" id="61"/>
-				</LabelDecoration>
+				<UsualGroup name="ГруппаСтатусТопика" id="62">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтатусТопикаРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаСтатусТопика" id="64">
+							<Width>2</Width>
+							<Height>1</Height>
+							<PictureSize>AutoSize</PictureSize>
+							<ContextMenu name="КартинкаСтатусТопикаКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="КартинкаСтатусТопикаРасширеннаяПодсказка" id="65"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияСтатусТопика" id="60">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не проверено</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияСтатусТопикаКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="ДекорацияСтатусТопикаРасширеннаяПодсказка" id="61"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСозданиеТопика" id="70">
