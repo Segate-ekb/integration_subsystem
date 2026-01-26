@@ -101,6 +101,7 @@
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
+			<CommonModule>СПР_инт_Эндпоинты_ММ</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТДымовыеТесты</CommonModule>
 			<CommonModule>ЮТДымовыеТестыСлужебныйВызовСервера</CommonModule>

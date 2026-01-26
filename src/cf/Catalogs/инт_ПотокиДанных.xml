@@ -630,7 +630,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:DefinedType.инт_Подписчик</v8:Type>
+								<v8:TypeSet>cfg:DefinedType.инт_Подписчик</v8:TypeSet>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

@@ -86,6 +86,30 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="d5a8f2c7-9e34-4b67-a123-c8e9f01d2345">
+				<Properties>
+					<Name>Digest</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Digest</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e6b9a3d8-0f45-5c78-b234-d9f0a12e3456">
+				<Properties>
+					<Name>ApiKey</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>API Key</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

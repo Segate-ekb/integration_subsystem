@@ -1,28 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<DefinedType uuid="d1e2f3a4-b5c6-7890-def1-234567890abc">
-		<InternalInfo>
-			<xr:GeneratedType name="DefinedType.инт_Подписчик" category="DefinedType">
-				<xr:TypeId>d1e2f3a4-0001-0001-0001-000000000001</xr:TypeId>
-				<xr:ValueId>d1e2f3a4-0001-0001-0001-000000000002</xr:ValueId>
-			</xr:GeneratedType>
-		</InternalInfo>
+	<Form uuid="f5975b6c-2423-4acb-b39a-6aefff2b2a91">
 		<Properties>
-			<Name>инт_Подписчик</Name>
+			<Name>ФормаЭлемента</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>(инт) Подписчик</v8:content>
+					<v8:content>Форма элемента</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Полиморфный тип для всех подписчиков потоков данных</Comment>
-			<Type>
-				<v8:Type>cfg:CatalogRef.инт_ПодписчикиHTTP</v8:Type>
-				<v8:Type>cfg:CatalogRef.инт_ПодписчикиJRPC</v8:Type>
-				<v8:Type>cfg:CatalogRef.инт_ПодписчикиПодсистемаИнтеграции</v8:Type>
-				<v8:Type>cfg:CatalogRef.инт_ПодписчикиKafka</v8:Type>
-				<v8:Type>cfg:CatalogRef.инт_ПодписчикиRabbitMQ</v8:Type>
-			</Type>
+			<Comment/>
+			<FormType>Managed</FormType>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<UsePurposes>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
+				<v8:Value xsi:type="app:ApplicationUsePurpose">MobilePlatformApplication</v8:Value>
+			</UsePurposes>
 		</Properties>
-	</DefinedType>
+	</Form>
 </MetaDataObject>

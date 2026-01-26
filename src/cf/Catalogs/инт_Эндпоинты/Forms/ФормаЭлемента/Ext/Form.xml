@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="АдресРесурса" id="7">
+			<DataPath>Объект.АдресРесурса</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АдресРесурсаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АдресРесурсаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ТаймаутСоединения" id="16">
+			<DataPath>Объект.ТаймаутСоединения</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймаут соединения (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТаймаутСоединенияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТаймаутСоединенияРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ТипАвторизации" id="10">
+			<DataPath>Объект.ТипАвторизации</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипАвторизацииКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТипАвторизацииРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">ТипАвторизацииПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="СтраницыАвторизация" id="200">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учётные данные</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыАвторизацияРасширеннаяПодсказка" id="201"/>
+			<ChildItems>
+				<Page name="СтраницаАнонимный" id="210">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анонимный</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаАнонимныйРасширеннаяПодсказка" id="211"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьАвторизацияНеТребуется" id="212">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Авторизация не требуется</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьАвторизацияНеТребуетсяКонтекстноеМеню" id="213"/>
+							<ExtendedTooltip name="НадписьАвторизацияНеТребуетсяРасширеннаяПодсказка" id="214"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаBasic" id="220">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Basic</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаBasicРасширеннаяПодсказка" id="221"/>
+					<ChildItems>
+						<InputField name="Basic_ПользовательПоле" id="222">
+							<DataPath>Basic_Пользователь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Basic_ПользовательПолеКонтекстноеМеню" id="223"/>
+							<ExtendedTooltip name="Basic_ПользовательПолеРасширеннаяПодсказка" id="224"/>
+						</InputField>
+						<InputField name="Basic_ПарольПоле" id="225">
+							<DataPath>Basic_Пароль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<PasswordMode>true</PasswordMode>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="Basic_ПарольПолеКонтекстноеМеню" id="288"/>
+							<ExtendedTooltip name="Basic_ПарольПолеРасширеннаяПодсказка" id="227"/>
+							<Events>
+								<Event name="OnChange">Basic_ПарольПриИзменении</Event>
+								<Event name="Opening">ПоказатьПароль</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаDigest" id="230">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Digest</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаDigestРасширеннаяПодсказка" id="231"/>
+					<ChildItems>
+						<InputField name="Digest_ПользовательПоле" id="232">
+							<DataPath>Digest_Пользователь</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Digest_ПользовательПолеКонтекстноеМеню" id="233"/>
+							<ExtendedTooltip name="Digest_ПользовательПолеРасширеннаяПодсказка" id="234"/>
+						</InputField>
+						<InputField name="Digest_ПарольПоле" id="235">
+							<DataPath>Digest_Пароль</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<PasswordMode>true</PasswordMode>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="Digest_ПарольПолеКонтекстноеМеню" id="289"/>
+							<ExtendedTooltip name="Digest_ПарольПолеРасширеннаяПодсказка" id="237"/>
+							<Events>
+								<Event name="OnChange">Digest_ПарольПриИзменении</Event>
+								<Event name="Opening">ПоказатьПароль</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаBearer" id="240">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Bearer</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаBearerРасширеннаяПодсказка" id="241"/>
+					<ChildItems>
+						<InputField name="Bearer_ТокенПоле" id="242">
+							<DataPath>Bearer_Токен</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Токен</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<PasswordMode>true</PasswordMode>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="Bearer_ТокенПолеКонтекстноеМеню" id="290"/>
+							<ExtendedTooltip name="Bearer_ТокенПолеРасширеннаяПодсказка" id="244"/>
+							<Events>
+								<Event name="OnChange">Bearer_ТокенПриИзменении</Event>
+								<Event name="Opening">ПоказатьПароль</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаTls" id="250">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>TLS (клиентский сертификат)</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаTlsРасширеннаяПодсказка" id="251"/>
+					<ChildItems>
+						<CheckBoxField name="ПроверятьSSL" id="13">
+							<DataPath>Объект.ПроверятьSSL</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Проверять сертификат сервера</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПроверятьSSLКонтекстноеМеню" id="291"/>
+							<ExtendedTooltip name="ПроверятьSSLРасширеннаяПодсказка" id="15"/>
+						</CheckBoxField>
+						<RadioButtonField name="Tls_ИсточникСертификатаПоле" id="252">
+							<DataPath>Tls_ИсточникСертификата</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Источник сертификата</v8:content>
+								</v8:item>
+							</Title>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ColumnsCount>2</ColumnsCount>
+							<ContextMenu name="Tls_ИсточникСертификатаПолеКонтекстноеМеню" id="292"/>
+							<ExtendedTooltip name="Tls_ИсточникСертификатаПолеРасширеннаяПодсказка" id="254"/>
+							<Events>
+								<Event name="OnChange">Tls_ИсточникСертификатаПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ГруппаСертификатХранилище" id="263">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Хранилище Windows</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаСертификатХранилищеРасширеннаяПодсказка" id="264"/>
+							<ChildItems>
+								<InputField name="Tls_СертификатХранилищеПоле" id="265">
+									<DataPath>Tls_СертификатХранилище</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отпечаток сертификата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Tls_СертификатХранилищеПолеКонтекстноеМеню" id="293"/>
+									<ExtendedTooltip name="Tls_СертификатХранилищеПолеРасширеннаяПодсказка" id="267">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>SHA1 отпечаток сертификата из хранилища Windows</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">Tls_СертификатПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСертификатЗагрузка" id="280">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка сертификата</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаСертификатЗагрузкаРасширеннаяПодсказка" id="281"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьСертификатЗагружен" id="282">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сертификат не загружен</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьСертификатЗагруженКонтекстноеМеню" id="294"/>
+									<ExtendedTooltip name="НадписьСертификатЗагруженРасширеннаяПодсказка" id="283"/>
+								</LabelDecoration>
+								<Button name="КнопкаЗагрузитьСертификат" id="284">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьСертификат</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить сертификат...</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="КнопкаЗагрузитьСертификатРасширеннаяПодсказка" id="285"/>
+								</Button>
+								<InputField name="Tls_СертификатПарольЗагруженныйПоле" id="286">
+									<DataPath>Tls_СертификатПароль</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль сертификата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<PasswordMode>true</PasswordMode>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="Tls_СертификатПарольЗагруженныйПолеКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="Tls_СертификатПарольЗагруженныйПолеРасширеннаяПодсказка" id="287"/>
+									<Events>
+										<Event name="OnChange">Tls_СертификатПриИзменении</Event>
+										<Event name="Opening">ПоказатьПароль</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаApiKey" id="270">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>API Key</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаApiKeyРасширеннаяПодсказка" id="271"/>
+					<ChildItems>
+						<InputField name="ApiKey_ИмяЗаголовкаПоле" id="272">
+							<DataPath>ApiKey_ИмяЗаголовка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя заголовка</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ApiKey_ИмяЗаголовкаПолеКонтекстноеМеню" id="273"/>
+							<ExtendedTooltip name="ApiKey_ИмяЗаголовкаПолеРасширеннаяПодсказка" id="274">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Например: X-API-Key, Authorization</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="ApiKey_ЗначениеПоле" id="275">
+							<DataPath>ApiKey_Значение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение ключа</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<PasswordMode>true</PasswordMode>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="ApiKey_ЗначениеПолеКонтекстноеМеню" id="296"/>
+							<ExtendedTooltip name="ApiKey_ЗначениеПолеРасширеннаяПодсказка" id="277"/>
+							<Events>
+								<Event name="OnChange">ApiKey_ЗначениеПриИзменении</Event>
+								<Event name="Opening">ПоказатьПароль</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.инт_Эндпоинты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Basic_Пользователь" id="400">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Basic_Пароль" id="401">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Basic_ПарольИзменен" id="402">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Digest_Пользователь" id="410">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Digest_Пароль" id="411">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Digest_ПарольИзменен" id="412">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Bearer_Токен" id="420">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Токен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Bearer_ТокенИзменен" id="421">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_ИсточникСертификата" id="430">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_СертификатПароль" id="432">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_СертификатХранилище" id="433">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_СертификатИзменен" id="434">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ApiKey_ИмяЗаголовка" id="440">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ApiKey_Значение" id="441">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ApiKey_ЗначениеИзменено" id="442">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_СертификатЗагружен" id="450">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_СертификатДанные" id="451">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Tls_СертификатИмяФайла" id="452">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьСертификат" id="501">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить файл сертификата (PFX/P12)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСертификат</Action>
+		</Command>
+	</Commands>
+</Form>
