@@ -19,7 +19,6 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_Подписчики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиHTTP</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиJRPC</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.инт_ПодписчикиKafka</xr:Item>
@@ -74,6 +73,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_МенеджерПотоковРассылкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_МенеджерПотоковФормированияИсходящихСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_ОбработкаВходящейОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.инт_Подписчики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.инт_Подписчики</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

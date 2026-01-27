@@ -129,6 +129,9 @@
 		<Command name="InformationRegister.инт_ОчередьВходящихСообщений.StandardCommand.OpenList">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
 		</Command>
+		<Command name="CommonCommand.инт_Подписчики">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>

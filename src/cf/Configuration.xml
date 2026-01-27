@@ -381,11 +381,6 @@
 			<CommonModule>инт_ПреобразованиеДанных</CommonModule>
 			<CommonModule>инт_РаботаСКафка</CommonModule>
 			<CommonModule>инт_РаботаСКафкаПовтИсп</CommonModule>
-			<CommonModule>инт_РаботаССообщениямиJRPC2</CommonModule>
-			<CommonModule>инт_РаботаССообщениямиKafka</CommonModule>
-			<CommonModule>инт_РаботаССообщениямиRabbitMQ</CommonModule>
-			<CommonModule>инт_РаботаССообщениямиПодсистемаИнтеграции</CommonModule>
-			<CommonModule>инт_РаботаССообщениямиПроизвольныйHTTP</CommonModule>
 			<CommonModule>инт_СервисныеДействия</CommonModule>
 			<CommonModule>инт_СтатусыСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
@@ -482,6 +477,7 @@
 			<DefinedType>инт_Подписчик</DefinedType>
 			<CommonCommand>пэмНастройки</CommonCommand>
 			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
+			<CommonCommand>инт_Подписчики</CommonCommand>
 			<Constant>пэмАдресСервераPushgateway</Constant>
 			<Constant>пэмИспользоватьPushgateway</Constant>
 			<Constant>пэмМногопоточныйРасчетМетрик</Constant>
@@ -497,8 +493,8 @@
 			<CommonForm>пэмНастройкиМетрик</CommonForm>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>ИТКВ_Настройки</CommonForm>
+			<CommonForm>инт_Подписчики</CommonForm>
 			<Catalog>пэмМетрики</Catalog>
-			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПодписчикиHTTP</Catalog>
 			<Catalog>инт_ПодписчикиJRPC</Catalog>
 			<Catalog>инт_ПодписчикиKafka</Catalog>

@@ -197,7 +197,6 @@
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
-			<Catalog>инт_Подписчики</Catalog>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>

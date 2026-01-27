@@ -51,17 +51,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.инт_Подписчики</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.пэмМетрики</name>
 		<right>
 			<name>Read</name>
