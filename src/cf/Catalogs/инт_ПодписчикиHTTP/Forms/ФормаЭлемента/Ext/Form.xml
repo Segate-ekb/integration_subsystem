@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Эндпоинт" id="7">
+			<DataPath>Объект.Эндпоинт</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЭндпоинтКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЭндпоинтРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="СпособПередачиИдентификатораСообщения" id="10">
+			<DataPath>Объект.СпособПередачиИдентификатораСообщения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СпособПередачиИдентификатораСообщенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="СпособПередачиИдентификатораСообщенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="СпособПередачиИдентификатораПотока" id="13">
+			<DataPath>Объект.СпособПередачиИдентификатораПотока</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СпособПередачиИдентификатораПотокаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СпособПередачиИдентификатораПотокаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<CheckBoxField name="Активен" id="16">
+			<DataPath>Объект.Активен</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="АктивенКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="АктивенРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+		<InputField name="КоличествоПопытокОтправки" id="19">
+			<DataPath>Объект.КоличествоПопытокОтправки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КоличествоПопытокОтправкиКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КоличествоПопытокОтправкиРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ПаузаМеждуПопыткамиОбработки" id="22">
+			<DataPath>Объект.ПаузаМеждуПопыткамиОбработки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПаузаМеждуПопыткамиОбработкиКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПаузаМеждуПопыткамиОбработкиРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<Table name="ПостПроцессинг" id="25">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ПостПроцессинг</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПостПроцессингКонтекстноеМеню" id="26"/>
+			<AutoCommandBar name="ПостПроцессингКоманднаяПанель" id="27"/>
+			<ExtendedTooltip name="ПостПроцессингРасширеннаяПодсказка" id="28"/>
+			<SearchStringAddition name="ПостПроцессингСтрокаПоиска" id="29">
+				<AdditionSource>
+					<Item>ПостПроцессинг</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПостПроцессингСтрокаПоискаКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ПостПроцессингСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПостПроцессингСостояниеПросмотра" id="32">
+				<AdditionSource>
+					<Item>ПостПроцессинг</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПостПроцессингСостояниеПросмотраКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="ПостПроцессингСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПостПроцессингУправлениеПоиском" id="35">
+				<AdditionSource>
+					<Item>ПостПроцессинг</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПостПроцессингУправлениеПоискомКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ПостПроцессингУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПостПроцессингНомерСтроки" id="38">
+					<DataPath>Объект.ПостПроцессинг.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПостПроцессингНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПостПроцессингНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="ПостПроцессингКодСостояния" id="41">
+					<DataPath>Объект.ПостПроцессинг.КодСостояния</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПостПроцессингКодСостоянияКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПостПроцессингКодСостоянияРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПостПроцессингОбработчик" id="44">
+					<DataPath>Объект.ПостПроцессинг.Обработчик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="ПостПроцессингОбработчикКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПостПроцессингОбработчикРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="StartChoice">ПостПроцессингОбработчикНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.инт_ПодписчикиHTTP</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
