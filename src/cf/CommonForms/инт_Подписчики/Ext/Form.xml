@@ -1,5 +1,235 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<AutoCommandBar name="" id="-1"/>
-	<Attributes/>
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подписчики</v8:content>
+		</v8:item>
+	</Title>
+	<Width>80</Width>
+	<Height>25</Height>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСоздатьПодписчика" id="1">
+				<Type>UsualButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.СоздатьПодписчика</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаСоздатьПодписчикаРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаОбновить" id="3">
+				<Type>UsualButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Command.Обновить</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Подписчики" id="5">
+			<Representation>Tree</Representation>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<DataPath>Подписчики</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписчики</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПодписчикиКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="ПодписчикиКоманднаяПанель" id="7">
+				<Visible>false</Visible>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ПодписчикиРасширеннаяПодсказка" id="8"/>
+			<SearchStringAddition name="ПодписчикиСтрокаПоиска" id="9">
+				<AdditionSource>
+					<Item>Подписчики</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодписчикиСтрокаПоискаКонтекстноеМеню" id="10"/>
+				<ExtendedTooltip name="ПодписчикиСтрокаПоискаРасширеннаяПодсказка" id="11"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПодписчикиСостояниеПросмотра" id="12">
+				<AdditionSource>
+					<Item>Подписчики</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодписчикиСостояниеПросмотраКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ПодписчикиСостояниеПросмотраРасширеннаяПодсказка" id="14"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПодписчикиУправлениеПоиском" id="15">
+				<AdditionSource>
+					<Item>Подписчики</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПодписчикиУправлениеПоискомКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ПодписчикиУправлениеПоискомРасширеннаяПодсказка" id="17"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">ПодписчикиВыбор</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="ПодписчикиАктивен" id="18">
+					<DataPath>Подписчики.Активен</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПодписчикиАктивенКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПодписчикиАктивенРасширеннаяПодсказка" id="20"/>
+				</CheckBoxField>
+				<InputField name="ПодписчикиНаименование" id="21">
+					<DataPath>Подписчики.Наименование</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПодписчикиНаименованиеКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ПодписчикиНаименованиеРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ПодписчикиКод" id="24">
+					<DataPath>Подписчики.Код</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Width>15</Width>
+					<ContextMenu name="ПодписчикиКодКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПодписчикиКодРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Подписчики" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписчики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.инт_Подписчик</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Код" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Активен" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Активен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипПодписчика" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип подписчика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоГруппа" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список подписчиков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="СоздатьПодписчика" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать подписчика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать нового подписчика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПодписчика</Action>
+		</Command>
+	</Commands>
 </Form>

@@ -46,6 +46,31 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Catalog.инт_ПодписчикиHTTP.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.инт_ПодписчикиJRPC.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.инт_ПодписчикиKafka.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.инт_ПодписчикиRabbitMQ.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.инт_ПодписчикиПодсистемаИнтеграции.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="InformationRegister.инт_ТекущийСтатусИсходящихСообщений.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
