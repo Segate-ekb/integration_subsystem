@@ -152,6 +152,8 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
 			<ExtendedTooltip name="ГруппаПараметрыТопикаРасширеннаяПодсказка" id="93"/>
 			<ChildItems>
 				<Table name="НастройкиТопика" id="120">
