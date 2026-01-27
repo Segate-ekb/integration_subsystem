@@ -19,6 +19,11 @@
 				<CommandName>Form.Command.СоздатьТопик</CommandName>
 				<ExtendedTooltip name="ФормаСоздатьТопикРасширеннаяПодсказка" id="105"/>
 			</Button>
+			<Button name="ФормаОтправитьСообщение" id="160">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтправитьСообщение</CommandName>
+				<ExtendedTooltip name="ФормаОтправитьСообщениеРасширеннаяПодсказка" id="161"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -477,6 +482,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьНастройки</Action>
+		</Command>
+		<Command name="ОтправитьСообщение" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить произвольное сообщение в топик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьСообщение</Action>
 		</Command>
 	</Commands>
 </Form>
