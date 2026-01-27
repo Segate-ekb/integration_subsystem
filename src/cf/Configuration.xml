@@ -490,6 +490,10 @@
 			<Constant>инт_РазмерПачкиОбработкиВходящихСообщений</Constant>
 			<Constant>инт_РазмерПачкиОтправкиСообщений</Constant>
 			<Constant>инт_РазмерПачкиФормированияСообщений</Constant>
+			<Constant>инт_КаталогЛоговKafka</Constant>
+			<Constant>инт_ИдентификаторКлиентаKafka</Constant>
+			<Constant>инт_УровеньОтладкиKafka</Constant>
+			<Constant>инт_ИнтервалСтатистикиKafka</Constant>
 			<CommonForm>пэмНастройкиМетрик</CommonForm>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>ИТКВ_Настройки</CommonForm>
@@ -513,6 +517,7 @@
 			<Enum>инт_СтатусыРассылкиИсходящихСообщений</Enum>
 			<Enum>инт_ТипыАвторизации</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
+			<Enum>инт_ТипыСжатияKafka</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>

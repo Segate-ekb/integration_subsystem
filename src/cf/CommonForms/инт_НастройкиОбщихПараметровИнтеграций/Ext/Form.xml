@@ -142,6 +142,109 @@
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкиЛогированияKafka" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логирование Kafka</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки логирования компоненты Kafka</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<United>false</United>
+					<ExtendedTooltip name="ГруппаНастройкиЛогированияKafkaРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="инт_КаталогЛоговKafka" id="42">
+							<DataPath>НаборКонстант.инт_КаталогЛоговKafka</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог логов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="инт_КаталогЛоговKafkaКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="инт_КаталогЛоговKafkaРасширеннаяПодсказка" id="44">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Каталог для записи логов (пусто = отключено)</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="инт_ИдентификаторКлиентаKafka" id="45">
+							<DataPath>НаборКонстант.инт_ИдентификаторКлиентаKafka</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Идентификатор клиента</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="инт_ИдентификаторКлиентаKafkaКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="инт_ИдентификаторКлиентаKafkaРасширеннаяПодсказка" id="47">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>client.id для имён файлов логов</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="инт_УровеньОтладкиKafka" id="48">
+							<DataPath>НаборКонстант.инт_УровеньОтладкиKafka</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уровень отладки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="инт_УровеньОтладкиKafkaКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="инт_УровеньОтладкиKafkaРасширеннаяПодсказка" id="50">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Категории: broker,topic,msg (продюсер) | consumer,cgrp,topic,fetch (консьюмер)</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<InputField name="инт_ИнтервалСтатистикиKafka" id="51">
+							<DataPath>НаборКонстант.инт_ИнтервалСтатистикиKafka</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Интервал статистики (мс)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="инт_ИнтервалСтатистикиKafkaКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="инт_ИнтервалСтатистикиKafkaРасширеннаяПодсказка" id="53">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Рекомендуется не менее 15000 мс (0 = отключено)</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>

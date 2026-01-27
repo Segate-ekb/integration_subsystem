@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="b7c8d9e0-f1a2-3b4c-5d6e-7f8091a2b3c4">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.инт_ТипыСжатияKafka" category="Ref">
+				<xr:TypeId>b7c8d9e0-0001-0001-0001-000000000001</xr:TypeId>
+				<xr:ValueId>b7c8d9e0-0001-0001-0001-000000000002</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.инт_ТипыСжатияKafka" category="Manager">
+				<xr:TypeId>b7c8d9e0-0001-0001-0002-000000000001</xr:TypeId>
+				<xr:ValueId>b7c8d9e0-0001-0001-0002-000000000002</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.инт_ТипыСжатияKafka" category="List">
+				<xr:TypeId>b7c8d9e0-0001-0001-0003-000000000001</xr:TypeId>
+				<xr:ValueId>b7c8d9e0-0001-0001-0003-000000000002</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>инт_ТипыСжатияKafka</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(инт) Типы сжатия Kafka</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Типы сжатия сообщений для Apache Kafka (librdkafka compression.codec)</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="b7c8d9e0-0002-0001-0001-000000000001">
+				<Properties>
+					<Name>БезСжатия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Без сжатия (none)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>compression.codec = none</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7c8d9e0-0002-0002-0001-000000000001">
+				<Properties>
+					<Name>Gzip</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Gzip</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>compression.codec = gzip</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7c8d9e0-0002-0003-0001-000000000001">
+				<Properties>
+					<Name>Snappy</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Snappy</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>compression.codec = snappy</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7c8d9e0-0002-0004-0001-000000000001">
+				<Properties>
+					<Name>Lz4</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>LZ4</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>compression.codec = lz4</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7c8d9e0-0002-0005-0001-000000000001">
+				<Properties>
+					<Name>Zstd</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Zstd</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>compression.codec = zstd</Comment>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -143,60 +143,84 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры топика (из Kafka)</v8:content>
+					<v8:content>Настройки топика (из Kafka)</v8:content>
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
 			<ExtendedTooltip name="ГруппаПараметрыТопикаРасширеннаяПодсказка" id="93"/>
 			<ChildItems>
-				<InputField name="RetentionMs" id="81">
-					<DataPath>RetentionMs</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Retention (мс)</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="RetentionMsКонтекстноеМеню" id="82"/>
-					<ExtendedTooltip name="RetentionMsРасширеннаяПодсказка" id="83"/>
-				</InputField>
-				<InputField name="RetentionBytes" id="84">
-					<DataPath>RetentionBytes</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Retention (байт)</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="RetentionBytesКонтекстноеМеню" id="85"/>
-					<ExtendedTooltip name="RetentionBytesРасширеннаяПодсказка" id="86"/>
-				</InputField>
-				<InputField name="CleanupPolicy" id="87">
-					<DataPath>CleanupPolicy</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Cleanup Policy</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="CleanupPolicyКонтекстноеМеню" id="88"/>
-					<ExtendedTooltip name="CleanupPolicyРасширеннаяПодсказка" id="89"/>
-				</InputField>
-				<InputField name="MaxMessageBytes" id="90">
-					<DataPath>MaxMessageBytes</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Max message bytes</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="MaxMessageBytesКонтекстноеМеню" id="91"/>
-					<ExtendedTooltip name="MaxMessageBytesРасширеннаяПодсказка" id="92"/>
-				</InputField>
+				<Table name="НастройкиТопика" id="120">
+					<Height>8</Height>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<DataPath>НастройкиТопика</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="НастройкиТопикаКонтекстноеМеню" id="121"/>
+					<AutoCommandBar name="НастройкиТопикаКоманднаяПанель" id="122">
+						<ChildItems>
+							<Button name="ФормаСохранитьНастройки" id="125">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СохранитьНастройки</CommandName>
+								<ExtendedTooltip name="ФормаСохранитьНастройкиРасширеннаяПодсказка" id="142"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="НастройкиТопикаРасширеннаяПодсказка" id="126"/>
+					<SearchStringAddition name="НастройкиТопикаСтрокаПоиска" id="127">
+						<AdditionSource>
+							<Item>НастройкиТопика</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НастройкиТопикаСтрокаПоискаКонтекстноеМеню" id="143"/>
+						<ExtendedTooltip name="НастройкиТопикаСтрокаПоискаРасширеннаяПодсказка" id="128"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НастройкиТопикаСостояниеПросмотра" id="129">
+						<AdditionSource>
+							<Item>НастройкиТопика</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НастройкиТопикаСостояниеПросмотраКонтекстноеМеню" id="144"/>
+						<ExtendedTooltip name="НастройкиТопикаСостояниеПросмотраРасширеннаяПодсказка" id="130"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НастройкиТопикаУправлениеПоиском" id="131">
+						<AdditionSource>
+							<Item>НастройкиТопика</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НастройкиТопикаУправлениеПоискомКонтекстноеМеню" id="145"/>
+						<ExtendedTooltip name="НастройкиТопикаУправлениеПоискомРасширеннаяПодсказка" id="132"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnStartEdit">НастройкиТопикаПриНачалеРедактирования</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="НастройкиТопикаКлючНастройки" id="133">
+							<DataPath>НастройкиТопика.КлючНастройки</DataPath>
+							<Width>30</Width>
+							<ContextMenu name="НастройкиТопикаКлючНастройкиКонтекстноеМеню" id="134"/>
+							<ExtendedTooltip name="НастройкиТопикаКлючНастройкиРасширеннаяПодсказка" id="135"/>
+							<Events>
+								<Event name="OnChange">НастройкиТопикаКлючНастройкиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="НастройкиТопикаЗначениеНастройки" id="136">
+							<DataPath>НастройкиТопика.ЗначениеНастройки</DataPath>
+							<Width>30</Width>
+							<ContextMenu name="НастройкиТопикаЗначениеНастройкиКонтекстноеМеню" id="137"/>
+							<ExtendedTooltip name="НастройкиТопикаЗначениеНастройкиРасширеннаяПодсказка" id="138"/>
+							<Events>
+								<Event name="OnChange">НастройкиТопикаЗначениеНастройкиПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="НастройкиТопикаИзменено" id="139">
+							<DataPath>НастройкиТопика.Изменено</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НастройкиТопикаИзмененоКонтекстноеМеню" id="140"/>
+							<ExtendedTooltip name="НастройкиТопикаИзмененоРасширеннаяПодсказка" id="141"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаДополнительно" id="54">
@@ -216,6 +240,25 @@
 					<ContextMenu name="ПакетнаяОбработкаКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ПакетнаяОбработкаРасширеннаяПодсказка" id="15"/>
 				</CheckBoxField>
+				<InputField name="ТипСжатия" id="110">
+					<DataPath>Объект.ТипСжатия</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сжатие сообщений</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипСжатияКонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТипСжатияРасширеннаяПодсказка" id="112">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип сжатия сообщений (compression.codec для librdkafka): gzip, snappy, lz4, zstd</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</InputField>
 				<InputField name="КоличествоПопытокОтправки" id="19">
 					<DataPath>Объект.КоличествоПопытокОтправки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -304,68 +347,74 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="RetentionMs" id="34">
+		<Attribute name="НастройкиТопика" id="150">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Retention (мс)</v8:content>
+					<v8:content>Настройки топика</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
-				</v8:NumberQualifiers>
+				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
-		</Attribute>
-		<Attribute name="RetentionBytes" id="35">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Retention (байт)</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="CleanupPolicy" id="36">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Cleanup Policy</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>50</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="MaxMessageBytes" id="37">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Max message bytes</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>15</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
+			<Columns>
+				<Column name="КлючНастройки" id="151">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗначениеНастройки" id="152">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменено" id="153">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изм.</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсходноеЗначение" id="154">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходное значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -413,6 +462,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьТопик</Action>
+		</Command>
+		<Command name="СохранитьНастройки" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить изменённые настройки топика в Kafka</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройки</Action>
 		</Command>
 	</Commands>
 </Form>
