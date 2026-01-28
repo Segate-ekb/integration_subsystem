@@ -58,6 +58,7 @@ outline: deep
 | [Установка](/guide/installation) | Интеграция подсистемы в конфигурацию |
 | [Создание потока](/guide/create-flow) | Пошаговое создание исходящего потока |
 | [Настройка подписчиков](/guide/configure-subscribers) | HTTP, RabbitMQ, Kafka подписчики |
+| [Обработка входящих HTTP](/guide/incoming-http-processing) | Приём данных, коды ответов, обработка ошибок |
 | [Валидация](/guide/validation) | Настройка OpenAPI-схем |
 | [Мониторинг](/guide/monitoring) | Prometheus и алерты |
 
