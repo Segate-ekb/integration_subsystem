@@ -28,11 +28,11 @@
 		<UsualGroup name="ГруппаОбновлениеДоступно" id="80">
 			<Visible>false</Visible>
 			<HorizontalStretch>true</HorizontalStretch>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
 			<Group>AlwaysHorizontal</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<GroupVerticalAlign>Center</GroupVerticalAlign>
 			<ExtendedTooltip name="ГруппаОбновлениеДоступноРасширеннаяПодсказка" id="81"/>
 			<ChildItems>
 				<LabelDecoration name="НадписьОбновлениеДоступно" id="82">
@@ -49,6 +49,7 @@
 				</LabelDecoration>
 				<Button name="КнопкаОбновитьМетрику" id="85">
 					<Type>CommandBarButton</Type>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<CommandName>Form.Command.ОбновитьМетрикуИзМакета</CommandName>
 					<Title>
 						<v8:item>
@@ -56,7 +57,6 @@
 							<v8:content>Обновить</v8:content>
 						</v8:item>
 					</Title>
-					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<ExtendedTooltip name="КнопкаОбновитьМетрикуРасширеннаяПодсказка" id="86"/>
 				</Button>
 			</ChildItems>
