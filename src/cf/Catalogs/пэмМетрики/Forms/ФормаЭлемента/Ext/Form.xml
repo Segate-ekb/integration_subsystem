@@ -25,6 +25,42 @@
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаОбновлениеДоступно" id="80">
+			<Visible>false</Visible>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<ExtendedTooltip name="ГруппаОбновлениеДоступноРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьОбновлениеДоступно" id="82">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступна новая версия метрики</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="НадписьОбновлениеДоступноКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="НадписьОбновлениеДоступноРасширеннаяПодсказка" id="84"/>
+				</LabelDecoration>
+				<Button name="КнопкаОбновитьМетрику" id="85">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОбновитьМетрикуИзМакета</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ExtendedTooltip name="КнопкаОбновитьМетрикуРасширеннаяПодсказка" id="86"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаШапка" id="17">
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
@@ -244,6 +280,33 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ДоступноОбновлениеМетрики" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступно обновление метрики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияВМакетеДляОбновления" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия в макете для обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьПроверкуАлгоритма" id="1">
@@ -275,6 +338,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Настройки</Action>
+		</Command>
+		<Command name="ОбновитьМетрикуИзМакета" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить метрику из макета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить метрику из макета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьМетрикуИзМакета</Action>
 		</Command>
 	</Commands>
 </Form>

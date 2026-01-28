@@ -362,6 +362,17 @@
 			<Role>инт_ИзменениеДанных</Role>
 			<CommonTemplate>инт_simple_kafka</CommonTemplate>
 			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
+			<CommonTemplate>пэмМетрикиИндекс</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_scrape_duration</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_last_refresh</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_queue_length</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_error_count</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_formation_duration</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_send_duration</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_incoming_duration</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_oldest_pending_age</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_messages_per_minute</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_retry_count</CommonTemplate>
 			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
 			<CommonModule>пэмМетрикиСервер</CommonModule>
@@ -469,6 +480,7 @@
 			<HTTPService>Prometheus</HTTPService>
 			<ScheduledJob>пэмВыполнитьРасчетМетрик</ScheduledJob>
 			<ScheduledJob>пэмРегламентныеОперации</ScheduledJob>
+			<ScheduledJob>инт_ОчисткаСтатистикиОбработкиСообщений</ScheduledJob>
 			<ScheduledJob>инт_МенеджерПотоковРассылкиСообщений</ScheduledJob>
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
@@ -484,6 +496,7 @@
 			<Constant>пэмПервоначальноеЗаполнениеВыполнено</Constant>
 			<Constant>пэмПортСервераPushgateway</Constant>
 			<Constant>пэмПутьНаСервереPushgateway</Constant>
+			<Constant>инт_СрокХраненияСтатистикиДней</Constant>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>
 			<Constant>инт_РазделятьПотокиОтправкиПоТипамПодписчиков</Constant>
@@ -518,6 +531,7 @@
 			<Enum>инт_ТипыАвторизации</Enum>
 			<Enum>инт_ТипыПодписчиков</Enum>
 			<Enum>инт_ТипыСжатияKafka</Enum>
+			<Enum>инт_ТипыОперацийСтатистики</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>
@@ -532,6 +546,7 @@
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьОтправкиИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
+			<InformationRegister>инт_СтатистикаОбработкиСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
