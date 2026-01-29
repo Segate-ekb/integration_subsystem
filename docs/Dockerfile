@@ -2,27 +2,11 @@
 # Dockerfile for VitePress Documentation
 # Integration Subsystem (Подсистема интеграции)
 # =============================================================================
-
-# Build stage (if not using pre-built artifacts)
-FROM node:20-alpine AS builder
-
-WORKDIR /app
-
-# Copy package files
-COPY docs/package*.json ./
-
-# Install dependencies
-RUN npm ci --only=production
-
-# Copy documentation source
-COPY docs/ ./
-
-# Build VitePress
-RUN npm run docs:build
-
+# 
+# This Dockerfile expects pre-built VitePress artifacts in docs/.vitepress/dist
+# Build is done by GitHub Actions before Docker build
 # =============================================================================
-# Production stage - nginx for serving static files
-# =============================================================================
+
 FROM nginx:1.25-alpine AS production
 
 LABEL maintainer="Integration Subsystem Team"
@@ -44,14 +28,10 @@ RUN apk add --no-cache curl
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy custom nginx configuration
-COPY docs/nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
-# Copy built documentation from builder stage
-# If using GitHub Actions artifact, this will be overwritten by the mounted dist folder
-COPY --from=builder /app/.vitepress/dist /usr/share/nginx/html
-
-# Alternatively, if dist is pre-built and passed as context:
-# COPY docs/.vitepress/dist /usr/share/nginx/html
+# Copy pre-built documentation (built by GitHub Actions)
+COPY .vitepress/dist /usr/share/nginx/html
 
 # Set proper permissions
 RUN chown -R nginx:nginx /usr/share/nginx/html && \

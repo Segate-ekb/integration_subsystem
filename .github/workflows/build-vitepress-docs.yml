@@ -3,6 +3,7 @@ name: Build VitePress Docs and Push to Harbor
 on:
   push:
     branches:
+      - master
       - main
       - develop
     paths:
@@ -88,14 +89,14 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'main') }}
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') || github.ref == format('refs/heads/{0}', 'main') }}
             type=raw,value=${{ github.event.inputs.image_tag }},enable=${{ github.event_name == 'workflow_dispatch' }}
             type=sha,prefix=,format=short
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./docs
           file: ./docs/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
