@@ -397,6 +397,7 @@
 			<CommonModule>инт_ФормированиеИсходящихСообщений</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийПовтИсп</CommonModule>
 			<CommonModule>инт_ФормированиеИсходящихСообщенийСлужебный</CommonModule>
+			<CommonModule>инт_РучноеУправлениеМенеджерами</CommonModule>
 			<CommonModule>инт_ЭндпоинтыКлиент</CommonModule>
 			<CommonModule>инт_ЭндпоинтыКлиентСервер</CommonModule>
 			<CommonModule>ИТКВ_БСП</CommonModule>
@@ -534,6 +535,8 @@
 			<Enum>инт_ТипыОперацийСтатистики</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
+			<DataProcessor>пэм_мониторингМетрик</DataProcessor>
+			<DataProcessor>инт_ручнойЗапускМенеджеровПотоков</DataProcessor>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>
 			<InformationRegister>инт_ИдентификаторыВнешнихСистем</InformationRegister>
 			<InformationRegister>инт_ИсторияСтатусовВходящихСообщений</InformationRegister>

@@ -42,6 +42,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.Prometheus</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пэмСостояниеМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.пэмСостояниеМетрик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пэм_мониторингМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пэмНастройкаМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пэмПолучениеМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.пэмВыполнитьРасчетМетрик</xr:Item>

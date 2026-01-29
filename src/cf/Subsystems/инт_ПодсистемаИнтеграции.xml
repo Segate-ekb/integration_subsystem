@@ -75,6 +75,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.инт_ОбработкаВходящейОчереди</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.инт_Подписчики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.инт_Подписчики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.инт_ручнойЗапускМенеджеровПотоков</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
