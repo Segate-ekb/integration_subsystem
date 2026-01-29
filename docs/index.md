@@ -85,7 +85,7 @@ features:
 
 ## Ссылки
 
-- [Руководство по установке](/guide/installation)
+- [Начало работы](/guide/)
 - [Создание первого потока](/guide/create-flow)
 - [API Reference](/api/)
-- [Участие в разработке](/developer/contributing)
+- [Для разработчиков](/developer/)

@@ -250,6 +250,6 @@ outline: deep
 
 ## Следующие шаги
 
-- [Мониторинг](/guide/monitoring) — настройка Prometheus
 - [Очереди сообщений](/concepts/message-queues) — детали работы очередей
-- [Устранение неполадок](/guide/troubleshooting)
+- [Валидация](/concepts/validation) — проверка сообщений
+- [Потоки данных](/concepts/data-flows) — архитектура потоков

@@ -235,7 +235,6 @@ sonar.sourceEncoding=UTF-8
 
 ## Полезные ссылки
 
-- [CONTRIBUTING.md](/developer/contributing) — правила участия
-- [Соглашения по коду](/developer/conventions)
+- [CONTRIBUTING.md](https://github.com/Segate-ekb/integration_subsystem/blob/develop/CONTRIBUTING.md) — правила участия
 - [YAXUNIT документация](https://github.com/bia-technologies/yaxunit)
 - [vrunner документация](https://github.com/vanessa-opensource/vanern)

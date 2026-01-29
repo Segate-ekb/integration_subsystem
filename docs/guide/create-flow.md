@@ -258,5 +258,5 @@ outline: deep
 ## Следующие шаги
 
 - [Настройка подписчиков](/guide/configure-subscribers) — создание HTTP-подписчика
-- [Валидация сообщений](/guide/validation) — настройка OpenAPI-схем
-- [Мониторинг](/guide/monitoring) — отслеживание состояния очередей
+- [Валидация сообщений](/concepts/validation) — настройка OpenAPI-схем
+- [Очереди сообщений](/concepts/message-queues) — механизм очередей

@@ -316,6 +316,6 @@ Scope: orders:write
 
 ## Следующие шаги
 
-- [Валидация сообщений](/guide/validation)
-- [Мониторинг](/guide/monitoring)
-- [API: инт_КоннекторHTTP](/api/common-modules/connector-http)
+- [Валидация сообщений](/concepts/validation)
+- [Очереди сообщений](/concepts/message-queues)
+- [Многопоточность](/concepts/multithreading)

@@ -223,4 +223,4 @@ outline: deep
 
 - [Многопоточность](/concepts/multithreading) — параллельная обработка очередей
 - [Валидация](/concepts/validation) — проверка сообщений
-- [Мониторинг](/guide/monitoring) — настройка Prometheus
+- [Подписчики](/concepts/subscribers) — типы подписчиков
