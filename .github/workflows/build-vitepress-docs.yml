@@ -19,8 +19,8 @@ on:
         default: 'latest'
 
 env:
-  HARBOR_REGISTRY: ${{ vars.HARBOR_REGISTRY }}
-  HARBOR_PROJECT: ${{ vars.HARBOR_PROJECT }}
+  HARBOR_REGISTRY: harbor.1cdevelopers.ru
+  HARBOR_PROJECT: library
   IMAGE_NAME: integration-subsystem-docs
 
 jobs:
