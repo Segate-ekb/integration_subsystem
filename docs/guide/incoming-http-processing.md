@@ -326,9 +326,14 @@ def send_message(flow_id: str, payload: dict, max_retries: int = 3):
 
 | Метрика | Тип | Описание |
 |---------|-----|----------|
-| `integration_incoming_messages_total` | Counter | Всего принятых сообщений |
-| `integration_incoming_errors_total` | Counter | Количество ошибок по типам |
-| `integration_queue_size` | Gauge | Размер очереди входящих |
+| `pde_queue_length` | Gauge | Размер очередей по типам |
+| `pde_error_count` | Gauge | Количество ошибок по типам и потокам |
+| `pde_incoming_duration_seconds` | Gauge | Время обработки входящих (avg/max) |
+| `pde_messages_per_minute` | Gauge | Пропускная способность |
+
+::: tip Полная документация
+Подробное описание всех метрик, настройки алертов и интеграции с Grafana см. в разделе [Мониторинг и метрики](/concepts/monitoring).
+:::
 
 ## Безопасность
 

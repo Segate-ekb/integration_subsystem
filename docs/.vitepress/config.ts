@@ -59,7 +59,8 @@ export default defineConfig({
             { text: 'Подписчики', link: '/concepts/subscribers' },
             { text: 'Очереди сообщений', link: '/concepts/message-queues' },
             { text: 'Валидация', link: '/concepts/validation' },
-            { text: 'Многопоточность', link: '/concepts/multithreading' }
+            { text: 'Многопоточность', link: '/concepts/multithreading' },
+            { text: 'Мониторинг и метрики', link: '/concepts/monitoring' }
           ]
         }
       ],

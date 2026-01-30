@@ -139,4 +139,4 @@ outline: deep
 - [Потоки данных](/concepts/data-flows) — подробнее о конфигурации потоков
 - [Подписчики](/concepts/subscribers) — типы и настройка подписчиков
 - [Валидация](/concepts/validation) — работа с OpenAPI-схемами
-- [Многопоточность](/concepts/multithreading) — параллельная обработка
+- [Многопоточность](/concepts/multithreading) — параллельная обработка- [Мониторинг и метрики](/concepts/monitoring) — Prometheus-метрики и алерты
