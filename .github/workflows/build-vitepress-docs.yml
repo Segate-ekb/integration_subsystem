@@ -121,6 +121,19 @@ jobs:
           path: sbom.spdx.json
           retention-days: 30
 
+  trigger-deployment:
+    needs: docker
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/develop'
+    steps:
+      - name: Trigger ArgoCD deployment update
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.K8S_APPS_PAT }}
+          repository: segate-k8s/integration-subsystem-docs
+          event-type: image-updated
+          client-payload: '{"sha": "${{ github.sha }}", "image_tag": "latest"}'
+
   notify:
     needs: [build, docker]
     runs-on: ubuntu-latest
