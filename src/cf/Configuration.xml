@@ -477,6 +477,10 @@
 			<CommonModule>ИТКВ_ФормаВызовСервера</CommonModule>
 			<CommonModule>ИТКВ_ФормаКлиент</CommonModule>
 			<CommonModule>ИТКВ_ФормаКлиентСервер</CommonModule>
+			<CommonModule>инт_МенеджерВходящихПотоков</CommonModule>
+			<CommonModule>инт_КонсьюмерОчередей</CommonModule>
+			<CommonModule>инт_КонсьюмерОчередейПовтИсп</CommonModule>
+			<CommonModule>инт_КонсьюмерОчередейСлужебный</CommonModule>
 			<HTTPService>integration</HTTPService>
 			<HTTPService>Prometheus</HTTPService>
 			<ScheduledJob>пэмВыполнитьРасчетМетрик</ScheduledJob>
@@ -486,8 +490,10 @@
 			<ScheduledJob>инт_МенеджерПотоковФормированияИсходящихСообщений</ScheduledJob>
 			<ScheduledJob>инт_ОбработкаВходящейОчереди</ScheduledJob>
 			<ScheduledJob>инт_ОчисткаУстаревшихСообщений</ScheduledJob>
+			<ScheduledJob>инт_МенеджерВходящихПотоков</ScheduledJob>
 			<DefinedType>инт_ИсходныеДанные</DefinedType>
 			<DefinedType>инт_Подписчик</DefinedType>
+			<DefinedType>инт_Подписка</DefinedType>
 			<CommonCommand>пэмНастройки</CommonCommand>
 			<CommonCommand>инт_ОткрытьФормуНастроек</CommonCommand>
 			<CommonCommand>инт_Подписчики</CommonCommand>
@@ -555,6 +561,7 @@
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
 			<InformationRegister>инт_ХешиОбъектов</InformationRegister>
 			<InformationRegister>ИТКВ_БезопасноеХранилищеДанных</InformationRegister>
+			<InformationRegister>инт_АктивныеКонсьюмеры</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -138,5 +138,7 @@ outline: deep
 
 - [Потоки данных](/concepts/data-flows) — подробнее о конфигурации потоков
 - [Подписчики](/concepts/subscribers) — типы и настройка подписчиков
+- [Kafka-консьюмеры](/concepts/kafka-consumers) — входящие потоки из Kafka
 - [Валидация](/concepts/validation) — работа с OpenAPI-схемами
-- [Многопоточность](/concepts/multithreading) — параллельная обработка- [Мониторинг и метрики](/concepts/monitoring) — Prometheus-метрики и алерты
+- [Многопоточность](/concepts/multithreading) — параллельная обработка
+- [Мониторинг и метрики](/concepts/monitoring) — Prometheus-метрики и алерты

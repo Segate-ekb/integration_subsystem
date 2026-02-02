@@ -662,6 +662,70 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<TabularSection uuid="3a4b5c6d-7e8f-9012-ab34-567890abcdef">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.инт_ПотокиДанных.ПодпискиНаВходящиеСообщения" category="TabularSection">
+						<xr:TypeId>3a4b5c6d-0001-0001-0001-000000000001</xr:TypeId>
+						<xr:ValueId>3a4b5c6d-0001-0001-0001-000000000002</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.инт_ПотокиДанных.ПодпискиНаВходящиеСообщения" category="TabularSectionRow">
+						<xr:TypeId>3a4b5c6d-0001-0002-0001-000000000001</xr:TypeId>
+						<xr:ValueId>3a4b5c6d-0001-0002-0001-000000000002</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ПодпискиНаВходящиеСообщения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписки на входящие сообщения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Источники входящих сообщений (Kafka/RabbitMQ консьюмеры)</Comment>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<Use>ForItem</Use>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="3a4b5c6d-0002-0001-0001-000000000001">
+						<Properties>
+							<Name>Подписка</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подписка</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Подписчик Kafka или RabbitMQ</Comment>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.инт_Подписка</v8:TypeSet>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>DontUse</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>РедактированиеОтслеживаемыхРеквизитов</Form>

@@ -282,6 +282,45 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаПараметрыКонсьюмера" id="170">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры консьюмера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для входящих сообщений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="ГруппаПараметрыКонсьюмераРасширеннаяПодсказка" id="171"/>
+			<ChildItems>
+				<InputField name="ИмяDLQТопика" id="172">
+					<DataPath>Объект.ИмяDLQТопика</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя DLQ топика</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяDLQТопикаКонтекстноеМеню" id="173"/>
+					<ExtendedTooltip name="ИмяDLQТопикаРасширеннаяПодсказка" id="174">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Dead Letter Queue - топик для недоставленных сообщений при синхронной обработке</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

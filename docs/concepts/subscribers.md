@@ -230,6 +230,10 @@ https://api.example.com/v1/{flow_id}/messages/{message_id}
 Для работы требуется внешняя компонента `SimpleKafka1C`, использующая библиотеку librdkafka.
 :::
 
+::: tip Входящие потоки (Консьюмеры)
+Для получения сообщений из Kafka см. раздел [Kafka-консьюмеры](/concepts/kafka-consumers) — настройка входящих потоков, DLQ, мониторинг.
+:::
+
 ---
 
 ## RabbitMQ-подписчик

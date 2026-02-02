@@ -342,6 +342,74 @@
 				</Table>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаПодпискиВходящие" id="110">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписки на входящие сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подписки на входящие сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="ГруппаПодпискиВходящиеРасширеннаяПодсказка" id="111"/>
+			<ChildItems>
+				<Table name="ПодпискиНаВходящиеСообщения" id="112">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ПодпискиНаВходящиеСообщения</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПодпискиНаВходящиеСообщенияКонтекстноеМеню" id="113"/>
+					<AutoCommandBar name="ПодпискиНаВходящиеСообщенияКоманднаяПанель" id="114"/>
+					<ExtendedTooltip name="ПодпискиНаВходящиеСообщенияРасширеннаяПодсказка" id="115"/>
+					<SearchStringAddition name="ПодпискиНаВходящиеСообщенияСтрокаПоиска" id="116">
+						<AdditionSource>
+							<Item>ПодпискиНаВходящиеСообщения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодпискиНаВходящиеСообщенияСтрокаПоискаКонтекстноеМеню" id="117"/>
+						<ExtendedTooltip name="ПодпискиНаВходящиеСообщенияСтрокаПоискаРасширеннаяПодсказка" id="118"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодпискиНаВходящиеСообщенияСостояниеПросмотра" id="119">
+						<AdditionSource>
+							<Item>ПодпискиНаВходящиеСообщения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодпискиНаВходящиеСообщенияСостояниеПросмотраКонтекстноеМеню" id="120"/>
+						<ExtendedTooltip name="ПодпискиНаВходящиеСообщенияСостояниеПросмотраРасширеннаяПодсказка" id="121"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодпискиНаВходящиеСообщенияУправлениеПоиском" id="122">
+						<AdditionSource>
+							<Item>ПодпискиНаВходящиеСообщения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодпискиНаВходящиеСообщенияУправлениеПоискомКонтекстноеМеню" id="123"/>
+						<ExtendedTooltip name="ПодпискиНаВходящиеСообщенияУправлениеПоискомРасширеннаяПодсказка" id="124"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ПодпискиНаВходящиеСообщенияНомерСтроки" id="125">
+							<DataPath>Объект.ПодпискиНаВходящиеСообщения.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПодпискиНаВходящиеСообщенияНомерСтрокиКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="ПодпискиНаВходящиеСообщенияНомерСтрокиРасширеннаяПодсказка" id="127"/>
+						</LabelField>
+						<InputField name="ПодпискиНаВходящиеСообщенияПодписка" id="128">
+							<DataPath>Объект.ПодпискиНаВходящиеСообщения.Подписка</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПодпискиНаВходящиеСообщенияПодпискаКонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="ПодпискиНаВходящиеСообщенияПодпискаРасширеннаяПодсказка" id="130"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="14">
@@ -352,6 +420,7 @@
 			<SavedData>true</SavedData>
 			<Columns>
 				<AdditionalColumns table="Объект.ПодписчикиПотока"/>
+				<AdditionalColumns table="Объект.ПодпискиНаВходящиеСообщения"/>
 			</Columns>
 		</Attribute>
 		<Attribute name="РедакторКода" id="16">
