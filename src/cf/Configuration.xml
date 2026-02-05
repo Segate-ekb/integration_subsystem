@@ -247,7 +247,6 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>инт_ПодсистемаИнтеграции</Subsystem>
-			<Subsystem>ИТКВ_РедакторКода</Subsystem>
 			<Subsystem>Prometheus</Subsystem>
 			<Subsystem>конс_ПодключаемаяКонсольКода</Subsystem>
 			<CommonPicture>пэмPrometheusLogo</CommonPicture>
@@ -362,7 +361,6 @@
 			<Role>инт_Администрирование</Role>
 			<Role>инт_ИзменениеДанных</Role>
 			<CommonTemplate>инт_simple_kafka</CommonTemplate>
-			<CommonTemplate>ИТКВ_РедакторКодаMonaco</CommonTemplate>
 			<CommonTemplate>пэмМетрикиИндекс</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_scrape_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_last_refresh</CommonTemplate>
@@ -402,83 +400,6 @@
 			<CommonModule>инт_РучноеУправлениеМенеджерами</CommonModule>
 			<CommonModule>инт_ЭндпоинтыКлиент</CommonModule>
 			<CommonModule>инт_ЭндпоинтыКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_БСП</CommonModule>
-			<CommonModule>ИТКВ_БСПВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_БСПКлиент</CommonModule>
-			<CommonModule>ИТКВ_БСПКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_БСПКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_БСППовтИсп</CommonModule>
-			<CommonModule>ИТКВ_БСППодключаемыеКоманды</CommonModule>
-			<CommonModule>ИТКВ_БуферОбменаКлиент</CommonModule>
-			<CommonModule>ИТКВ_ВременноеХранилище</CommonModule>
-			<CommonModule>ИТКВ_ВременноеХранилищеВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_Запрос</CommonModule>
-			<CommonModule>ИТКВ_ЗапросВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_ЗапросКлиент</CommonModule>
-			<CommonModule>ИТКВ_ЗапросКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_Код</CommonModule>
-			<CommonModule>ИТКВ_КодВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_КодКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_КонсольРазработчика</CommonModule>
-			<CommonModule>ИТКВ_КонсольРазработчикаВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_КонсольРазработчикаДанныеКлиент</CommonModule>
-			<CommonModule>ИТКВ_КонсольРазработчикаДанныеКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_КонсольРазработчикаКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_КонсольРазработчикаЭкспортДанных</CommonModule>
-			<CommonModule>ИТКВ_КонструкторЗапросов</CommonModule>
-			<CommonModule>ИТКВ_КонструкторЗапросовВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_КонструкторЗапросовКлиент</CommonModule>
-			<CommonModule>ИТКВ_КонструкторЗапросовКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_КонструкторЗапросовПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_КонструкторСКД</CommonModule>
-			<CommonModule>ИТКВ_КонструкторСКДКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_Метаданные</CommonModule>
-			<CommonModule>ИТКВ_МетаданныеВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_МетаданныеКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_МетаданныеКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_МетаданныеПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_Настройки</CommonModule>
-			<CommonModule>ИТКВ_НастройкиВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_НастройкиКлиент</CommonModule>
-			<CommonModule>ИТКВ_НастройкиКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_НастройкиКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_ОбработкаРезультата</CommonModule>
-			<CommonModule>ИТКВ_ОбработкаРезультатаКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_Общий</CommonModule>
-			<CommonModule>ИТКВ_ОбщийВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_ОбщийКлиент</CommonModule>
-			<CommonModule>ИТКВ_ОбщийКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_ОбщийКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_ОбщийПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_Перечисления</CommonModule>
-			<CommonModule>ИТКВ_ПодключениеКСерверам</CommonModule>
-			<CommonModule>ИТКВ_ПодключениеКСерверамКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_РедакторКода</CommonModule>
-			<CommonModule>ИТКВ_РедакторКодаВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_РедакторКодаКлиент</CommonModule>
-			<CommonModule>ИТКВ_РедакторКодаКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_РедакторКодаКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_РедакторКодаПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_СКД</CommonModule>
-			<CommonModule>ИТКВ_СКДВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_СКДКлиент</CommonModule>
-			<CommonModule>ИТКВ_СКДКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_Строки</CommonModule>
-			<CommonModule>ИТКВ_Типы</CommonModule>
-			<CommonModule>ИТКВ_ТипыВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_ТипыКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_ТипыПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_Туллкит</CommonModule>
-			<CommonModule>ИТКВ_ТуллкитВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_ТуллкитКлиент</CommonModule>
-			<CommonModule>ИТКВ_ТуллкитКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_ТуллкитКлиентСерверПовтИсп</CommonModule>
-			<CommonModule>ИТКВ_ФайлыКонфигурацииВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_ФайлыКонфигурацииКлиентСервер</CommonModule>
-			<CommonModule>ИТКВ_Форма</CommonModule>
-			<CommonModule>ИТКВ_ФормаВызовСервера</CommonModule>
-			<CommonModule>ИТКВ_ФормаКлиент</CommonModule>
-			<CommonModule>ИТКВ_ФормаКлиентСервер</CommonModule>
 			<CommonModule>инт_МенеджерВходящихПотоков</CommonModule>
 			<CommonModule>инт_КонсьюмерОчередей</CommonModule>
 			<CommonModule>инт_КонсьюмерОчередейПовтИсп</CommonModule>
@@ -488,6 +409,8 @@
 			<CommonModule>конс_ПодключаемаяКонсольКлиентСервер</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольПовтИсп</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольСервер</CommonModule>
+			<CommonModule>инт_ОбщегоНазначения</CommonModule>
+			<CommonModule>инт_РаботаСБезопаснымХранилищем</CommonModule>
 			<HTTPService>integration</HTTPService>
 			<HTTPService>Prometheus</HTTPService>
 			<ScheduledJob>пэмВыполнитьРасчетМетрик</ScheduledJob>
@@ -523,7 +446,6 @@
 			<Constant>инт_ИнтервалСтатистикиKafka</Constant>
 			<CommonForm>пэмНастройкиМетрик</CommonForm>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
-			<CommonForm>ИТКВ_Настройки</CommonForm>
 			<CommonForm>инт_Подписчики</CommonForm>
 			<CommonForm>конс_НастройкиПодключаемойКонсолиКода</CommonForm>
 			<Catalog>пэмМетрики</Catalog>
@@ -569,7 +491,7 @@
 			<InformationRegister>инт_ТекущийСтатусИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ТекущийСтатусРассылкиСообщений</InformationRegister>
 			<InformationRegister>инт_ХешиОбъектов</InformationRegister>
-			<InformationRegister>ИТКВ_БезопасноеХранилищеДанных</InformationRegister>
+			<InformationRegister>инт_БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>инт_АктивныеКонсьюмеры</InformationRegister>
 		</ChildObjects>
 	</Configuration>

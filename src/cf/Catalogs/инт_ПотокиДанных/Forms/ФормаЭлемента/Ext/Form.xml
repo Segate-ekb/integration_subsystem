@@ -179,6 +179,9 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="РежимОтображенияРезультатаКонтекстноеМеню" id="136"/>
 									<ExtendedTooltip name="РежимОтображенияРезультатаРасширеннаяПодсказка" id="137"/>
+									<Events>
+										<Event name="OnChange">РежимОтображенияРезультатаПриИзменении</Event>
+									</Events>
 								</InputField>
 								<Table name="СписокРеквизитовДляОтображенияРезультата" id="138">
 									<Representation>List</Representation>

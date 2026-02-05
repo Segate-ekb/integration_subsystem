@@ -210,16 +210,12 @@
 		<HTMLDocumentField name="РедакторКода" id="73">
 			<DataPath>РедакторКода</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="74">
-				<ChildItems>
-					<Button name="РедакторКодаКонтекстноеМенюНастройки" id="76">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Настройки</CommandName>
-						<ExtendedTooltip name="РедакторКодаКонтекстноеМенюНастройкиРасширеннаяПодсказка" id="77"/>
-					</Button>
-				</ChildItems>
-			</ContextMenu>
+			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="74"/>
 			<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="75"/>
+			<Events>
+				<Event name="DocumentComplete">РедакторКодаДокументСформирован</Event>
+				<Event name="OnClick">РедакторКодаПриНажатии</Event>
+			</Events>
 		</HTMLDocumentField>
 	</ChildItems>
 	<Attributes>
@@ -323,21 +319,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьПроверкуАлгоритма</Action>
-		</Command>
-		<Command name="Настройки" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>Настройки</Action>
 		</Command>
 		<Command name="ОбновитьМетрикуИзМакета" id="16">
 			<Title>
