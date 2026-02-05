@@ -249,6 +249,7 @@
 			<Subsystem>инт_ПодсистемаИнтеграции</Subsystem>
 			<Subsystem>ИТКВ_РедакторКода</Subsystem>
 			<Subsystem>Prometheus</Subsystem>
+			<Subsystem>конс_ПодключаемаяКонсольКода</Subsystem>
 			<CommonPicture>пэмPrometheusLogo</CommonPicture>
 			<CommonPicture>пэмPullGreen</CommonPicture>
 			<CommonPicture>пэмPullRed</CommonPicture>
@@ -373,6 +374,7 @@
 			<CommonTemplate>пэмМетрика_pde_oldest_pending_age</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_messages_per_minute</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_retry_count</CommonTemplate>
+			<CommonTemplate>конс_КонсольКода</CommonTemplate>
 			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
 			<CommonModule>пэмМетрикиСервер</CommonModule>
@@ -481,6 +483,11 @@
 			<CommonModule>инт_КонсьюмерОчередей</CommonModule>
 			<CommonModule>инт_КонсьюмерОчередейПовтИсп</CommonModule>
 			<CommonModule>инт_КонсьюмерОчередейСлужебный</CommonModule>
+			<CommonModule>конс_ПодключаемаяКонсольВызовСервера</CommonModule>
+			<CommonModule>конс_ПодключаемаяКонсольКлиент</CommonModule>
+			<CommonModule>конс_ПодключаемаяКонсольКлиентСервер</CommonModule>
+			<CommonModule>конс_ПодключаемаяКонсольПовтИсп</CommonModule>
+			<CommonModule>конс_ПодключаемаяКонсольСервер</CommonModule>
 			<HTTPService>integration</HTTPService>
 			<HTTPService>Prometheus</HTTPService>
 			<ScheduledJob>пэмВыполнитьРасчетМетрик</ScheduledJob>
@@ -518,6 +525,7 @@
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>ИТКВ_Настройки</CommonForm>
 			<CommonForm>инт_Подписчики</CommonForm>
+			<CommonForm>конс_НастройкиПодключаемойКонсолиКода</CommonForm>
 			<Catalog>пэмМетрики</Catalog>
 			<Catalog>инт_ПодписчикиHTTP</Catalog>
 			<Catalog>инт_ПодписчикиJRPC</Catalog>
@@ -539,6 +547,7 @@
 			<Enum>инт_ТипыПодписчиков</Enum>
 			<Enum>инт_ТипыСжатияKafka</Enum>
 			<Enum>инт_ТипыОперацийСтатистики</Enum>
+			<Enum>конс_РежимПоказаПеременных</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
 			<DataProcessor>пэм_мониторингМетрик</DataProcessor>
