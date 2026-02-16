@@ -360,7 +360,7 @@
 			<Role>пэмПолучениеМетрик</Role>
 			<Role>инт_Администрирование</Role>
 			<Role>инт_ИзменениеДанных</Role>
-			<CommonTemplate>инт_simple_kafka</CommonTemplate>
+			<CommonTemplate>конс_ВстроенныеФункцииВМ</CommonTemplate>
 			<CommonTemplate>пэмМетрикиИндекс</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_scrape_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_last_refresh</CommonTemplate>
@@ -372,8 +372,16 @@
 			<CommonTemplate>пэмМетрика_pde_oldest_pending_age</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_messages_per_minute</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_retry_count</CommonTemplate>
+			<CommonTemplate>инт_simple_kafka</CommonTemplate>
+			<CommonTemplate>конс_Грамматика</CommonTemplate>
 			<CommonTemplate>конс_КонсольКода</CommonTemplate>
-			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
+			<CommonTemplate>конс_МетодыГлобальногоКонтекста</CommonTemplate>
+			<CommonTemplate>конс_ОбработчикиОпКодовВМ</CommonTemplate>
+			<CommonTemplate>конс_СловарьТиповEn</CommonTemplate>
+			<CommonTemplate>конс_СловарьТиповRu</CommonTemplate>
+			<CommonTemplate>конс_ТаблицаПереходовЛексера</CommonTemplate>
+			<CommonTemplate>конс_ТаблицаПереходовПарсера</CommonTemplate>
+			<CommonModule>конс_АСТ_ЛексерКлиентСервер</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
 			<CommonModule>пэмМетрикиСервер</CommonModule>
 			<CommonModule>пэмМетрикиСерверПовтИсп</CommonModule>
@@ -404,13 +412,26 @@
 			<CommonModule>инт_КонсьюмерОчередей</CommonModule>
 			<CommonModule>инт_КонсьюмерОчередейПовтИсп</CommonModule>
 			<CommonModule>инт_КонсьюмерОчередейСлужебный</CommonModule>
+			<CommonModule>пэмМетрикиВызовСервера</CommonModule>
+			<CommonModule>конс_АСТ_ПарсерКлиентСервер</CommonModule>
+			<CommonModule>конс_АСТ_ПостроительКлиентСервер</CommonModule>
+			<CommonModule>конс_АСТ_ПрепроцессорКлиентСервер</CommonModule>
+			<CommonModule>конс_ВМ_ВызовСервера</CommonModule>
+			<CommonModule>инт_ОбщегоНазначения</CommonModule>
+			<CommonModule>инт_РаботаСБезопаснымХранилищем</CommonModule>
+			<CommonModule>конс_ВМ_КлиентСервер</CommonModule>
+			<CommonModule>конс_ВМ_ОпКодыКлиентСервер</CommonModule>
+			<CommonModule>конс_КомпиляцияКлиентСервер</CommonModule>
+			<CommonModule>конс_КомпиляцияСемантикаКлиентСервер</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольВызовСервера</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольКлиент</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольКлиентСервер</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольПовтИсп</CommonModule>
 			<CommonModule>конс_ПодключаемаяКонсольСервер</CommonModule>
-			<CommonModule>инт_ОбщегоНазначения</CommonModule>
-			<CommonModule>инт_РаботаСБезопаснымХранилищем</CommonModule>
+			<CommonModule>конс_ПросмотрЗначенийКлиентСервер</CommonModule>
+			<CommonModule>конс_СистемаТиповКлиентСервер</CommonModule>
+			<CommonModule>конс_ТаблицыПереходовКлиентСервер</CommonModule>
+			<CommonModule>конс_ТаблицыПереходовПовтИсп</CommonModule>
 			<HTTPService>integration</HTTPService>
 			<HTTPService>Prometheus</HTTPService>
 			<ScheduledJob>пэмВыполнитьРасчетМетрик</ScheduledJob>
@@ -448,6 +469,9 @@
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>инт_Подписчики</CommonForm>
 			<CommonForm>конс_НастройкиПодключаемойКонсолиКода</CommonForm>
+			<CommonForm>конс_ПросмотрЗначенияВыражения</CommonForm>
+			<CommonForm>конс_ПросмотрСодержимогоКоллекции</CommonForm>
+			<CommonForm>конс_Просмотрщик</CommonForm>
 			<Catalog>пэмМетрики</Catalog>
 			<Catalog>инт_ПодписчикиHTTP</Catalog>
 			<Catalog>инт_ПодписчикиJRPC</Catalog>
