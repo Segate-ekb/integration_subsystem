@@ -43,6 +43,8 @@
 	<ChildItems>
 		<Table name="Подписчики" id="5">
 			<Representation>Tree</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
 			<InitialTreeView>ExpandAllLevels</InitialTreeView>
 			<DataPath>Подписчики</DataPath>
 			<Title>
@@ -69,8 +71,6 @@
 			<AutoCommandBar name="ПодписчикиКоманднаяПанель" id="7">
 				<Visible>false</Visible>
 			</AutoCommandBar>
-			<ChangeRowSet>false</ChangeRowSet>
-			<ChangeRowOrder>false</ChangeRowOrder>
 			<ExtendedTooltip name="ПодписчикиРасширеннаяПодсказка" id="8"/>
 			<SearchStringAddition name="ПодписчикиСтрокаПоиска" id="9">
 				<AdditionSource>
