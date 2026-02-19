@@ -51,10 +51,26 @@
 					<v8:content>Подписчики</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ПодписчикиКонтекстноеМеню" id="6"/>
+			<ContextMenu name="ПодписчикиКонтекстноеМеню" id="6">
+				<ChildItems>
+					<Button name="ПодписчикиКонтекстноеМенюСоздать" id="27">
+						<Type>UsualButton</Type>
+						<CommandName>Form.Command.СоздатьПодписчика</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПодписчикиКонтекстноеМенюСоздатьРасширеннаяПодсказка" id="28"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
 			<AutoCommandBar name="ПодписчикиКоманднаяПанель" id="7">
 				<Visible>false</Visible>
 			</AutoCommandBar>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
 			<ExtendedTooltip name="ПодписчикиРасширеннаяПодсказка" id="8"/>
 			<SearchStringAddition name="ПодписчикиСтрокаПоиска" id="9">
 				<AdditionSource>
