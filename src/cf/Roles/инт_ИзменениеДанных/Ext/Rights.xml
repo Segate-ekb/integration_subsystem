@@ -122,7 +122,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ИТКВ_БезопасноеХранилищеДанных</name>
+		<name>InformationRegister.инт_БезопасноеХранилищеДанных</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -156,13 +156,6 @@
 	</object>
 	<object>
 		<name>CommonForm.инт_НастройкиОбщихПараметровИнтеграций</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Subsystem.ИТКВ_РедакторКода</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -262,13 +255,6 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>CommonForm.ИТКВ_Настройки</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

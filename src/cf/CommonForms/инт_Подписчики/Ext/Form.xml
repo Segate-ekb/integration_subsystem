@@ -43,6 +43,8 @@
 	<ChildItems>
 		<Table name="Подписчики" id="5">
 			<Representation>Tree</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
 			<InitialTreeView>ExpandAllLevels</InitialTreeView>
 			<DataPath>Подписчики</DataPath>
 			<Title>
@@ -51,7 +53,21 @@
 					<v8:content>Подписчики</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ПодписчикиКонтекстноеМеню" id="6"/>
+			<ContextMenu name="ПодписчикиКонтекстноеМеню" id="6">
+				<ChildItems>
+					<Button name="ПодписчикиКонтекстноеМенюСоздать" id="27">
+						<Type>UsualButton</Type>
+						<CommandName>Form.Command.СоздатьПодписчика</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПодписчикиКонтекстноеМенюСоздатьРасширеннаяПодсказка" id="28"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
 			<AutoCommandBar name="ПодписчикиКоманднаяПанель" id="7">
 				<Visible>false</Visible>
 			</AutoCommandBar>
