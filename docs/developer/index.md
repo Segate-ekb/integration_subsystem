@@ -21,7 +21,7 @@ outline: deep
 
 ```batch
 # 1. Клонируйте репозиторий
-git clone https://github.com/your-org/integration_subsystem.git
+git clone https://github.com/Segate-ekb/integration_subsystem.git
 cd integration_subsystem
 
 # 2. Установите пакеты OneScript

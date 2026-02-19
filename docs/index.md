@@ -16,7 +16,7 @@ hero:
       link: /concepts/
     - theme: alt
       text: GitHub
-      link: https://github.com/your-org/integration_subsystem
+      link: https://github.com/Segate-ekb/integration_subsystem
 
 features:
   - icon: 📨

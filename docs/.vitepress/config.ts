@@ -46,7 +46,9 @@ export default defineConfig({
           text: 'Практические руководства',
           items: [
             { text: 'Создание потока данных', link: '/guide/create-flow' },
-            { text: 'Настройка подписчиков', link: '/guide/configure-subscribers' }
+            { text: 'Настройка подписчиков', link: '/guide/configure-subscribers' },
+            { text: 'Настройка эндпоинтов', link: '/guide/configure-endpoints' },
+            { text: 'Обработка входящих HTTP', link: '/guide/incoming-http-processing' }
           ]
         }
       ],
@@ -57,10 +59,12 @@ export default defineConfig({
             { text: 'Обзор архитектуры', link: '/concepts/' },
             { text: 'Потоки данных', link: '/concepts/data-flows' },
             { text: 'Подписчики', link: '/concepts/subscribers' },
+            { text: 'Kafka-консьюмеры', link: '/concepts/kafka-consumers' },
             { text: 'Очереди сообщений', link: '/concepts/message-queues' },
             { text: 'Валидация', link: '/concepts/validation' },
             { text: 'Многопоточность', link: '/concepts/multithreading' },
-            { text: 'Мониторинг и метрики', link: '/concepts/monitoring' }
+            { text: 'Мониторинг и метрики', link: '/concepts/monitoring' },
+            { text: 'Управление эндпоинтами', link: '/concepts/endpoint-management' }
           ]
         }
       ],
@@ -105,7 +109,7 @@ export default defineConfig({
     
     // Social links
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-org/integration_subsystem' }
+      { icon: 'github', link: 'https://github.com/Segate-ekb/integration_subsystem' }
     ],
     
     // Last updated text

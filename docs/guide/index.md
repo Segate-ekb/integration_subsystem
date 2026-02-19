@@ -56,7 +56,8 @@ outline: deep
 | Раздел | Описание |
 |--------|----------|
 | [Создание потока](/guide/create-flow) | Пошаговое создание исходящего потока |
-| [Настройка подписчиков](/guide/configure-subscribers) | HTTP, RabbitMQ, Kafka подписчики |
+| [Настройка подписчиков](/guide/configure-subscribers) | HTTP, Kafka, JRPC, RabbitMQ подписчики |
+| [Настройка эндпоинтов](/guide/configure-endpoints) | URL, авторизация, безопасное хранение |
 | [Обработка входящих HTTP](/guide/incoming-http-processing) | Приём данных, коды ответов, обработка ошибок |
 | [Валидация](/concepts/validation) | Настройка OpenAPI-схем |
 | [Очереди сообщений](/concepts/message-queues) | Механизм очередей и статусы |
