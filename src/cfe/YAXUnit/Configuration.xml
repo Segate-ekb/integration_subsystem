@@ -93,6 +93,7 @@
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
 			<CommonModule>ОМ_инт_ВалидаторПакетов</CommonModule>
+			<CommonModule>ОМ_инт_ГенераторОбработок</CommonModule>
 			<CommonModule>ОМ_инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
 			<CommonModule>ОМ_инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>РС_инт_ОчередьВходящихСообщений_ММ</CommonModule>

@@ -381,12 +381,15 @@
 			<CommonTemplate>конс_СловарьТиповRu</CommonTemplate>
 			<CommonTemplate>конс_ТаблицаПереходовЛексера</CommonTemplate>
 			<CommonTemplate>конс_ТаблицаПереходовПарсера</CommonTemplate>
+			<CommonTemplate>инт_СтруктураВнешнейОбработки</CommonTemplate>
 			<CommonModule>конс_АСТ_ЛексерКлиентСервер</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
 			<CommonModule>пэмМетрикиСервер</CommonModule>
 			<CommonModule>пэмМетрикиСерверПовтИсп</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
+			<CommonModule>инт_ГенераторОбработок</CommonModule>
+			<CommonModule>инт_ГенераторОбработокПовтИсп</CommonModule>
 			<CommonModule>инт_ДинамическоеФормированиеИнтерфейса</CommonModule>
 			<CommonModule>инт_КоннекторHTTP</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
