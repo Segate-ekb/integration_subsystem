@@ -151,13 +151,13 @@
 									<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="49"/>
 								</LabelField>
 								<LabelField name="ДатаСоздания" id="97">
+									<DataPath>Список.ДатаСоздания</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Дата создания</v8:content>
 										</v8:item>
 									</Title>
-									<DataPath>Список.ДатаСоздания</DataPath>
 									<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="98"/>
 									<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="99"/>
 								</LabelField>

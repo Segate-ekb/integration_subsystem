@@ -475,6 +475,7 @@
 			<CommonForm>конс_ПросмотрЗначенияВыражения</CommonForm>
 			<CommonForm>конс_ПросмотрСодержимогоКоллекции</CommonForm>
 			<CommonForm>конс_Просмотрщик</CommonForm>
+			<CommonForm>инт_РедакторОбработчика</CommonForm>
 			<Catalog>пэмМетрики</Catalog>
 			<Catalog>инт_ПодписчикиHTTP</Catalog>
 			<Catalog>инт_ПодписчикиJRPC</Catalog>
