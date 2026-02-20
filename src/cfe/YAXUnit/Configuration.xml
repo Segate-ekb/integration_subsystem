@@ -104,6 +104,10 @@
 			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
+			<CommonModule>СПР_инт_ПодписчикиHTTP_ММ</CommonModule>
+			<CommonModule>СПР_инт_ПодписчикиJRPC_ММ</CommonModule>
+			<CommonModule>СПР_инт_ПодписчикиKafka_ММ</CommonModule>
+			<CommonModule>СПР_инт_ПодписчикиПодсистемаИнтеграции_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>СПР_инт_Эндпоинты_ММ</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
@@ -201,6 +205,7 @@
 			<CommonModule>ЮТТестовыеДанныеСлужебныйВызовСервера</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
+			<CommonModule>инт_ПодписчикиОбщий</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТТесты</CommonModule>
 			<CommonModule>ЮТТестыСлужебный</CommonModule>
