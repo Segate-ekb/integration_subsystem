@@ -1,6 +1,6 @@
 ﻿//©///////////////////////////////////////////////////////////////////////////©//
 //
-//  Copyright 2021-2024 BIA-Technologies Limited Liability Company
+//  Copyright 2021-2025 BIA-Technologies Limited Liability Company
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -187,7 +187,7 @@
 	
 КонецФункции
 
-Процедура ВыполнитьВыражение(Выражение, Параметры = Неопределено, Объект = Неопределено, Безопасно = Истина)
+Процедура ВыполнитьВыражение(Выражение, Параметры = Неопределено, Объект = Неопределено, Безопасно = Истина) Экспорт
 	
 	// BSLLS:ExecuteExternalCodeInCommonModule-off
 #Если ВебКлиент Тогда
@@ -266,7 +266,7 @@
 
 Функция ВерсияЗапретаИспользованияУстаревших()
 	
-	Возврат "23.01";
+	Возврат "24.05";
 	
 КонецФункции
 

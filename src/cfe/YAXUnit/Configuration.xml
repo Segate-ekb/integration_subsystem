@@ -47,7 +47,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>24.08.1</Version>
+			<Version>25.12</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -57,9 +57,10 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>ЮТДвижок</Subsystem>
+			<Subsystem>ЮТКодогенерация</Subsystem>
 			<Subsystem>ЮТПодключаемыеМодули</Subsystem>
-			<Subsystem>ЮТПубличный</Subsystem>
 			<Subsystem>инт_Тесты</Subsystem>
+			<Subsystem>ЮТПубличный</Subsystem>
 			<CommonPicture>ЮТЗапустить</CommonPicture>
 			<CommonPicture>ЮТИмпорт</CommonPicture>
 			<CommonPicture>ЮТНастройки</CommonPicture>
@@ -82,7 +83,9 @@
 			<CommonTemplate>ЮТ_СловарьПодражателя_Люди_МужскиеИмена_ru</CommonTemplate>
 			<CommonTemplate>ЮТ_СловарьПодражателя_Люди_МужскиеОтчества_ru</CommonTemplate>
 			<CommonTemplate>ЮТ_СловарьПодражателя_Люди_МужскиеФамилии_ru</CommonTemplate>
+			<CommonTemplate>ЮТMonacoEditor</CommonTemplate>
 			<CommonTemplate>ЮТRegEx1CAddin</CommonTemplate>
+			<CommonTemplate>ЮТWebSocketAddIn</CommonTemplate>
 			<CommonTemplate>ЮТYaxUnitAddIn</CommonTemplate>
 			<CommonTemplate>ЮТИнформацияОбОшибке</CommonTemplate>
 			<CommonTemplate>ЮТОписаниеМетаданных</CommonTemplate>
@@ -103,11 +106,16 @@
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>СПР_инт_Эндпоинты_ММ</CommonModule>
+			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
-			<CommonModule>ЮТДымовыеТесты</CommonModule>
 			<CommonModule>ЮТДымовыеТестыСлужебныйВызовСервера</CommonModule>
-			<CommonModule>ЮТДымовыеТестыСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ЮТВнешниеОбработкиСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТДымовыеТестыСлужебныйСервер</CommonModule>
+			<CommonModule>ЮТВнешнийЗапускТестовСлужебныйКлиент</CommonModule>
+			<CommonModule>ЮТГенераторКода</CommonModule>
+			<CommonModule>ЮТГенераторКодаСлужебныйСервер</CommonModule>
+			<CommonModule>ЮТДымовыеТесты</CommonModule>
+			<CommonModule>ЮТДымовыеТестыСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТест</CommonModule>
 			<CommonModule>ЮТЗависимости</CommonModule>
 			<CommonModule>ЮТЗависимостиСлужебный</CommonModule>
@@ -116,6 +124,7 @@
 			<CommonModule>ЮТЗапросы</CommonModule>
 			<CommonModule>ЮТЗапросыСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТЗапросыСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ЮТЗапросыСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТИсключения</CommonModule>
 			<CommonModule>ЮТИсполнительСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТИсполнительСлужебныйГлобальный</CommonModule>
@@ -128,6 +137,7 @@
 			<CommonModule>ЮТКомпонентыСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТКонструкторВариантов</CommonModule>
 			<CommonModule>ЮТКонструкторТестовыхДанныхСлужебный</CommonModule>
+			<CommonModule>ЮТКонтекст</CommonModule>
 			<CommonModule>ЮТКонтекстИсполненияСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТКонтекстСлужебный</CommonModule>
 			<CommonModule>ЮТКонтекстСлужебныйВызовСервера</CommonModule>
@@ -138,8 +148,8 @@
 			<CommonModule>ЮТЛогированиеСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТЛогИсполненияТестаСлужебный</CommonModule>
 			<CommonModule>ЮТМетаданные</CommonModule>
-			<CommonModule>ЮТМетаданныеСлужебный</CommonModule>
 			<CommonModule>ЮТМетаданныеСлужебныйВызовСервера</CommonModule>
+			<CommonModule>ЮТМетаданныеСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТМетаданныеСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ЮТМетоды</CommonModule>
 			<CommonModule>ЮТМетодыСлужебный</CommonModule>
@@ -170,20 +180,27 @@
 			<CommonModule>ЮТПредикатыСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТПреобразованияСлужебный</CommonModule>
 			<CommonModule>ЮТПроверкиСлужебный</CommonModule>
+			<CommonModule>ЮТРаботаСТекстом</CommonModule>
 			<CommonModule>ЮТРазрешениеЗависимостейСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТРазрешениеЗависимостейСлужебныйКлиент</CommonModule>
+			<CommonModule>ЮТРеактивныйКлиент</CommonModule>
+			<CommonModule>ЮТРеактивныйСервер</CommonModule>
 			<CommonModule>ЮТРегистрацияОшибок</CommonModule>
 			<CommonModule>ЮТРегистрацияОшибокСлужебный</CommonModule>
 			<CommonModule>ЮТСлужебныйПовторногоИспользования</CommonModule>
 			<CommonModule>ЮТСобытияСлужебный</CommonModule>
 			<CommonModule>ЮТСообщенияСлужебный</CommonModule>
+			<CommonModule>ЮТСостояниеИсполненияТестовСлужебный</CommonModule>
 			<CommonModule>ЮТСравнениеСлужебныйВызовСервера</CommonModule>
 			<CommonModule>ЮТСравнениеСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ЮТСравнениеСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТСтроки</CommonModule>
 			<CommonModule>ЮТТестовыеДанные</CommonModule>
+			<CommonModule>ЮТТестовыеДанныеПереопределяемый</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебный</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйВызовСервера</CommonModule>
+			<CommonModule>инт_ВалидаторПакетов</CommonModule>
+			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТТесты</CommonModule>
 			<CommonModule>ЮТТестыСлужебный</CommonModule>
@@ -196,14 +213,24 @@
 			<CommonModule>ЮТФильтрацияСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
-			<CommonModule>инт_ВалидаторПакетов</CommonModule>
-			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
+			<CommonModule>ЮТЧитательСлужебныйКлиент</CommonModule>
 			<Catalog>инт_ПотокиДанных</Catalog>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
+			<DataProcessor>ЮТHTTPОтвет</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
+			<DataProcessor>ЮТHTTPСоединение</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
+			<DataProcessor>ЮТГенераторКода</DataProcessor>
+			<DataProcessor>ЮТГенераторКодаТестовыхДанных</DataProcessor>
+			<DataProcessor>ЮТКонструкторДвижений</DataProcessor>
 			<DataProcessor>ЮТКонструкторОбъектаXDTO</DataProcessor>
+			<DataProcessor>ЮТКонструкторТекста</DataProcessor>
 			<DataProcessor>ЮТКонструкторТестовыхДанных</DataProcessor>
+			<DataProcessor>ЮТПомощникДляСозданияТестовыхДанных</DataProcessor>
+			<DataProcessor>ЮТРедакторМакетаСТестовымиДанными</DataProcessor>
+			<DataProcessor>ЮТРедакторОбработки</DataProcessor>
+			<DataProcessor>ЮТРедакторТестов</DataProcessor>
+			<DataProcessor>ЮТСообщениеСервисаИнтеграции</DataProcessor>
 			<DataProcessor>ЮТЮнитТесты</DataProcessor>
 			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
