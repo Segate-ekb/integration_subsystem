@@ -381,7 +381,6 @@
 			<CommonTemplate>конс_СловарьТиповRu</CommonTemplate>
 			<CommonTemplate>конс_ТаблицаПереходовЛексера</CommonTemplate>
 			<CommonTemplate>конс_ТаблицаПереходовПарсера</CommonTemplate>
-			<CommonTemplate>инт_СтруктураВнешнейОбработки</CommonTemplate>
 			<CommonModule>конс_АСТ_ЛексерКлиентСервер</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
 			<CommonModule>пэмМетрикиСервер</CommonModule>
@@ -500,6 +499,7 @@
 			<Enum>конс_РежимПоказаПеременных</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
+			<DataProcessor>инт_РедакторОбработки</DataProcessor>
 			<DataProcessor>пэм_мониторингМетрик</DataProcessor>
 			<DataProcessor>инт_ручнойЗапускМенеджеровПотоков</DataProcessor>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>
