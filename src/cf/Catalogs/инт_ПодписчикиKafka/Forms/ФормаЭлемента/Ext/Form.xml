@@ -669,18 +669,6 @@
 							<Collapsed>true</Collapsed>
 							<ExtendedTooltip name="ГруппаОффсетыРасширеннаяПодсказка" id="311"/>
 							<ChildItems>
-								<InputField name="ИмяГруппыКонсьюмеров" id="312">
-									<DataPath>ИмяГруппыКонсьюмеров</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Consumer Group</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ИмяГруппыКонсьюмеровКонтекстноеМеню" id="313"/>
-									<ExtendedTooltip name="ИмяГруппыКонсьюмеровРасширеннаяПодсказка" id="314"/>
-								</InputField>
 								<Table name="Оффсеты" id="315">
 									<Height>6</Height>
 									<DataPath>Оффсеты</DataPath>
@@ -739,6 +727,12 @@
 										<InputField name="ОффсетыНомерПартиции" id="336">
 											<DataPath>Оффсеты.НомерПартиции</DataPath>
 											<ReadOnly>true</ReadOnly>
+											<Format>
+												<v8:item xmlns:v8="http://v8.1c.ru/8.1/data/core">
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧН=0</v8:content>
+												</v8:item>
+											</Format>
 											<ContextMenu name="ОффсетыНомерПартицииКонтекстноеМеню" id="337"/>
 											<ExtendedTooltip name="ОффсетыНомерПартицииРасширеннаяПодсказка" id="338"/>
 										</InputField>
@@ -1171,21 +1165,6 @@
 					</Type>
 				</Column>
 			</Columns>
-		</Attribute>
-		<Attribute name="ИмяГруппыКонсьюмеров" id="230">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Consumer Group</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>255</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
 		</Attribute>
 		<Attribute name="Оффсеты" id="240">
 			<Title>
