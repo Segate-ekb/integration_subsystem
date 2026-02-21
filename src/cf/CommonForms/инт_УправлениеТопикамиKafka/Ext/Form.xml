@@ -1,0 +1,1390 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление топиками Kafka</v8:content>
+		</v8:item>
+	</Title>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаТестПодключения" id="1">
+				<Type>UsualButton</Type>
+				<CommandName>Form.Command.ТестПодключения</CommandName>
+				<ExtendedTooltip name="ФормаТестПодключенияРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаОбновитьИнформацию" id="3">
+				<Type>UsualButton</Type>
+				<CommandName>Form.Command.ОбновитьИнформацию</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьИнформациюРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Эндпоинт" id="5">
+			<DataPath>Эндпоинт</DataPath>
+			<ContextMenu name="ЭндпоинтКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ЭндпоинтРасширеннаяПодсказка" id="7"/>
+			<Events>
+				<Event name="OnChange">ЭндпоинтПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="Страницы" id="8">
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<Page name="СтраницаУправлениеТопиком" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление топиком</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаУправлениеТопикомРасширеннаяПодсказка" id="11"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОсновнойТопик" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основной топик</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаОсновнойТопикРасширеннаяПодсказка" id="13"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИмяТопикаИСтатус" id="14">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИмяТопикаИСтатусРасширеннаяПодсказка" id="15"/>
+									<ChildItems>
+										<InputField name="ИмяТопика" id="16">
+											<DataPath>ИмяТопика</DataPath>
+											<ContextMenu name="ИмяТопикаКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ИмяТопикаРасширеннаяПодсказка" id="18"/>
+											<Events>
+												<Event name="OnChange">ИмяТопикаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаСтатусТопика" id="19">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтатусТопикаРасширеннаяПодсказка" id="20"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаСтатусТопика" id="21">
+													<Width>2</Width>
+													<Height>1</Height>
+													<PictureSize>AutoSize</PictureSize>
+													<ContextMenu name="КартинкаСтатусТопикаКонтекстноеМеню" id="22"/>
+													<ExtendedTooltip name="КартинкаСтатусТопикаРасширеннаяПодсказка" id="23"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияСтатусТопика" id="24">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Не проверено</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСтатусТопикаКонтекстноеМеню" id="25"/>
+													<ExtendedTooltip name="ДекорацияСтатусТопикаРасширеннаяПодсказка" id="26"/>
+												</LabelDecoration>
+												<Button name="ФормаПроверитьТопик" id="27">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПроверитьТопик</CommandName>
+													<ExtendedTooltip name="ФормаПроверитьТопикРасширеннаяПодсказка" id="28"/>
+												</Button>
+												<Button name="ФормаСоздатьТопик" id="29">
+													<Type>UsualButton</Type>
+													<Visible>false</Visible>
+													<CommandName>Form.Command.СоздатьТопик</CommandName>
+													<ExtendedTooltip name="ФормаСоздатьТопикРасширеннаяПодсказка" id="30"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСозданиеТопика" id="31">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры создания топика</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ГруппаСозданиеТопикаРасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<InputField name="КоличествоПартиций" id="33">
+											<DataPath>КоличествоПартиций</DataPath>
+											<ContextMenu name="КоличествоПартицийКонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="КоличествоПартицийРасширеннаяПодсказка" id="35"/>
+										</InputField>
+										<InputField name="ФакторРепликации" id="36">
+											<DataPath>ФакторРепликации</DataPath>
+											<ContextMenu name="ФакторРепликацииКонтекстноеМеню" id="37"/>
+											<ExtendedTooltip name="ФакторРепликацииРасширеннаяПодсказка" id="38"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметрыТопика" id="39">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки топика (из Kafka)</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<Collapsed>true</Collapsed>
+									<ExtendedTooltip name="ГруппаПараметрыТопикаРасширеннаяПодсказка" id="40"/>
+									<ChildItems>
+										<Table name="НастройкиТопика" id="41">
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<Height>8</Height>
+											<DataPath>НастройкиТопика</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="НастройкиТопикаКонтекстноеМеню" id="42"/>
+											<AutoCommandBar name="НастройкиТопикаКоманднаяПанель" id="43">
+												<ChildItems>
+													<Button name="ФормаСохранитьНастройкиТопика" id="44">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СохранитьНастройкиТопика</CommandName>
+														<ExtendedTooltip name="ФормаСохранитьНастройкиТопикаРасширеннаяПодсказка" id="45"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="НастройкиТопикаРасширеннаяПодсказка" id="46"/>
+											<SearchStringAddition name="НастройкиТопикаСтрокаПоиска" id="47">
+												<AdditionSource>
+													<Item>НастройкиТопика</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="НастройкиТопикаСтрокаПоискаКонтекстноеМеню" id="48"/>
+												<ExtendedTooltip name="НастройкиТопикаСтрокаПоискаРасширеннаяПодсказка" id="49"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="НастройкиТопикаСостояниеПросмотра" id="50">
+												<AdditionSource>
+													<Item>НастройкиТопика</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="НастройкиТопикаСостояниеПросмотраКонтекстноеМеню" id="51"/>
+												<ExtendedTooltip name="НастройкиТопикаСостояниеПросмотраРасширеннаяПодсказка" id="52"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="НастройкиТопикаУправлениеПоиском" id="53">
+												<AdditionSource>
+													<Item>НастройкиТопика</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="НастройкиТопикаУправлениеПоискомКонтекстноеМеню" id="54"/>
+												<ExtendedTooltip name="НастройкиТопикаУправлениеПоискомРасширеннаяПодсказка" id="55"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="НастройкиТопикаКлючНастройки" id="56">
+													<DataPath>НастройкиТопика.КлючНастройки</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Width>30</Width>
+													<ContextMenu name="НастройкиТопикаКлючНастройкиКонтекстноеМеню" id="57"/>
+													<ExtendedTooltip name="НастройкиТопикаКлючНастройкиРасширеннаяПодсказка" id="58"/>
+												</InputField>
+												<InputField name="НастройкиТопикаЗначениеНастройки" id="59">
+													<DataPath>НастройкиТопика.ЗначениеНастройки</DataPath>
+													<Width>30</Width>
+													<ContextMenu name="НастройкиТопикаЗначениеНастройкиКонтекстноеМеню" id="60"/>
+													<ExtendedTooltip name="НастройкиТопикаЗначениеНастройкиРасширеннаяПодсказка" id="61"/>
+													<Events>
+														<Event name="OnChange">НастройкиТопикаЗначениеНастройкиПриИзменении</Event>
+													</Events>
+												</InputField>
+												<CheckBoxField name="НастройкиТопикаИзменено" id="62">
+													<DataPath>НастройкиТопика.Изменено</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="НастройкиТопикаИзмененоКонтекстноеМеню" id="63"/>
+													<ExtendedTooltip name="НастройкиТопикаИзмененоРасширеннаяПодсказка" id="64"/>
+												</CheckBoxField>
+												<InputField name="НастройкиТопикаИсходноеЗначение" id="65">
+													<DataPath>НастройкиТопика.ИсходноеЗначение</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Width>30</Width>
+													<ContextMenu name="НастройкиТопикаИсходноеЗначениеКонтекстноеМеню" id="66"/>
+													<ExtendedTooltip name="НастройкиТопикаИсходноеЗначениеРасширеннаяПодсказка" id="67"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаDLQ" id="68">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>DLQ топик</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="ГруппаDLQРасширеннаяПодсказка" id="69"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИмяDLQИСтатус" id="70">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИмяDLQИСтатусРасширеннаяПодсказка" id="71"/>
+									<ChildItems>
+										<InputField name="ИмяDLQТопика" id="72">
+											<DataPath>ИмяDLQТопика</DataPath>
+											<ContextMenu name="ИмяDLQТопикаКонтекстноеМеню" id="73"/>
+											<ExtendedTooltip name="ИмяDLQТопикаРасширеннаяПодсказка" id="74"/>
+											<Events>
+												<Event name="OnChange">ИмяDLQТопикаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<UsualGroup name="ГруппаСтатусDLQ" id="75">
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтатусDLQРасширеннаяПодсказка" id="76"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаСтатусDLQ" id="77">
+													<Width>2</Width>
+													<Height>1</Height>
+													<PictureSize>AutoSize</PictureSize>
+													<ContextMenu name="КартинкаСтатусDLQКонтекстноеМеню" id="78"/>
+													<ExtendedTooltip name="КартинкаСтатусDLQРасширеннаяПодсказка" id="79"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияСтатусDLQ" id="80">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Не проверено</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСтатусDLQКонтекстноеМеню" id="81"/>
+													<ExtendedTooltip name="ДекорацияСтатусDLQРасширеннаяПодсказка" id="82"/>
+												</LabelDecoration>
+												<Button name="ФормаПроверитьDLQ" id="83">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПроверитьDLQ</CommandName>
+													<ExtendedTooltip name="ФормаПроверитьDLQРасширеннаяПодсказка" id="84"/>
+												</Button>
+												<Button name="ФормаСоздатьDLQ" id="85">
+													<Type>UsualButton</Type>
+													<Visible>false</Visible>
+													<CommandName>Form.Command.СоздатьDLQ</CommandName>
+													<ExtendedTooltip name="ФормаСоздатьDLQРасширеннаяПодсказка" id="86"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСозданиеDLQ" id="87">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Параметры создания DLQ</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<ExtendedTooltip name="ГруппаСозданиеDLQРасширеннаяПодсказка" id="88"/>
+									<ChildItems>
+										<InputField name="КоличествоПартицийDLQ" id="89">
+											<DataPath>КоличествоПартицийDLQ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество партиций</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="КоличествоПартицийDLQКонтекстноеМеню" id="90"/>
+											<ExtendedTooltip name="КоличествоПартицийDLQРасширеннаяПодсказка" id="91"/>
+										</InputField>
+										<InputField name="ФакторРепликацииDLQ" id="92">
+											<DataPath>ФакторРепликацииDLQ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Фактор репликации</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ФакторРепликацииDLQКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="ФакторРепликацииDLQРасширеннаяПодсказка" id="94"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПараметрыDLQ" id="95">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройки DLQ (из Kafka)</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<Collapsed>true</Collapsed>
+									<ExtendedTooltip name="ГруппаПараметрыDLQРасширеннаяПодсказка" id="96"/>
+									<ChildItems>
+										<Table name="НастройкиDLQ" id="97">
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<Height>8</Height>
+											<DataPath>НастройкиDLQ</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="НастройкиDLQКонтекстноеМеню" id="98"/>
+											<AutoCommandBar name="НастройкиDLQКоманднаяПанель" id="99">
+												<ChildItems>
+													<Button name="ФормаСохранитьНастройкиDLQ" id="100">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СохранитьНастройкиDLQ</CommandName>
+														<ExtendedTooltip name="ФормаСохранитьНастройкиDLQРасширеннаяПодсказка" id="101"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="НастройкиDLQРасширеннаяПодсказка" id="102"/>
+											<SearchStringAddition name="НастройкиDLQСтрокаПоиска" id="103">
+												<AdditionSource>
+													<Item>НастройкиDLQ</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="НастройкиDLQСтрокаПоискаКонтекстноеМеню" id="104"/>
+												<ExtendedTooltip name="НастройкиDLQСтрокаПоискаРасширеннаяПодсказка" id="105"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="НастройкиDLQСостояниеПросмотра" id="106">
+												<AdditionSource>
+													<Item>НастройкиDLQ</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="НастройкиDLQСостояниеПросмотраКонтекстноеМеню" id="107"/>
+												<ExtendedTooltip name="НастройкиDLQСостояниеПросмотраРасширеннаяПодсказка" id="108"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="НастройкиDLQУправлениеПоиском" id="109">
+												<AdditionSource>
+													<Item>НастройкиDLQ</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="НастройкиDLQУправлениеПоискомКонтекстноеМеню" id="110"/>
+												<ExtendedTooltip name="НастройкиDLQУправлениеПоискомРасширеннаяПодсказка" id="111"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="НастройкиDLQКлючНастройки" id="112">
+													<DataPath>НастройкиDLQ.КлючНастройки</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Width>30</Width>
+													<ContextMenu name="НастройкиDLQКлючНастройкиКонтекстноеМеню" id="113"/>
+													<ExtendedTooltip name="НастройкиDLQКлючНастройкиРасширеннаяПодсказка" id="114"/>
+												</InputField>
+												<InputField name="НастройкиDLQЗначениеНастройки" id="115">
+													<DataPath>НастройкиDLQ.ЗначениеНастройки</DataPath>
+													<Width>30</Width>
+													<ContextMenu name="НастройкиDLQЗначениеНастройкиКонтекстноеМеню" id="116"/>
+													<ExtendedTooltip name="НастройкиDLQЗначениеНастройкиРасширеннаяПодсказка" id="117"/>
+													<Events>
+														<Event name="OnChange">НастройкиDLQЗначениеНастройкиПриИзменении</Event>
+													</Events>
+												</InputField>
+												<CheckBoxField name="НастройкиDLQИзменено" id="118">
+													<DataPath>НастройкиDLQ.Изменено</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<TitleLocation>None</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="НастройкиDLQИзмененоКонтекстноеМеню" id="119"/>
+													<ExtendedTooltip name="НастройкиDLQИзмененоРасширеннаяПодсказка" id="120"/>
+												</CheckBoxField>
+												<InputField name="НастройкиDLQИсходноеЗначение" id="121">
+													<DataPath>НастройкиDLQ.ИсходноеЗначение</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Width>30</Width>
+													<ContextMenu name="НастройкиDLQИсходноеЗначениеКонтекстноеМеню" id="122"/>
+													<ExtendedTooltip name="НастройкиDLQИсходноеЗначениеРасширеннаяПодсказка" id="123"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПартиции" id="124">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Партиции</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="ГруппаПартицииРасширеннаяПодсказка" id="125"/>
+							<ChildItems>
+								<Table name="Партиции" id="126">
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Height>6</Height>
+									<DataPath>Партиции</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПартицииКонтекстноеМеню" id="127"/>
+									<AutoCommandBar name="ПартицииКоманднаяПанель" id="128">
+										<Visible>false</Visible>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПартицииРасширеннаяПодсказка" id="129"/>
+									<SearchStringAddition name="ПартицииСтрокаПоиска" id="130">
+										<AdditionSource>
+											<Item>Партиции</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПартицииСтрокаПоискаКонтекстноеМеню" id="131"/>
+										<ExtendedTooltip name="ПартицииСтрокаПоискаРасширеннаяПодсказка" id="132"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПартицииСостояниеПросмотра" id="133">
+										<AdditionSource>
+											<Item>Партиции</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПартицииСостояниеПросмотраКонтекстноеМеню" id="134"/>
+										<ExtendedTooltip name="ПартицииСостояниеПросмотраРасширеннаяПодсказка" id="135"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПартицииУправлениеПоиском" id="136">
+										<AdditionSource>
+											<Item>Партиции</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПартицииУправлениеПоискомКонтекстноеМеню" id="137"/>
+										<ExtendedTooltip name="ПартицииУправлениеПоискомРасширеннаяПодсказка" id="138"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ПартицииНомерПартиции" id="139">
+											<DataPath>Партиции.НомерПартиции</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ContextMenu name="ПартицииНомерПартицииКонтекстноеМеню" id="140"/>
+											<ExtendedTooltip name="ПартицииНомерПартицииРасширеннаяПодсказка" id="141"/>
+										</InputField>
+										<InputField name="ПартицииЛидер" id="142">
+											<DataPath>Партиции.Лидер</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ContextMenu name="ПартицииЛидерКонтекстноеМеню" id="143"/>
+											<ExtendedTooltip name="ПартицииЛидерРасширеннаяПодсказка" id="144"/>
+										</InputField>
+										<InputField name="ПартицииHighWatermark" id="145">
+											<DataPath>Партиции.HighWatermark</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>High WM</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПартицииHighWatermarkКонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ПартицииHighWatermarkРасширеннаяПодсказка" id="147"/>
+										</InputField>
+										<InputField name="ПартицииLowWatermark" id="148">
+											<DataPath>Партиции.LowWatermark</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Low WM</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПартицииLowWatermarkКонтекстноеМеню" id="149"/>
+											<ExtendedTooltip name="ПартицииLowWatermarkРасширеннаяПодсказка" id="150"/>
+										</InputField>
+										<InputField name="ПартицииКоличествоСообщений" id="151">
+											<DataPath>Партиции.КоличествоСообщений</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сообщений</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПартицииКоличествоСообщенийКонтекстноеМеню" id="152"/>
+											<ExtendedTooltip name="ПартицииКоличествоСообщенийРасширеннаяПодсказка" id="153"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКонсьюмерыОффсеты" id="154">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Консьюмеры и оффсеты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаКонсьюмерыОффсетыРасширеннаяПодсказка" id="155"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВыборКонсьюмера" id="156">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВыборКонсьюмераРасширеннаяПодсказка" id="157"/>
+							<ChildItems>
+								<InputField name="ИмяГруппыКонсьюмеров" id="158">
+									<DataPath>ИмяГруппыКонсьюмеров</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Consumer Group</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИмяГруппыКонсьюмеровКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ИмяГруппыКонсьюмеровРасширеннаяПодсказка" id="160"/>
+								</InputField>
+								<Button name="ФормаЗагрузитьОффсеты" id="161">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьОффсеты</CommandName>
+									<ExtendedTooltip name="ФормаЗагрузитьОффсетыРасширеннаяПодсказка" id="162"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОффсеты" id="163">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оффсеты</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаОффсетыРасширеннаяПодсказка" id="164"/>
+							<ChildItems>
+								<Table name="Оффсеты" id="165">
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<Height>8</Height>
+									<DataPath>Оффсеты</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ОффсетыКонтекстноеМеню" id="166"/>
+									<AutoCommandBar name="ОффсетыКоманднаяПанель" id="167">
+										<ChildItems>
+											<Button name="ФормаНаНачало" id="168">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.НаНачало</CommandName>
+												<ExtendedTooltip name="ФормаНаНачалоРасширеннаяПодсказка" id="169"/>
+											</Button>
+											<Button name="ФормаНаКонец" id="170">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.НаКонец</CommandName>
+												<ExtendedTooltip name="ФормаНаКонецРасширеннаяПодсказка" id="171"/>
+											</Button>
+											<Button name="ФормаПрименитьОффсеты" id="172">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПрименитьОффсеты</CommandName>
+												<ExtendedTooltip name="ФормаПрименитьОффсетыРасширеннаяПодсказка" id="173"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ОффсетыРасширеннаяПодсказка" id="174"/>
+									<SearchStringAddition name="ОффсетыСтрокаПоиска" id="175">
+										<AdditionSource>
+											<Item>Оффсеты</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ОффсетыСтрокаПоискаКонтекстноеМеню" id="176"/>
+										<ExtendedTooltip name="ОффсетыСтрокаПоискаРасширеннаяПодсказка" id="177"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ОффсетыСостояниеПросмотра" id="178">
+										<AdditionSource>
+											<Item>Оффсеты</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ОффсетыСостояниеПросмотраКонтекстноеМеню" id="179"/>
+										<ExtendedTooltip name="ОффсетыСостояниеПросмотраРасширеннаяПодсказка" id="180"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ОффсетыУправлениеПоиском" id="181">
+										<AdditionSource>
+											<Item>Оффсеты</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ОффсетыУправлениеПоискомКонтекстноеМеню" id="182"/>
+										<ExtendedTooltip name="ОффсетыУправлениеПоискомРасширеннаяПодсказка" id="183"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ОффсетыНомерПартиции" id="184">
+											<DataPath>Оффсеты.НомерПартиции</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Партиция</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОффсетыНомерПартицииКонтекстноеМеню" id="185"/>
+											<ExtendedTooltip name="ОффсетыНомерПартицииРасширеннаяПодсказка" id="186"/>
+										</InputField>
+										<InputField name="ОффсетыТекущийОффсет" id="187">
+											<DataPath>Оффсеты.ТекущийОффсет</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текущий оффсет</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОффсетыТекущийОффсетКонтекстноеМеню" id="188"/>
+											<ExtendedTooltip name="ОффсетыТекущийОффсетРасширеннаяПодсказка" id="189"/>
+										</InputField>
+										<InputField name="ОффсетыHighWatermark" id="190">
+											<DataPath>Оффсеты.HighWatermark</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>High WM</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОффсетыHighWatermarkКонтекстноеМеню" id="191"/>
+											<ExtendedTooltip name="ОффсетыHighWatermarkРасширеннаяПодсказка" id="192"/>
+										</InputField>
+										<InputField name="ОффсетыЛаг" id="193">
+											<DataPath>Оффсеты.Лаг</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Lag</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОффсетыЛагКонтекстноеМеню" id="194"/>
+											<ExtendedTooltip name="ОффсетыЛагРасширеннаяПодсказка" id="195"/>
+										</InputField>
+										<InputField name="ОффсетыНовыйОффсет" id="196">
+											<DataPath>Оффсеты.НовыйОффсет</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Новый оффсет</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОффсетыНовыйОффсетКонтекстноеМеню" id="197"/>
+											<ExtendedTooltip name="ОффсетыНовыйОффсетРасширеннаяПодсказка" id="198"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Эндпоинт" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Эндпоинт (брокер Kafka)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.инт_Эндпоинты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяТопика" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя топика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусТопика" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус топика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнформацияОТопике" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о топике</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПартиций" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество партиций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФакторРепликации" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактор репликации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиТопика" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки топика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КлючНастройки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗначениеНастройки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменено" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсходноеЗначение" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходное значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмяDLQТопика" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя DLQ топика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусDLQТопика" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус DLQ топика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнформацияОDLQТопике" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о DLQ топике</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПартицийDLQ" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество партиций DLQ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФакторРепликацииDLQ" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактор репликации DLQ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиDLQ" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки DLQ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КлючНастройки" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗначениеНастройки" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменено" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсходноеЗначение" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исходное значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1024</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Партиции" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партиции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерПартиции" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партиция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Лидер" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лидер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="HighWatermark" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>High Watermark</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="LowWatermark" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Low Watermark</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоСообщений" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщений</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИмяГруппыКонсьюмеров" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Consumer Group</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Оффсеты" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оффсеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерПартиции" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партиция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТекущийОффсет" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущий оффсет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="HighWatermark" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>High Watermark</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Лаг" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Lag</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НовыйОффсет" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новый оффсет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ТестПодключения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест подключения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка доступности брокера Kafka</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТестПодключения</Action>
+		</Command>
+		<Command name="ОбновитьИнформацию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить информацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить статус топика, партиций и настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьИнформацию</Action>
+		</Command>
+		<Command name="ПроверитьТопик" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить существование основного топика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьТопик</Action>
+		</Command>
+		<Command name="СоздатьТопик" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать топик</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать основной топик в Kafka</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТопик</Action>
+		</Command>
+		<Command name="СохранитьНастройкиТопика" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки топика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить изменённые настройки топика в Kafka</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройкиТопика</Action>
+		</Command>
+		<Command name="ПроверитьDLQ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить существование DLQ топика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьDLQ</Action>
+		</Command>
+		<Command name="СоздатьDLQ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать DLQ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать DLQ топик в Kafka</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьDLQ</Action>
+		</Command>
+		<Command name="СохранитьНастройкиDLQ" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки DLQ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить изменённые настройки DLQ топика в Kafka</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройкиDLQ</Action>
+		</Command>
+		<Command name="ЗагрузитьОффсеты" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить оффсеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить оффсеты для выбранной consumer group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьОффсеты</Action>
+		</Command>
+		<Command name="НаНачало" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На начало</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемотать оффсеты всех партиций на начало</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НаНачало</Action>
+		</Command>
+		<Command name="НаКонец" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На конец</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перемотать оффсеты всех партиций на конец</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НаКонец</Action>
+		</Command>
+		<Command name="ПрименитьОффсеты" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить оффсеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить новые оффсеты из колонки «Новый оффсет»</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрименитьОффсеты</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Эндпоинт">
+			<Type>
+				<v8:Type>cfg:CatalogRef.инт_Эндпоинты</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ИмяТопика">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ИмяDLQТопика">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>255</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>
