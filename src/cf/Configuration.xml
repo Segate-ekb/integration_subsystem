@@ -369,6 +369,7 @@
 			<CommonTemplate>пэмМетрика_pde_formation_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_send_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_incoming_duration</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_sync_incoming_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_oldest_pending_age</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_messages_per_minute</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_retry_count</CommonTemplate>

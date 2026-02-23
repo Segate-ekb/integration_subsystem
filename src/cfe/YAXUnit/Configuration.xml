@@ -242,6 +242,7 @@
 			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
+			<InformationRegister>инт_СтатистикаОбработкиСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
