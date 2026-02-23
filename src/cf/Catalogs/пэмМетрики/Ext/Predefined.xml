@@ -18,4 +18,52 @@
 		<Description/>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000001">
+		<Name>pde_error_count</Name>
+		<Code>pde_error_count</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000002">
+		<Name>pde_formation_duration_seconds</Name>
+		<Code>pde_formation_duration_seconds</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000003">
+		<Name>pde_send_duration_seconds</Name>
+		<Code>pde_send_duration_seconds</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000004">
+		<Name>pde_incoming_duration_seconds</Name>
+		<Code>pde_incoming_duration_seconds</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000005">
+		<Name>pde_oldest_pending_age_seconds</Name>
+		<Code>pde_oldest_pending_age_seconds</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000008">
+		<Name>pde_sync_incoming_duration_seconds</Name>
+		<Code>pde_sync_incoming_duration_seconds</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000006">
+		<Name>pde_messages_per_minute</Name>
+		<Code>pde_messages_per_minute</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000007">
+		<Name>pde_retry_count</Name>
+		<Code>pde_retry_count</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

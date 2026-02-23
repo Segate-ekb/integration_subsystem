@@ -113,7 +113,6 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ExtendedTooltip name="ГруппаПараметрыЗапускаРасширеннаяПодсказка" id="44"/>
 			<ChildItems>
@@ -148,7 +147,6 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<ThroughAlign>Use</ThroughAlign>
 					<ExtendedTooltip name="ГруппаОтчетыРасширеннаяПодсказка" id="76"/>
 					<ChildItems>
@@ -185,7 +183,6 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПараметрыЗапускаСтрока1РасширеннаяПодсказка" id="95"/>
@@ -198,7 +195,6 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<ThroughAlign>Use</ThroughAlign>
 							<ExtendedTooltip name="ГруппаЛогированиеРасширеннаяПодсказка" id="91"/>
 							<ChildItems>
@@ -236,7 +232,6 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="93"/>
 							<ChildItems>
 								<CheckBoxField name="ЗакрытьПослеТестирования" id="103">
@@ -268,7 +263,6 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаНастройкиЗапуска" id="53">
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНастройкиЗапускаРасширеннаяПодсказка" id="54"/>

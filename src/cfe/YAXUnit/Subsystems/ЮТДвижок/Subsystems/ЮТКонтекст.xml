@@ -21,6 +21,7 @@
 			</Explanation>
 			<Picture/>
 			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТКонтекст</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТКонтекстСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТКонтекстСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТКонтекстСлужебныйКлиент</xr:Item>

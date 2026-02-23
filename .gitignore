@@ -3,6 +3,11 @@ env.json
 build/
 allure-report/
 oscript_modules/
+node_modules/
+
+# VitePress
+docs/.vitepress/cache/
+docs/.vitepress/dist/
 
 ConfigDumpInfo.xml
 lastUploadedCommit.txt
@@ -12,3 +17,4 @@ out
 .scannerwork
 .sonarlint/
 .idea/
+examples/

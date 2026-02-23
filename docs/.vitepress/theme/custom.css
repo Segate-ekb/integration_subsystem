@@ -1,0 +1,66 @@
+/* Подсветка синтаксиса для 1С (BSL) */
+:root {
+  --vp-c-brand-1: #5a67d8;
+  --vp-c-brand-2: #667eea;
+  --vp-c-brand-3: #7c3aed;
+}
+
+.dark {
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #a78bfa;
+}
+
+/* Стили для блоков кода BSL */
+.vp-doc div[class*='language-bsl'] {
+  background-color: var(--vp-code-block-bg);
+}
+
+/* Улучшенные стили для таблиц */
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vp-doc table th,
+.vp-doc table td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 8px 12px;
+}
+
+.vp-doc table th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+/* Стили для блок-схем mermaid */
+.mermaid {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Стили для заметок и предупреждений */
+.custom-block.info {
+  border-color: var(--vp-c-brand-1);
+}
+
+.custom-block.tip {
+  border-color: #10b981;
+}
+
+.custom-block.warning {
+  border-color: #f59e0b;
+}
+
+.custom-block.danger {
+  border-color: #ef4444;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 640px) {
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+  }
+}

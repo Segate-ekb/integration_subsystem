@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Очередь исходящих сообщений</v8:content>
+		</v8:item>
+	</Title>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -143,6 +149,17 @@
 									<DataPath>Список.КоличествоПопыток</DataPath>
 									<ContextMenu name="КоличествоПопытокКонтекстноеМеню" id="48"/>
 									<ExtendedTooltip name="КоличествоПопытокРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+								<LabelField name="ДатаСоздания" id="97">
+									<DataPath>Список.ДатаСоздания</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата создания</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="99"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
@@ -306,11 +323,21 @@
 	РегистрСведенийинт_ОчередьИсходящихСообщений.ПотокДанных КАК ПотокДанных,
 	инт_ТекущийСтатусИсходящихСообщений.СтатусСообщения КАК СтатусСообщения,
 	инт_ТекущийСтатусИсходящихСообщений.КоличествоПопыток КАК КоличествоПопыток,
-	инт_ТекущийСтатусИсходящихСообщений.ТекстОшибки КАК ТекстОшибки
+	инт_ТекущийСтатусИсходящихСообщений.ТекстОшибки КАК ТекстОшибки,
+	ДатыСоздания.ДатаСоздания КАК ДатаСоздания
 ИЗ
 	РегистрСведений.инт_ОчередьИсходящихСообщений КАК РегистрСведенийинт_ОчередьИсходящихСообщений
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.инт_ТекущийСтатусИсходящихСообщений КАК инт_ТекущийСтатусИсходящихСообщений
-		ПО РегистрСведенийинт_ОчередьИсходящихСообщений.ИдентификаторСообщения = инт_ТекущийСтатусИсходящихСообщений.ИдентификаторСообщения</QueryText>
+		ПО РегистрСведенийинт_ОчередьИсходящихСообщений.ИдентификаторСообщения = инт_ТекущийСтатусИсходящихСообщений.ИдентификаторСообщения
+		ЛЕВОЕ СОЕДИНЕНИЕ (
+			ВЫБРАТЬ
+				инт_ИсторияСтатусовИсходящихСообщений.ИдентификаторСообщения КАК ИдентификаторСообщения,
+				МИНИМУМ(инт_ИсторияСтатусовИсходящихСообщений.Период) КАК ДатаСоздания
+			ИЗ
+				РегистрСведений.инт_ИсторияСтатусовИсходящихСообщений КАК инт_ИсторияСтатусовИсходящихСообщений
+			СГРУППИРОВАТЬ ПО
+				инт_ИсторияСтатусовИсходящихСообщений.ИдентификаторСообщения) КАК ДатыСоздания
+		ПО РегистрСведенийинт_ОчередьИсходящихСообщений.ИдентификаторСообщения = ДатыСоздания.ИдентификаторСообщения</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>СформированноеСообщение</dcssch:dataPath>
 					<dcssch:field>СформированноеСообщение</dcssch:field>
@@ -318,10 +345,6 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИдентификаторСообщения</dcssch:dataPath>
 					<dcssch:field>ИдентификаторСообщения</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИсходныеДанные</dcssch:dataPath>
-					<dcssch:field>ИсходныеДанные</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПотокДанных</dcssch:dataPath>
@@ -338,6 +361,16 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>СтатусСообщения</dcssch:dataPath>
 					<dcssch:field>СтатусСообщения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаСоздания</dcssch:dataPath>
+					<dcssch:field>ДатаСоздания</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<MainTable>InformationRegister.инт_ОчередьИсходящихСообщений</MainTable>
 				<ListSettings>

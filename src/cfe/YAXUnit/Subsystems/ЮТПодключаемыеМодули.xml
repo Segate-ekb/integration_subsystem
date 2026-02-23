@@ -25,6 +25,7 @@
 		<ChildObjects>
 			<Subsystem>ДымовыеТесты</Subsystem>
 			<Subsystem>ОбработчикиСобытий</Subsystem>
+			<Subsystem>ТестовыеДанные</Subsystem>
 			<Subsystem>ФормированиеОтчета</Subsystem>
 		</ChildObjects>
 	</Subsystem>

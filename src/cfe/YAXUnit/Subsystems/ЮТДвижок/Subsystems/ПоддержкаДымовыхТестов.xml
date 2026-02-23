@@ -17,9 +17,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТДымовыеТесты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТДымовыеТестыСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТДымовыеТестыСлужебныйКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТДымовыеТестыСлужебныйСервер</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

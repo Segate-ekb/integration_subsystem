@@ -62,6 +62,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="8e398513-9ffc-44b5-9407-7c2509c0b1b4">
+				<Properties>
+					<Name>Tls</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tls</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="cba00911-a74d-4fa4-94fb-3ab41f57a606">
 				<Properties>
 					<Name>Анонимный</Name>
@@ -69,6 +81,30 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Анонимный</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d5a8f2c7-9e34-4b67-a123-c8e9f01d2345">
+				<Properties>
+					<Name>Digest</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Digest</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e6b9a3d8-0f45-5c78-b234-d9f0a12e3456">
+				<Properties>
+					<Name>ApiKey</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>API Key</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

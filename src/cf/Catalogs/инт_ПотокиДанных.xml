@@ -41,7 +41,7 @@
 			<Owners/>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>50</CodeLength>
-			<DescriptionLength>25</DescriptionLength>
+			<DescriptionLength>150</DescriptionLength>
 			<CodeType>String</CodeType>
 			<CodeAllowedLength>Variable</CodeAllowedLength>
 			<CodeSeries>WholeCatalog</CodeSeries>
@@ -395,9 +395,13 @@
 							<v8:content>Пример</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>Сериализованное представление примера исходных данных (ЗначениеВСтрокуВнутр)</Comment>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.инт_ИсходныеДанные</v8:TypeSet>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -550,6 +554,46 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="c3d4e5f6-a7b8-9012-cdef-345678901234">
+				<Properties>
+					<Name>СкомпилированныйОбработчик</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Скомпилированный обработчик</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Скомпилированная внешняя обработка (EPF) из текста обработчика</Comment>
+					<Type>
+						<v8:Type>v8:ValueStorage</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>DontUse</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="ed031fe5-1cff-43c8-8c97-5e333d734f01">
 				<Properties>
 					<Name>ОтслеживаемыеРеквизиты</Name>
@@ -630,7 +674,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:CatalogRef.инт_Подписчики</v8:Type>
+								<v8:TypeSet>cfg:DefinedType.инт_Подписчик</v8:TypeSet>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -643,6 +687,70 @@
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>DontUse</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="3a4b5c6d-7e8f-9012-ab34-567890abcdef">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.инт_ПотокиДанных.ПодпискиНаВходящиеСообщения" category="TabularSection">
+						<xr:TypeId>3a4b5c6d-0001-0001-0001-000000000001</xr:TypeId>
+						<xr:ValueId>3a4b5c6d-0001-0001-0001-000000000002</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.инт_ПотокиДанных.ПодпискиНаВходящиеСообщения" category="TabularSectionRow">
+						<xr:TypeId>3a4b5c6d-0001-0002-0001-000000000001</xr:TypeId>
+						<xr:ValueId>3a4b5c6d-0001-0002-0001-000000000002</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ПодпискиНаВходящиеСообщения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписки на входящие сообщения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Источники входящих сообщений (Kafka/RabbitMQ консьюмеры)</Comment>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<Use>ForItem</Use>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="3a4b5c6d-0002-0001-0001-000000000001">
+						<Properties>
+							<Name>Подписка</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подписка</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment>Подписчик Kafka или RabbitMQ</Comment>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.инт_Подписка</v8:TypeSet>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>ShowError</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters/>

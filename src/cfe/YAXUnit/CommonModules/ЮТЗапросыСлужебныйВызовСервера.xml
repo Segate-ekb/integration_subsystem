@@ -6,7 +6,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запросы вызов сервера</v8:content>
+					<v8:content>Запросы служебный вызов сервера</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -14,7 +14,7 @@
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>
 			<ExternalConnection>false</ExternalConnection>
-			<ClientOrdinaryApplication>true</ClientOrdinaryApplication>
+			<ClientOrdinaryApplication>false</ClientOrdinaryApplication>
 			<ServerCall>true</ServerCall>
 			<Privileged>false</Privileged>
 			<ReturnValuesReuse>DontUse</ReturnValuesReuse>

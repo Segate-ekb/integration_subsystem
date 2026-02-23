@@ -25,6 +25,42 @@
 		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаОбновлениеДоступно" id="80">
+			<Visible>false</Visible>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupVerticalAlign>Center</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОбновлениеДоступноРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьОбновлениеДоступно" id="82">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступна новая версия метрики</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ContextMenu name="НадписьОбновлениеДоступноКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="НадписьОбновлениеДоступноРасширеннаяПодсказка" id="84"/>
+				</LabelDecoration>
+				<Button name="КнопкаОбновитьМетрику" id="85">
+					<Type>CommandBarButton</Type>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ОбновитьМетрикуИзМакета</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновить</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КнопкаОбновитьМетрикуРасширеннаяПодсказка" id="86"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаШапка" id="17">
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
@@ -174,16 +210,12 @@
 		<HTMLDocumentField name="РедакторКода" id="73">
 			<DataPath>РедакторКода</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="74">
-				<ChildItems>
-					<Button name="РедакторКодаКонтекстноеМенюНастройки" id="76">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Настройки</CommandName>
-						<ExtendedTooltip name="РедакторКодаКонтекстноеМенюНастройкиРасширеннаяПодсказка" id="77"/>
-					</Button>
-				</ChildItems>
-			</ContextMenu>
+			<ContextMenu name="РедакторКодаКонтекстноеМеню" id="74"/>
 			<ExtendedTooltip name="РедакторКодаРасширеннаяПодсказка" id="75"/>
+			<Events>
+				<Event name="DocumentComplete">РедакторКодаДокументСформирован</Event>
+				<Event name="OnClick">РедакторКодаПриНажатии</Event>
+			</Events>
 		</HTMLDocumentField>
 	</ChildItems>
 	<Attributes>
@@ -244,6 +276,33 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ДоступноОбновлениеМетрики" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доступно обновление метрики</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияВМакетеДляОбновления" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия в макете для обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыполнитьПроверкуАлгоритма" id="1">
@@ -261,20 +320,20 @@
 			</ToolTip>
 			<Action>ВыполнитьПроверкуАлгоритма</Action>
 		</Command>
-		<Command name="Настройки" id="2">
+		<Command name="ОбновитьМетрикуИзМакета" id="16">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки</v8:content>
+					<v8:content>Обновить метрику из макета</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки</v8:content>
+					<v8:content>Обновить метрику из макета</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Настройки</Action>
+			<Action>ОбновитьМетрикуИзМакета</Action>
 		</Command>
 	</Commands>
 </Form>
