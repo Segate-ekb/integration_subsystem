@@ -19,3 +19,5 @@ call vrunner run --command "Путь=build/YAXUNIT.cfe;ЗавершитьРаб�
 
 @rem обновление в режиме Предприятие
 call vrunner run --command "ЗапуститьОбновлениеИнформационнойБазы;ЗавершитьРаботуСистемы;" --execute $runnerRoot\epf\ЗакрытьПредприятие.epf %* || exit /b %errorlevel%
+
+@echo === update.cmd COMPLETED SUCCESSFULLY ===

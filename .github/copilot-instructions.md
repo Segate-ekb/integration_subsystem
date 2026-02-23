@@ -42,14 +42,75 @@ decompile.bat        # Export config changes to src/cf
 git commit -m "..."
 ```
 
+### TDD Development Cycle (Red-Green-Refactor)
+
+Iterative loop until the feature is complete:
+
+```
+┌─ 1. Составить план (спецификация / задача)
+│
+│  ┌──────────────── inner loop ────────────────┐
+│  │ 2. Написать / дополнить тесты              │
+│  │    → src/cfe/YAXUnit/CommonModules/        │
+│  │                                            │
+│  │ 3. Написать / изменить код                 │
+│  │    → src/cf/  (конфигурация)               │
+│  │                                            │
+│  │ 4. Обновить базу данных                    │
+│  │    > update.cmd                            │
+│  │                                            │
+│  │ 5. Запустить тесты                         │
+│  │    > test.cmd                              │
+│  │                                            │
+│  │ 6. Проверить результат                     │
+│  │    → build/test-reports/ (Allure XML)      │
+│  │    → exit code: 0 = OK, иначе — провал    │
+│  │                                            │
+│  │ если тесты красные ──► повтор с шага 2/3   │
+│  └────────────────────────────────────────────┘
+│
+└─ 7. Финализация
+      > decompile.bat   # выгрузить и тесты, и код в src/
+      > git add . && git commit
+```
+
+#### Шаг 4 — `update.cmd`: что происходит
+
+| Этап | Команда | Результат |
+|------|---------|-----------|
+| 1 | `vrunner update-dev --src src/cf --disable-support` | Загрузка конфигурации из `src/cf` → `build/ib` |
+| 2 | `vrunner compileexttocfe --src src/cfe/YAXUNIT --out build/YAXUNIT.cfe` | Сборка расширения тестов в `.cfe` |
+| 3 | `vrunner run ... ЗагрузитьРасширениеВРежимеПредприятия.epf` | Загрузка расширения YAXUNIT в базу |
+| 4 | `vrunner run ... ЗапуститьОбновлениеИнформационнойБазы` | Обновление БД в режиме Предприятия |
+
+> **Важно:** `update.cmd` обновляет **и** основную конфигурацию, **и** расширение с тестами.
+> Это значит, что после изменения _любых_ исходников (код или тесты) достаточно одного вызова `update.cmd`.
+
+#### Шаг 5 — `test.cmd`: что происходит
+
+| Этап | Команда | Результат |
+|------|---------|-----------|
+| 1 | Генерация `build/yaxunit-config.json` | Конфиг с абсолютными путями для YAXUnit |
+| 2 | `vrunner run --command "RunUnitTests=..."` | Запуск 1С:Предприятие с параметром YAXUnit |
+| 3 | Чтение `build/test-reports/exitCode.txt` | Код возврата: `0` — все тесты пройдены |
+
+Отчёты в формате Allure сохраняются в `build/test-reports/`.
+
+#### Практические рекомендации
+
+- **Не открывайте Конфигуратор** одновременно с `update.cmd` — файл БД блокируется.
+- Если нужно отлаживать тест вручную, используйте VS Code task **"Run current feature in 1C:Enterprise + WAIT"** — он не закрывает 1С после прогона.
+- При добавлении **нового** общего модуля тестов: добавьте его в `src/cfe/YAXUnit/`, а не в основную конфигурацию.
+- После окончания работы **всегда** выполняйте `decompile.bat` — он выгрузит и `src/cf`, и `src/cfe/YAXUnit`.
+
 ### Key Commands
 | Command | Purpose |
 |---------|---------|
-| `prepare.cmd` | Initial DB setup from `src/cf` |
-| `update.cmd` | Update existing DB with config changes + YAXUNIT |
-| `decompile.bat` | Export configuration to `src/cf` (and `src/cfe/YAXUnit`) |
+| `prepare.cmd` | Initial DB setup from `src/cf` + YAXUNIT extension |
+| `update.cmd` | Update existing DB: config + YAXUNIT extension + DB update |
+| `decompile.bat` | Export configuration to `src/cf` and extension to `src/cfe/YAXUnit` |
 | `build.cmd` | Compile to `build/1cv8.cf` |
-| `test.cmd` | Run Vanessa BDD tests |
+| `test.cmd` | Run YAXUNIT tests, reports to `build/test-reports/` |
 
 ## Testing with YAXUNIT
 
@@ -115,6 +176,18 @@ Schemas stored in `инт_Схемы` catalog, test fixtures in `tests/fixtures/
     РегистрироватьДубль  // Optional: skip duplicates by hash
 );
 ```
+
+## Правила запуска терминальных команд (для AI-агента)
+
+> **CRITICAL** — несоблюдение этих правил приводит к прерыванию сборки / тестов.
+
+1. **`timeout: 0`** — для `update.cmd`, `test.cmd`, `prepare.cmd`, `build.cmd` и любых команд, запускающих 1С:Предприятие или Конфигуратор. Эти команды могут выполняться 1–5 минут. Никогда не ставь фиксированный timeout — используй `0` (без лимита).
+2. **Не отправляй новых команд**, пока предыдущая не завершилась. Отправка команды в занятый терминал вызывает `Ctrl+C` → `Terminate batch job (Y/N)` и убивает текущий процесс.
+3. **Маркер завершения** — `update.cmd` и `test.cmd` печатают финальную строку при успехе:
+   - `update.cmd` → `=== update.cmd COMPLETED SUCCESSFULLY ===`
+   - `test.cmd` → проверяй `exit code` и содержимое `build/test-reports/exitCode.txt`
+4. **Не запускай команды в фоне** (`isBackground: true`), если тебе нужен результат для следующего шага. Используй `isBackground: false` + `timeout: 0`.
+5. **Ошибка блокировки ИБ** (`Ошибка блокировки информационной базы`) — означает, что 1С:Предприятие или Конфигуратор ещё открыт. Сообщи пользователю и дождись закрытия, не пытайся повторять автоматически в цикле.
 
 ## Tooling
 

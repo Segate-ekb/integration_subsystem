@@ -22,6 +22,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТАсинхроннаяОбработкаСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТВнешниеОбработкиСлужебныйСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЗависимости</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЗависимостиСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЗависимостиСлужебныйВызовСервера</xr:Item>
@@ -37,11 +38,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЛогированиеСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЛогИсполненияТестаСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетаданные</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетаданныеСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетаданныеСлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетаданныеСлужебныйКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетаданныеСлужебныйПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетоды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетодыСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТМетодыСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТНастройкиВыполнения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТОбщий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТОбщийСлужебный</xr:Item>
@@ -56,30 +58,40 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТПроверкиСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРазрешениеЗависимостейСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРазрешениеЗависимостейСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРеактивныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРеактивныйСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРегистрацияОшибок</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТРегистрацияОшибокСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТСлужебныйПовторногоИспользования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТСобытияСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТСообщенияСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТСравнениеСлужебныйСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТСтроки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТТипыДанныхСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТФабрика</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТФабрикаСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТЗапустить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТИмпорт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТНастройки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТНеизвестный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТОшибка</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТПерезапуститьУпавшие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТПодсистема</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТПропущен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТРедактировать</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТСравнить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТСтруктура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТУпал</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТУспешно</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЮТЭлементыТестов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ЮТMonacoEditor</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ЮТRegEx1CAddin</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ЮТWebSocketAddIn</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ЮТYaxUnitAddIn</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ЮТИнформацияОбОшибке</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ЮТОписаниеМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТРедакторОбработки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

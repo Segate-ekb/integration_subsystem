@@ -27,11 +27,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТИсполнительСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТИсполнительСлужебныйКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТПараметрыЗапускаСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТСостояниеИсполненияТестовСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТТесты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТТестыСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТФильтрацияСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЧитательСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЧитательСлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТЧитательСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТРедакторТестов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТЮнитТесты</xr:Item>
 			</Content>
 		</Properties>

@@ -381,7 +381,6 @@
 			<CommonTemplate>конс_СловарьТиповRu</CommonTemplate>
 			<CommonTemplate>конс_ТаблицаПереходовЛексера</CommonTemplate>
 			<CommonTemplate>конс_ТаблицаПереходовПарсера</CommonTemplate>
-			<CommonTemplate>инт_СтруктураВнешнейОбработки</CommonTemplate>
 			<CommonModule>конс_АСТ_ЛексерКлиентСервер</CommonModule>
 			<CommonModule>пэмМетрикиКлиент</CommonModule>
 			<CommonModule>пэмМетрикиСервер</CommonModule>
@@ -468,6 +467,8 @@
 			<Constant>инт_ИдентификаторКлиентаKafka</Constant>
 			<Constant>инт_УровеньОтладкиKafka</Constant>
 			<Constant>инт_ИнтервалСтатистикиKafka</Constant>
+			<Constant>инт_КонсьюмерГруппаПоУмолчанию</Constant>
+			<Constant>инт_ОстановитьВсеКонсьюмеры</Constant>
 			<CommonForm>пэмНастройкиМетрик</CommonForm>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>инт_Подписчики</CommonForm>
@@ -500,6 +501,7 @@
 			<Enum>конс_РежимПоказаПеременных</Enum>
 			<Report>пэмСостояниеМетрик</Report>
 			<DataProcessor>инт_ВалидаторПакетов</DataProcessor>
+			<DataProcessor>инт_РедакторОбработки</DataProcessor>
 			<DataProcessor>пэм_мониторингМетрик</DataProcessor>
 			<DataProcessor>инт_ручнойЗапускМенеджеровПотоков</DataProcessor>
 			<InformationRegister>пэмСостояниеМетрик</InformationRegister>
