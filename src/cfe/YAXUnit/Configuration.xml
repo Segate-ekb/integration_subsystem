@@ -108,6 +108,7 @@
 			<CommonModule>СПР_инт_ПодписчикиHTTP_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиJRPC_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиKafka_ММ</CommonModule>
+			<CommonModule>ОМ_инт_МенеджерВходящихПотоков</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиПодсистемаИнтеграции_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>СПР_инт_Эндпоинты_ММ</CommonModule>

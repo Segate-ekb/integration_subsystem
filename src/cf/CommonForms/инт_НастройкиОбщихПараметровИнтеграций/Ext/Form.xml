@@ -140,6 +140,14 @@
 							<ContextMenu name="инт_РазмерПачкиОбработкиВходящихСообщенийКонтекстноеМеню" id="22"/>
 							<ExtendedTooltip name="инт_РазмерПачкиОбработкиВходящихСообщенийРасширеннаяПодсказка" id="23"/>
 						</InputField>
+						<CheckBoxField name="инт_ОстановитьВсеКонсьюмеры" id="54">
+							<DataPath>НаборКонстант.инт_ОстановитьВсеКонсьюмеры</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="инт_ОстановитьВсеКонсьюмерыКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="инт_ОстановитьВсеКонсьюмерыРасширеннаяПодсказка" id="56"/>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаНастройкиЛогированияKafka" id="40">

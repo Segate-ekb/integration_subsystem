@@ -468,6 +468,7 @@
 			<Constant>инт_УровеньОтладкиKafka</Constant>
 			<Constant>инт_ИнтервалСтатистикиKafka</Constant>
 			<Constant>инт_КонсьюмерГруппаПоУмолчанию</Constant>
+			<Constant>инт_ОстановитьВсеКонсьюмеры</Constant>
 			<CommonForm>пэмНастройкиМетрик</CommonForm>
 			<CommonForm>инт_НастройкиОбщихПараметровИнтеграций</CommonForm>
 			<CommonForm>инт_Подписчики</CommonForm>

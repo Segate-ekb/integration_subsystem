@@ -434,6 +434,72 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаПараметрыКонсьюмераРасширеннаяПодсказка" id="510"/>
 					<ChildItems>
+						<UsualGroup name="ГруппаDrain" id="600">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление консьюмером</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<ExtendedTooltip name="ГруппаDrainРасширеннаяПодсказка" id="601"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСтатусDrain" id="602">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСтатусDrainРасширеннаяПодсказка" id="603"/>
+									<ChildItems>
+										<PictureDecoration name="КартинкаСтатусDrain" id="604">
+											<Width>2</Width>
+											<Height>1</Height>
+											<PictureSize>AutoSize</PictureSize>
+											<ContextMenu name="КартинкаСтатусDrainКонтекстноеМеню" id="605"/>
+											<ExtendedTooltip name="КартинкаСтатусDrainРасширеннаяПодсказка" id="606"/>
+										</PictureDecoration>
+										<LabelDecoration name="ДекорацияСтатусDrain" id="607">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Консьюмер активен</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияСтатусDrainКонтекстноеМеню" id="608"/>
+											<ExtendedTooltip name="ДекорацияСтатусDrainРасширеннаяПодсказка" id="609"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКнопкиDrain" id="610">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиDrainРасширеннаяПодсказка" id="611"/>
+									<ChildItems>
+										<Button name="ФормаDrainКонсьюмер" id="612">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.DrainКонсьюмер</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Stop</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ФормаDrainКонсьюмерРасширеннаяПодсказка" id="613"/>
+										</Button>
+										<Button name="ФормаВосстановитьКонсьюмер" id="614">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<CommandName>Form.Command.ВосстановитьКонсьюмер</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Refresh</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ФормаВосстановитьКонсьюмерРасширеннаяПодсказка" id="615"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаDLQ" id="210">
 							<Title>
 								<v8:item>
@@ -1259,6 +1325,17 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="КонсьюмерВРежимеDrain" id="616">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Консьюмер в режиме Drain</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ТестПодключения" id="40">
@@ -1455,6 +1532,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПрименитьОффсеты</Action>
+		</Command>
+		<Command name="DrainКонсьюмер" id="620">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остановить (drain)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевести консьюмер в режим drain — все консьюмеры с этим топиком будут перезапущены без него</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DrainКонсьюмер</Action>
+		</Command>
+		<Command name="ВосстановитьКонсьюмер" id="621">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Восстановить консьюмер после drain — подписка будет снова включена в консьюмер-группу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВосстановитьКонсьюмер</Action>
 		</Command>
 	</Commands>
 </Form>
