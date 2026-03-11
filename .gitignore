@@ -18,3 +18,4 @@ out
 .sonarlint/
 .idea/
 examples/
+.DS_Store
