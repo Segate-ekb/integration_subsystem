@@ -1,0 +1,30 @@
+{
+ "vrunner": {
+  "ibconnection": "/Fbuild/ib",
+  "db-user": "",
+  "db-pwd": "",
+  "root": ".",
+  "workspace": ".",
+  "v8version": "8.3.24.1548",
+  "locale": "ru",
+  "language": "ru",
+  "additional": "/DisplayAllFunctions /Lru  /iTaxi /TESTMANAGER /SystemCodes",
+  "ordinaryapp": "-1",
+  "validate": {
+   "syntax-check": {
+    "groupbymetadata": true,
+    "exception-file": "tools/syntax-check-excludes.txt",
+    "junitpath": "out/syntax-check/junit/junit.xml",
+    "allure-results2": "out/syntax-check/allure",
+    "mode": [
+     "ExtendedModulesCheck",
+     "ThinClient",
+     "WebClient",
+     "Server",
+     "ExternalConnection",
+     "ThickClientOrdinaryApplication"
+    ]
+   }
+  }
+ }
+}

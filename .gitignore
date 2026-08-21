@@ -1,4 +1,5 @@
 .env
+autumn-properties.json
 env.json
 build/
 allure-report/
