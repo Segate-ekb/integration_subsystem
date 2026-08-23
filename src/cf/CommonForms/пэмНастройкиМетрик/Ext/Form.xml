@@ -189,6 +189,53 @@
 					<ContextMenu name="пэмМногопоточныйРасчетМетрикКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="пэмМногопоточныйРасчетМетрикРасширеннаяПодсказка" id="16"/>
 				</CheckBoxField>
+				<InputField name="пэмЧислоОдновременныхЗаданийРасчетаМетрик" id="74">
+					<DataPath>Константы.пэмЧислоОдновременныхЗаданийРасчетаМетрик</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Одновременно выполняемых заданий</v8:content>
+						</v8:item>
+					</Title>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=; ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="пэмЧислоОдновременныхЗаданийРасчетаМетрикКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="пэмЧислоОдновременныхЗаданийРасчетаМетрикРасширеннаяПодсказка" id="76"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаФормированиеОтвета" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формирование ответа с метриками</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаФормированиеОтветаРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<InputField name="пэмОтведенноеВремяФормированияОтветаМетрик" id="77">
+					<DataPath>Константы.пэмОтведенноеВремяФормированияОтветаМетрик</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отведенное время, секунд</v8:content>
+						</v8:item>
+					</Title>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=; ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="пэмОтведенноеВремяФормированияОтветаМетрикКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="пэмОтведенноеВремяФормированияОтветаМетрикРасширеннаяПодсказка" id="79"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>

@@ -454,9 +454,11 @@
 			<Constant>пэмАдресСервераPushgateway</Constant>
 			<Constant>пэмИспользоватьPushgateway</Constant>
 			<Constant>пэмМногопоточныйРасчетМетрик</Constant>
+			<Constant>пэмОтведенноеВремяФормированияОтветаМетрик</Constant>
 			<Constant>пэмПервоначальноеЗаполнениеВыполнено</Constant>
 			<Constant>пэмПортСервераPushgateway</Constant>
 			<Constant>пэмПутьНаСервереPushgateway</Constant>
+			<Constant>пэмЧислоОдновременныхЗаданийРасчетаМетрик</Constant>
 			<Constant>инт_СрокХраненияСтатистикиДней</Constant>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>

@@ -15,6 +15,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.пэмОтведенноеВремяФормированияОтветаМетрик</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.пэмПервоначальноеЗаполнениеВыполнено</name>
 		<right>
 			<name>Read</name>
@@ -501,6 +512,17 @@
 	</object>
 	<object>
 		<name>Constant.инт_РазделятьПотокиОтправкиПоТипамПодписчиков</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.пэмЧислоОдновременныхЗаданийРасчетаМетрик</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
