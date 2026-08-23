@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="ab2f78bd-cb40-4a77-9319-c9cccb2f10cf">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.инт_УдаленнаяСтатистикаОбработкиСообщений" category="Record">
+				<xr:TypeId>0ed7b8db-6c1e-4e3d-9c15-106eec382ace</xr:TypeId>
+				<xr:ValueId>16b3c8ef-a6fb-4f6c-bfbb-5bc25e054f59</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.инт_УдаленнаяСтатистикаОбработкиСообщений" category="Manager">
+				<xr:TypeId>eb945000-061c-437f-90b9-e01571b6c1a7</xr:TypeId>
+				<xr:ValueId>26b83306-3d40-414c-ac3d-6eed79ec8d5b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.инт_УдаленнаяСтатистикаОбработкиСообщений" category="Selection">
+				<xr:TypeId>05f98afc-843b-4bae-8612-a2cadc6bc1ec</xr:TypeId>
+				<xr:ValueId>614897ec-5d34-4191-8cd6-ce931565c7e8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.инт_УдаленнаяСтатистикаОбработкиСообщений" category="List">
+				<xr:TypeId>1af8611c-c563-4296-84b2-e008634cba02</xr:TypeId>
+				<xr:ValueId>821d1ba7-9702-43b4-a49d-bedeb839a69f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.инт_УдаленнаяСтатистикаОбработкиСообщений" category="RecordSet">
+				<xr:TypeId>3d6e6f01-e34f-4f3b-8060-ce3412c2bfa7</xr:TypeId>
+				<xr:ValueId>abb00b99-b4e0-44b9-ba42-5cf5bdddad2d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.инт_УдаленнаяСтатистикаОбработкиСообщений" category="RecordKey">
+				<xr:TypeId>f12644f9-1842-442b-9924-0bca40ed024b</xr:TypeId>
+				<xr:ValueId>26b62328-726f-468e-a326-0c09ad2e7655</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.инт_УдаленнаяСтатистикаОбработкиСообщений" category="RecordManager">
+				<xr:TypeId>a282e261-1596-4669-a541-00a9d4b83810</xr:TypeId>
+				<xr:ValueId>e67be4ca-7953-46ed-b12f-ddfb49be7663</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>инт_УдаленнаяСтатистикаОбработкиСообщений</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d44bf6a8-1925-4a6e-8852-92aca43f10dd</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

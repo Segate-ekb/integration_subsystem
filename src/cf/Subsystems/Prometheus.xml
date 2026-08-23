@@ -34,9 +34,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмАдресСервераPushgateway</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмИспользоватьPushgateway</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмМногопоточныйРасчетМетрик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмОкноАгрегацииМетрикДлительностиСек</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмОтведенноеВремяФормированияОтветаМетрик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмЧислоОдновременныхЗаданийРасчетаМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмПервоначальноеЗаполнениеВыполнено</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмПортСервераPushgateway</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмПутьНаСервереPushgateway</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.пэмТаймаутСоединенияPushgateway</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пэмМетодыПолученияМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.пэмТипыМетрик</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.Prometheus</xr:Item>

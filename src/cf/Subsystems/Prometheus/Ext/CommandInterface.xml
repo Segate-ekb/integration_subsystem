@@ -21,12 +21,27 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Constant.пэмОтведенноеВремяФормированияОтветаМетрик.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.пэмЧислоОдновременныхЗаданийРасчетаМетрик.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Constant.пэмПортСервераPushgateway.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Constant.пэмПутьНаСервереPushgateway.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.пэмТаймаутСоединенияPushgateway.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>

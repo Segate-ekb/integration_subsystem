@@ -362,17 +362,17 @@
 			<Role>инт_ИзменениеДанных</Role>
 			<CommonTemplate>конс_ВстроенныеФункцииВМ</CommonTemplate>
 			<CommonTemplate>пэмМетрикиИндекс</CommonTemplate>
-			<CommonTemplate>пэмМетрика_pde_scrape_duration</CommonTemplate>
-			<CommonTemplate>пэмМетрика_pde_last_refresh</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_metric_calculation_duration</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_metric_last_refresh_timestamp</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_queue_length</CommonTemplate>
-			<CommonTemplate>пэмМетрика_pde_error_count</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_operations_awaiting_intervention</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_formation_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_send_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_incoming_duration</CommonTemplate>
-			<CommonTemplate>пэмМетрика_pde_sync_incoming_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_oldest_pending_age</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_messages_per_minute</CommonTemplate>
-			<CommonTemplate>пэмМетрика_pde_retry_count</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_messages_processed_total</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_operations_awaiting_retry</CommonTemplate>
 			<CommonTemplate>инт_simple_kafka</CommonTemplate>
 			<CommonTemplate>конс_Грамматика</CommonTemplate>
 			<CommonTemplate>конс_КонсольКода</CommonTemplate>
@@ -455,9 +455,13 @@
 			<Constant>пэмАдресСервераPushgateway</Constant>
 			<Constant>пэмИспользоватьPushgateway</Constant>
 			<Constant>пэмМногопоточныйРасчетМетрик</Constant>
+			<Constant>пэмОкноАгрегацииМетрикДлительностиСек</Constant>
+			<Constant>пэмОтведенноеВремяФормированияОтветаМетрик</Constant>
 			<Constant>пэмПервоначальноеЗаполнениеВыполнено</Constant>
 			<Constant>пэмПортСервераPushgateway</Constant>
 			<Constant>пэмПутьНаСервереPushgateway</Constant>
+			<Constant>пэмТаймаутСоединенияPushgateway</Constant>
+			<Constant>пэмЧислоОдновременныхЗаданийРасчетаМетрик</Constant>
 			<Constant>инт_СрокХраненияСтатистикиДней</Constant>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>
 			<Constant>инт_КоличествоПотоковФормированияСообщений</Constant>
@@ -525,6 +529,7 @@
 			<InformationRegister>инт_ХешиОбъектов</InformationRegister>
 			<InformationRegister>инт_БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>инт_АктивныеКонсьюмеры</InformationRegister>
+			<InformationRegister>инт_УдаленнаяСтатистикаОбработкиСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

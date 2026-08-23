@@ -54,6 +54,12 @@
 		<Description/>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-000000000009">
+		<Name>pde_messages_processed_total</Name>
+		<Code>pde_messages_processed_total</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
 	<Item id="c3d4e5f6-0001-0001-0001-000000000006">
 		<Name>pde_messages_per_minute</Name>
 		<Code>pde_messages_per_minute</Code>
@@ -63,6 +69,30 @@
 	<Item id="c3d4e5f6-0001-0001-0001-000000000007">
 		<Name>pde_retry_count</Name>
 		<Code>pde_retry_count</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-00000000000a">
+		<Name>pde_operations_awaiting_intervention</Name>
+		<Code>pde_operations_awaiting_intervention</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-00000000000b">
+		<Name>pde_operations_awaiting_retry</Name>
+		<Code>pde_operations_awaiting_retry</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-00000000000c">
+		<Name>pde_metric_last_refresh_timestamp_seconds</Name>
+		<Code>pde_metric_last_refresh_timestamp_seconds</Code>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c3d4e5f6-0001-0001-0001-00000000000d">
+		<Name>pde_metric_calculation_duration_seconds</Name>
+		<Code>pde_metric_calculation_duration_seconds</Code>
 		<Description/>
 		<IsFolder>false</IsFolder>
 	</Item>

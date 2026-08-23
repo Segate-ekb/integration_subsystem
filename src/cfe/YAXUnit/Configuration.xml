@@ -100,10 +100,17 @@
 			<CommonModule>ОМ_инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
 			<CommonModule>ОМ_инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>ОМ_инт_РаботаСКафка</CommonModule>
+			<CommonModule>ОМ_инт_КонсьюмерОчередейСлужебный</CommonModule>
+			<CommonModule>ОМ_инт_ОбщегоНазначения</CommonModule>
+			<CommonModule>ОМ_пэмМетрикиСервер</CommonModule>
+			<CommonModule>ОМ_инт_РучноеУправлениеМенеджерами</CommonModule>
+			<CommonModule>ОМак_пэмМетрики</CommonModule>
+			<CommonModule>РС_инт_СтатистикаОбработкиСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьВходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
+			<CommonModule>РС_инт_ТекущийСтатусИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиHTTP_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиJRPC_ММ</CommonModule>
@@ -208,6 +215,7 @@
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ГенераторОбработок</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
+			<CommonModule>инт_РаботаСКафка</CommonModule>
 			<CommonModule>инт_ПодписчикиОбщий</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйСервер</CommonModule>
 			<CommonModule>ЮТТесты</CommonModule>
@@ -244,6 +252,7 @@
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
 			<InformationRegister>инт_СтатистикаОбработкиСообщений</InformationRegister>
+			<InformationRegister>инт_УдаленнаяСтатистикаОбработкиСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
