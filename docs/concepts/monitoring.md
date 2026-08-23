@@ -54,6 +54,34 @@
 | Расписание | Каждые 30–60 секунд |
 | Многопоточность | Включить (`пэмМногопоточныйРасчетМетрик = Истина`) |
 
+#### Окно агрегации метрик длительности
+
+Метрики длительности (`pde_formation_duration_seconds`, `pde_send_duration_seconds`,
+`pde_incoming_duration_seconds`) считают наблюдения за общее окно агрегации, заданное константой
+`пэмОкноАгрегацииМетрикДлительностиСек` (форма настроек метрик, группа «Метрики длительности»).
+
+| Свойство | Значение |
+|----------|----------|
+| Значение по умолчанию | 300 секунд |
+| Допустимый диапазон | от 60 до 3600 секунд |
+| Единица измерения | секунда |
+
+Окно должно быть **не меньше интервала опроса** Prometheus, иначе часть выборок окажется пустой,
+и не должно быть чрезмерно широким, иначе метрика долго удерживает след уже устранённой проблемы.
+Рекомендуемое соотношение — окно, равное пяти-десяти интервалам опроса: при `scrape_interval: 30s`
+это 150–300 секунд.
+
+Одно и то же значение применяется всеми метриками длительности: сопоставимость метрик между собой
+важнее раздельной настройки. Изменённое значение действует со следующего расчёта, перезапуск сеансов
+не требуется. Незаполненная константа и значение вне диапазона расчёт не прерывают: применяется
+300 секунд, а подмена записывается в журнал регистрации по событию `Prometheus data exporter`
+с уровнем «Предупреждение».
+
+::: warning Изменение окна меняет значения метрик
+Вместе со значениями меняется и срабатывание построенных на них правил оповещений: пороги,
+подобранные для одного окна, для другого окна придётся пересмотреть.
+:::
+
 ### Шаг 3. Настроить Prometheus
 
 #### Pull-модель (рекомендуется)
@@ -95,7 +123,7 @@ scrape_configs:
 
 ## Перечень метрик {#metric-reference}
 
-Все метрики имеют префикс `pde_` (Prometheus Data Exporter). Всего 11 встроенных метрик.
+Все метрики имеют префикс `pde_` (Prometheus Data Exporter). Всего 10 встроенных метрик.
 
 ### Метрики очередей
 
@@ -192,19 +220,35 @@ scrape_configs:
 
 ### Метрики производительности
 
+Все три метрики длительности выгружаются типом `Histogram`. Каждая даёт три семейства строк:
+`<имя>_bucket` с лейблом `le` — накопленное число наблюдений с длительностью не больше границы,
+`<имя>_sum` — сумма длительностей в секундах, `<имя>_count` — число наблюдений. Пороги отклика
+строятся по квантилям выражением `histogram_quantile`, а не по предагрегированному среднему;
+лейбл `aggregation` со значениями `avg` и `max` упразднён.
+
+Если за окно агрегации операций не было, метрика не исчезает из ответа: по каждому активному потоку
+данных выводятся нулевые `_sum` и `_count`. Если наименование потока данных или подписчик
+не определены, соответствующий лейбл принимает значение `unknown`.
+
 #### pde_formation_duration_seconds
 
 | | |
 |-|-|
-| **Тип** | Gauge |
+| **Тип** | Histogram |
 | **Описание** | Время выполнения обработчика формирования исходящих сообщений |
 | **Источник** | `инт_СтатистикаОбработкиСообщений` (`ТипОперации = Формирование`) |
-| **Период агрегации** | последние 5 минут |
+| **Период агрегации** | окно из константы `пэмОкноАгрегацииМетрикДлительностиСек` (по умолчанию 300 секунд) |
+| **Границы корзин, с** | 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, +Inf |
 
 | Лейбл | Описание | Значения |
 |-------|----------|----------|
-| `flow_name` | Наименование потока данных | Строка |
-| `aggregation` | Тип агрегации | `avg`, `max` |
+| `flow_name` | Наименование потока данных | Строка, `unknown` |
+| `status` | Результат операции | `success`, `error` |
+
+```
+# 95-й процентиль времени успешного формирования по потокам данных
+histogram_quantile(0.95, sum(rate(pde_formation_duration_seconds_bucket{status="success"}[5m])) by (le, flow_name))
+```
 
 ---
 
@@ -212,15 +256,26 @@ scrape_configs:
 
 | | |
 |-|-|
-| **Тип** | Gauge |
+| **Тип** | Histogram |
 | **Описание** | Время отправки сообщений подписчикам (включая сетевые задержки) |
 | **Источник** | `инт_СтатистикаОбработкиСообщений` (`ТипОперации = Отправка`) |
-| **Период агрегации** | последние 5 минут |
+| **Период агрегации** | окно из константы `пэмОкноАгрегацииМетрикДлительностиСек` (по умолчанию 300 секунд) |
+| **Границы корзин, с** | 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, 60, +Inf |
 
 | Лейбл | Описание | Значения |
 |-------|----------|----------|
-| `flow_name` | Наименование потока данных | Строка |
-| `aggregation` | Тип агрегации | `avg`, `max` |
+| `flow_name` | Наименование потока данных | Строка, `unknown` |
+| `subscriber` | Наименование подписчика | Строка, `unknown` |
+| `status` | Результат операции | `success`, `error` |
+
+Лейбл `subscriber` отличает медленный внешний сервис одного подписчика от общей деградации потока
+данных. Число временных последовательностей метрики равно числу подписчиков и верхней границы
+не имеет: у потока данных обычно один подписчик.
+
+```
+# 95-й процентиль времени успешной отправки в разрезе подписчиков
+histogram_quantile(0.95, sum(rate(pde_send_duration_seconds_bucket{status="success"}[5m])) by (le, subscriber))
+```
 
 ---
 
@@ -228,35 +283,28 @@ scrape_configs:
 
 | | |
 |-|-|
-| **Тип** | Gauge |
-| **Описание** | Время обработки входящих сообщений (асинхронных и синхронных) |
+| **Тип** | Histogram |
+| **Описание** | Время обработки входящих сообщений; метрика охватывает оба режима обработки — и асинхронный, и синхронный |
 | **Источник** | `инт_СтатистикаОбработкиСообщений` (`ТипОперации = ОбработкаВходящего`) |
-| **Период агрегации** | последние 5 минут |
+| **Период агрегации** | окно из константы `пэмОкноАгрегацииМетрикДлительностиСек` (по умолчанию 300 секунд) |
+| **Границы корзин, с** | 0.05, 0.1, 0.25, 0.5, 1, 2.5, 5, 10, 30, +Inf |
 
 | Лейбл | Описание | Значения |
 |-------|----------|----------|
-| `flow_name` | Наименование потока данных | Строка |
-| `aggregation` | Тип агрегации | `avg`, `max` |
+| `flow_name` | Наименование потока данных | Строка, `unknown` |
+| `status` | Результат операции | `success`, `error` |
 
----
+::: tip Сводка по синхронным потокам
+Отдельная метрика `pde_sync_incoming_duration_seconds` упразднена: её наблюдения были строгим
+подмножеством наблюдений этой метрики, а разбивку по результату обработки даёт лейбл `status`.
+Реквизит `АсинхроннаяОбработка` принадлежит потоку данных, поэтому все наблюдения одного значения
+`flow_name` относятся к одному режиму, и сводка по синхронным потокам строится отбором
+по лейблу `flow_name` — перечислением потоков или регулярным выражением по соглашению
+об именовании:
 
-#### pde_sync_incoming_duration_seconds
-
-| | |
-|-|-|
-| **Тип** | Gauge |
-| **Описание** | Время обработки **синхронных** входящих сообщений (потоки с `АсинхроннаяОбработка = Ложь`) |
-| **Источник** | `инт_СтатистикаОбработкиСообщений` (`ТипОперации = ОбработкаВходящего`, `ПотокДанных.АсинхроннаяОбработка = Ложь`) |
-| **Период агрегации** | последние 5 минут |
-
-| Лейбл | Описание | Значения |
-|-------|----------|----------|
-| `flow_name` | Наименование потока данных | Строка |
-| `aggregation` | Тип агрегации | `avg`, `max` |
-| `status` | Результат обработки | `success`, `error` |
-
-::: tip Зачем отдельная метрика
-`pde_incoming_duration_seconds` показывает **все** входящие (и асинхронные, и синхронные) без разбивки по статусу. `pde_sync_incoming_duration_seconds` выделяет именно синхронный путь с детализацией по `success`/`error`, что позволяет отслеживать качество обработки вне очереди.
+```
+sum(rate(pde_incoming_duration_seconds_count{status="error", flow_name=~"sync-.*"}[5m])) by (flow_name)
+```
 :::
 
 ---
@@ -347,10 +395,9 @@ sum(rate(pde_messages_processed_total{status="error"}[5m])) by (flow_name)
 | `pde_oldest_pending_age_seconds` | Gauge | Статусные регистры | `queue` |
 | `pde_error_count` | Gauge | Статусные регистры | `flow_name`, `error_type`, `direction` |
 | `pde_retry_count` | Gauge | Статусные регистры | `flow_name`, `direction` |
-| `pde_formation_duration_seconds` | Gauge | Статистика | `flow_name`, `aggregation` |
-| `pde_send_duration_seconds` | Gauge | Статистика | `flow_name`, `aggregation` |
-| `pde_incoming_duration_seconds` | Gauge | Статистика | `flow_name`, `aggregation` |
-| `pde_sync_incoming_duration_seconds` | Gauge | Статистика | `flow_name`, `aggregation`, `status` |
+| `pde_formation_duration_seconds` | Histogram | Статистика | `flow_name`, `status` |
+| `pde_send_duration_seconds` | Histogram | Статистика | `flow_name`, `subscriber`, `status` |
+| `pde_incoming_duration_seconds` | Histogram | Статистика | `flow_name`, `status` |
 | `pde_messages_processed_total` | Counter | Статистика | `flow_name`, `operation`, `status` |
 | `pde_last_refresh` | Counter | Служебная | — |
 | `pde_scrape_duration` | Gauge | Служебная | `label` |
@@ -390,8 +437,8 @@ sum(rate(pde_messages_processed_total{status="error"}[5m])) by (flow_name)
 | Размер очередей | `pde_queue_length` | Time series / Stat |
 | Ошибки по потокам | `pde_error_count` | Bar chart |
 | Пропускная способность | `rate(pde_messages_processed_total[5m])` | Time series |
-| Время обработки | `pde_*_duration_seconds` | Heatmap / Time series |
-| Синхронные входящие | `pde_sync_incoming_duration_seconds` | Time series |
+| Время обработки | `pde_*_duration_seconds_bucket` | Heatmap |
+| Квантили времени обработки | `histogram_quantile(0.95, sum(rate(pde_incoming_duration_seconds_bucket[5m])) by (le, flow_name))` | Time series |
 | Застрявшие сообщения | `pde_oldest_pending_age_seconds` | Gauge / Alert list |
 | Повторные попытки | `pde_retry_count` | Stat / Table |
 
@@ -420,9 +467,9 @@ sum(rate(pde_messages_processed_total{status="error"}[5m])) by (flow_name)
       ]
     },
     {
-      "title": "Sync Incoming Duration",
+      "title": "Incoming Duration p95",
       "targets": [
-        { "expr": "pde_sync_incoming_duration_seconds{aggregation=\"avg\"}", "legendFormat": "{{ flow_name }} ({{ status }})" }
+        { "expr": "histogram_quantile(0.95, sum(rate(pde_incoming_duration_seconds_bucket[5m])) by (le, flow_name, status))", "legendFormat": "{{ flow_name }} ({{ status }})" }
       ]
     }
   ]
@@ -466,20 +513,20 @@ groups:
           summary: "Высокий уровень ошибок интеграции"
           
       - alert: IntegrationSlowProcessing
-        expr: pde_formation_duration_seconds{aggregation="avg"} > 10
+        expr: histogram_quantile(0.95, sum(rate(pde_formation_duration_seconds_bucket{status="success"}[5m])) by (le, flow_name)) > 10
         for: 5m
         labels:
           severity: warning
         annotations:
           summary: "Медленная обработка в потоке {{ $labels.flow_name }}"
 
-      - alert: SyncIncomingErrors
-        expr: pde_sync_incoming_duration_seconds{status="error"} > 0
+      - alert: IncomingProcessingErrors
+        expr: sum(rate(pde_incoming_duration_seconds_count{status="error"}[5m])) by (flow_name) > 0
         for: 1m
         labels:
           severity: warning
         annotations:
-          summary: "Ошибки синхронной обработки в потоке {{ $labels.flow_name }}"
+          summary: "Ошибки обработки входящих в потоке {{ $labels.flow_name }}"
 ```
 
 ## Диагностика через журнал регистрации

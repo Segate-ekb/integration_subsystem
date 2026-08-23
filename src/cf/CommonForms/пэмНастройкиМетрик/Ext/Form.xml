@@ -238,6 +238,47 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаМетрикиДлительности" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Метрики длительности</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаМетрикиДлительностиРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<InputField name="пэмОкноАгрегацииМетрикДлительностиСек" id="84">
+					<DataPath>Константы.пэмОкноАгрегацииМетрикДлительностиСек</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окно агрегации, секунд</v8:content>
+						</v8:item>
+					</Title>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=; ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="пэмОкноАгрегацииМетрикДлительностиСекКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="пэмОкноАгрегацииМетрикДлительностиСекРасширеннаяПодсказка" id="86"/>
+				</InputField>
+				<LabelDecoration name="ПояснениеОкнаАгрегации" id="87">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окно применяется всеми метриками длительности. Допустимо от 60 до 3600 секунд. Окно должно быть не меньше интервала опроса Prometheus, иначе часть выборок окажется пустой, и не должно быть чрезмерно широким, иначе метрика долго удерживает след уже устранённой проблемы. Рекомендуемое окно равно пяти-десяти интервалам опроса. Изменение окна изменяет значения метрик и срабатывание построенных на них правил оповещений.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПояснениеОкнаАгрегацииКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ПояснениеОкнаАгрегацииРасширеннаяПодсказка" id="89"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Константы" id="2">
