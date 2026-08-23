@@ -30,7 +30,8 @@ export default defineConfig({
       { text: 'Руководство', link: '/guide/' },
       { text: 'Концепции', link: '/concepts/' },
       { text: 'API', link: '/api/' },
-      { text: 'Разработка', link: '/developer/' }
+      { text: 'Разработка', link: '/developer/' },
+      { text: 'Изменения', link: '/changelog' }
     ],
     
     // Sidebar configuration

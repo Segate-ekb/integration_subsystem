@@ -3,6 +3,8 @@
 [![Статус порога качества](https://sonar.1cdevelopers.ru/api/project_badges/measure?project=integration_subsystem&metric=alert_status&token=sqb_4fd736b1dca04cda6252313b25beafd7fb501a90)](https://sonar.1cdevelopers.ru/dashboard?id=integration_subsystem)
 
 > 📚 **[Документация](https://integration-subsystem-docs.1cdevelopers.ru)** — полное руководство по установке, настройке и использованию подсистемы.
+>
+> 📝 **[Журнал изменений](docs/changelog.md)** — что изменилось по выпускам и что требуется сделать на работающей базе после обновления.
 
 Подсистема создана для оптимизации процесса разработки новых интеграций в 1С:Предприятие 8.3.
 
