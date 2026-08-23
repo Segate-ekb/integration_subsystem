@@ -327,7 +327,8 @@ def send_message(flow_id: str, payload: dict, max_retries: int = 3):
 | Метрика | Тип | Описание |
 |---------|-----|----------|
 | `pde_queue_length` | Gauge | Размер очередей по типам |
-| `pde_error_count` | Gauge | Количество ошибок по типам и потокам |
+| `pde_operations_awaiting_intervention` | Gauge | Операции, исчерпавшие попытки и ожидающие разбора оператором |
+| `pde_operations_awaiting_retry` | Gauge | Операции, которые подсистема повторит сама |
 | `pde_incoming_duration_seconds` | Gauge | Время обработки входящих (avg/max) |
 | `pde_messages_processed_total` | Counter | Пропускная способность |
 
