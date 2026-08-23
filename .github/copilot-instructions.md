@@ -111,6 +111,8 @@ Iterative loop until the feature is complete:
 | `decompile.bat` | Export configuration to `src/cf` and extension to `src/cfe/YAXUnit` |
 | `build.cmd` | Compile to `build/1cv8.cf` |
 | `test.cmd` | Run YAXUNIT tests, reports to `build/test-reports/` |
+| `check-ids.cmd` | Проверка уникальности идентификаторов объектов метаданных в `src/cf` и `src/cfe/*` |
+| `install-hooks.cmd` | Установка ловушки `pre-commit` с этой проверкой |
 
 ## Testing with YAXUNIT
 

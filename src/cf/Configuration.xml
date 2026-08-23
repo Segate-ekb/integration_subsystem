@@ -388,6 +388,7 @@
 			<CommonModule>пэмМетрикиСерверПовтИсп</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
 			<CommonModule>инт_ВалидаторПакетовПовтИсп</CommonModule>
+			<CommonModule>инт_ВерсииОбработчиковПовтИсп</CommonModule>
 			<CommonModule>инт_ГенераторОбработок</CommonModule>
 			<CommonModule>инт_ГенераторОбработокПовтИсп</CommonModule>
 			<CommonModule>инт_ДинамическоеФормированиеИнтерфейса</CommonModule>

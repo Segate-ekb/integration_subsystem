@@ -206,6 +206,7 @@
 			<CommonModule>ЮТТестовыеДанныеСлужебный</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйВызовСервера</CommonModule>
 			<CommonModule>инт_ВалидаторПакетов</CommonModule>
+			<CommonModule>инт_ГенераторОбработок</CommonModule>
 			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>инт_ПодписчикиОбщий</CommonModule>
 			<CommonModule>ЮТТестовыеДанныеСлужебныйСервер</CommonModule>

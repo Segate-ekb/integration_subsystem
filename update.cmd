@@ -1,6 +1,10 @@
 @chcp 65001
 @setlocal enableextensions
 
+@rem артефакт со столкновением идентификаторов объектов метаданных не собирается
+call "%~dp0check-ids.cmd"
+@if errorlevel 1 exit /b 1
+
 @rem обновление конфигурации основной разработческой ИБ без поддержки или на поддержке. по умолчанию в каталоге build/ib
 call vrunner update-dev --src src/cf --disable-support %* || exit /b %errorlevel%
 

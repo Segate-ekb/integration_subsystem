@@ -16,6 +16,7 @@ renames.txt text eol=crlf
 *.ps1      text eol=crlf
 
 *.sh text eol=lf
+tools/hooks/pre-commit text eol=lf
 *.groovy text eol=lf
 Form.bin binary
 *.bin binary

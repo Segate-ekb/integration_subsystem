@@ -1,5 +1,9 @@
 @chcp 65001
 
+@rem артефакт со столкновением идентификаторов объектов метаданных не собирается
+call "%~dp0check-ids.cmd"
+@if errorlevel 1 exit /b 1
+
 @rem формирование файла конфигурации. для включения раскомментируйте код ниже
 call vrunner compile --src src/cf --out build/1cv8.cf %*
 

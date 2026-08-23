@@ -22,6 +22,7 @@
 1. Установите Onescript
 1. Установите необходимые пакеты(opm install vrunner precommit4onec)
 1. Установите precommit-hook выполнив `precommit4onec install <Путь к репозиторию>` заменив <путь к репозиторию> на ваш.
+1. Подключите проверку уникальности идентификаторов объектов метаданных, выполнив `install-hooks.cmd` в корне репозитория.
 1. Скопируйте файл `[env.json.example](env.json.example)` и переименуйте его в `env.json`
 1. При необходимости внесите изменения в файл `env.json` (cm `vrunner help`)
 1. Запустите подготовленный скрипт [prepare.cmd](prepare.cmd)
