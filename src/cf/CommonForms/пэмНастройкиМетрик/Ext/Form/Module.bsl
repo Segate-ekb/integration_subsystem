@@ -93,6 +93,7 @@
 		Константы.пэмПутьНаСервереPushgateway = "/metrics/job/pushgateway/instance/product";
 		Константы.пэмАдресСервераPushgateway = "";
 		Константы.пэмПортСервераPushgateway = 9091;
+		Константы.пэмТаймаутСоединенияPushgateway = пэмМетрикиВызовСервера.ТаймаутСоединенияPushgatewayПоУмолчанию();
 	Иначе
 		Константы.пэмПутьНаСервереPushgateway = "";
 		Константы.пэмАдресСервераPushgateway = "";

@@ -59,6 +59,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.пэмТаймаутСоединенияPushgateway</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>HTTPService.integration.URLTemplate.incomming.Method.POST</name>
 		<right>
 			<name>Use</name>

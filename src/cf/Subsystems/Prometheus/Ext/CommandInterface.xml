@@ -41,6 +41,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Constant.пэмТаймаутСоединенияPushgateway.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Constant.пэмПервоначальноеЗаполнениеВыполнено.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>

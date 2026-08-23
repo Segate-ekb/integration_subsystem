@@ -459,6 +459,7 @@
 			<Constant>пэмПервоначальноеЗаполнениеВыполнено</Constant>
 			<Constant>пэмПортСервераPushgateway</Constant>
 			<Constant>пэмПутьНаСервереPushgateway</Constant>
+			<Constant>пэмТаймаутСоединенияPushgateway</Constant>
 			<Constant>пэмЧислоОдновременныхЗаданийРасчетаМетрик</Constant>
 			<Constant>инт_СрокХраненияСтатистикиДней</Constant>
 			<Constant>инт_КоличествоПотоковОтправкиСообщений</Constant>

@@ -101,6 +101,7 @@
 			<CommonModule>ОМ_инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>ОМ_инт_РаботаСКафка</CommonModule>
 			<CommonModule>ОМ_пэмМетрикиСервер</CommonModule>
+			<CommonModule>ОМ_инт_РучноеУправлениеМенеджерами</CommonModule>
 			<CommonModule>ОМак_пэмМетрики</CommonModule>
 			<CommonModule>РС_инт_СтатистикаОбработкиСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьВходящихСообщений_ММ</CommonModule>

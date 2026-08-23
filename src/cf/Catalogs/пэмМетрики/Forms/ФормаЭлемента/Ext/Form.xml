@@ -205,6 +205,17 @@
 						</LabelDecoration>
 					</ChildItems>
 				</UsualGroup>
+				<LabelDecoration name="ГдеДоступноЗначениеМетрики" id="87">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Где доступно значение метрики</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ГдеДоступноЗначениеМетрикиКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ГдеДоступноЗначениеМетрикиРасширеннаяПодсказка" id="89"/>
+				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
 		<HTMLDocumentField name="РедакторКода" id="73">

@@ -115,6 +115,17 @@
 							<ContextMenu name="пэмПутьНаСервереPushgatewayКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="пэмПутьНаСервереPushgatewayРасширеннаяПодсказка" id="36"/>
 						</InputField>
+						<InputField name="пэмТаймаутСоединенияPushgateway" id="90">
+							<DataPath>Константы.пэмТаймаутСоединенияPushgateway</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тайм-аут соединения, секунд</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="пэмТаймаутСоединенияPushgatewayКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="пэмТаймаутСоединенияPushgatewayРасширеннаяПодсказка" id="92"/>
+						</InputField>
 						<UsualGroup name="ГруппаНастройкиРегламентногоЗадания" id="49">
 							<Title>
 								<v8:item>

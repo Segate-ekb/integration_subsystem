@@ -56,6 +56,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.пэмТаймаутСоединенияPushgateway</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.пэмМетрики</name>
 		<right>
 			<name>Read</name>
