@@ -421,7 +421,6 @@
 			<CommonModule>конс_АСТ_ПрепроцессорКлиентСервер</CommonModule>
 			<CommonModule>конс_ВМ_ВызовСервера</CommonModule>
 			<CommonModule>инт_ОбщегоНазначения</CommonModule>
-			<CommonModule>инт_ОбщегоНазначенияПовтИсп</CommonModule>
 			<CommonModule>инт_РаботаСБезопаснымХранилищем</CommonModule>
 			<CommonModule>конс_ВМ_КлиентСервер</CommonModule>
 			<CommonModule>конс_ВМ_ОпКодыКлиентСервер</CommonModule>
