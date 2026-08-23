@@ -934,6 +934,7 @@
 
 	Коды = Новый Массив;
 	Коды.Добавить("pde_sync_incoming_duration_seconds");
+	Коды.Добавить("pde_messages_per_minute");
 	Коды.Добавить("pde_error_count");
 	Коды.Добавить("pde_retry_count");
 	Коды.Добавить("pde_last_refresh");

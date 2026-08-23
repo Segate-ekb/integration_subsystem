@@ -108,6 +108,7 @@
 			<CommonModule>РС_инт_ОчередьИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
+			<CommonModule>РС_инт_ТекущийСтатусИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиHTTP_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиJRPC_ММ</CommonModule>
