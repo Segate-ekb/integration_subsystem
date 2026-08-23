@@ -372,6 +372,7 @@
 			<CommonTemplate>пэмМетрика_pde_sync_incoming_duration</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_oldest_pending_age</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_messages_per_minute</CommonTemplate>
+			<CommonTemplate>пэмМетрика_pde_messages_processed_total</CommonTemplate>
 			<CommonTemplate>пэмМетрика_pde_retry_count</CommonTemplate>
 			<CommonTemplate>инт_simple_kafka</CommonTemplate>
 			<CommonTemplate>конс_Грамматика</CommonTemplate>
@@ -526,6 +527,7 @@
 			<InformationRegister>инт_ХешиОбъектов</InformationRegister>
 			<InformationRegister>инт_БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>инт_АктивныеКонсьюмеры</InformationRegister>
+			<InformationRegister>инт_УдаленнаяСтатистикаОбработкиСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

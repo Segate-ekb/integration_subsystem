@@ -101,6 +101,7 @@
 			<CommonModule>ОМ_инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>ОМ_инт_РаботаСКафка</CommonModule>
 			<CommonModule>ОМ_пэмМетрикиСервер</CommonModule>
+			<CommonModule>РС_инт_СтатистикаОбработкиСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьВходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьИсходящихСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
@@ -244,6 +245,7 @@
 			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
 			<InformationRegister>инт_СтатистикаОбработкиСообщений</InformationRegister>
+			<InformationRegister>инт_УдаленнаяСтатистикаОбработкиСообщений</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
