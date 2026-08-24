@@ -19,3 +19,7 @@ out
 .sonarlint/
 .idea/
 examples/
+# Служебные каталоги и файлы, порождаемые инструментами разработки
+.build/
+src/cf/.build/
+src/cf/DumpFilesIndex.txt
