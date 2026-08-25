@@ -52,6 +52,7 @@
 					<ExtendedTooltip name="ГруппаВходящиеРасширеннаяПодсказка" id="25"/>
 					<ChildItems>
 						<Table name="Список" id="52">
+							<ChangeRowSet>false</ChangeRowSet>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>Список</DataPath>

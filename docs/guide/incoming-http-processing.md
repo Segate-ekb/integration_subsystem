@@ -65,6 +65,7 @@ JSON-объект, структура которого определяется 
 | **400** | `flow_id is missing` | Не указан идентификатор потока в URL | Добавьте `flow_id` в путь запроса |
 | **400** | `message_id is missing` | Не указан идентификатор сообщения | Добавьте `message_id` (UUID) в путь запроса |
 | **400** | `message_id must be uuid` | `message_id` не является валидным UUID | Используйте формат `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` |
+| **400** | `message_id must not be empty uuid (00000000-0000-0000-0000-000000000000)` | Передан пустой UUID — он не может идентифицировать сообщение (статус по нему не связан с записью очереди и блокирует её обработку) | Сгенерируйте реальный UUID (например, `uuid4`) |
 | **400** | `body is empty` | Тело запроса пустое | Отправьте JSON в теле запроса |
 | **400** | `payload deserialization failed. Extended info: {details}` | Невалидный JSON в теле запроса | Проверьте синтаксис JSON |
 | **400** | `body validation failed. Extended info: {details}` | Данные не соответствуют OpenAPI-схеме | Приведите данные в соответствие со схемой |
