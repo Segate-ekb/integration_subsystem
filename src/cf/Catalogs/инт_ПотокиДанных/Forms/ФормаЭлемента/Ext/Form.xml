@@ -10,6 +10,7 @@
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<CheckBoxField name="Активен" id="52">
