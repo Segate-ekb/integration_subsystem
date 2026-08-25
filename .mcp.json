@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "v8std": {
+      "type": "http",
+      "url": "https://ai.v8std.ru/mcp"
+    },
+    "vrunner": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "vrunner-mcp"]
+    },
+    "bslls": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "tools\\bsl-mcp.cmd"]
+    }
+  }
+}

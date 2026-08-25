@@ -5,6 +5,7 @@ build/
 allure-report/
 oscript_modules/
 node_modules/
+.claude/skills/
 
 # VitePress
 docs/.vitepress/cache/
