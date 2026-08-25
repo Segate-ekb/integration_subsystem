@@ -197,6 +197,9 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТестовыеДанныеКонтекстноеМеню" id="91"/>
 							<ExtendedTooltip name="ТестовыеДанныеРасширеннаяПодсказка" id="92"/>
+							<Events>
+								<Event name="OnChange">ТестовыеДанныеПриИзменении</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
