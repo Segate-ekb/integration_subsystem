@@ -119,6 +119,7 @@
 			<CommonModule>СПР_инт_ПодписчикиПодсистемаИнтеграции_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>СПР_инт_Эндпоинты_ММ</CommonModule>
+			<CommonModule>РЗ_инт_МенеджерПотоковРассылкиСообщений</CommonModule>
 			<CommonModule>ЮТАлюр</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТДымовыеТестыСлужебныйВызовСервера</CommonModule>
