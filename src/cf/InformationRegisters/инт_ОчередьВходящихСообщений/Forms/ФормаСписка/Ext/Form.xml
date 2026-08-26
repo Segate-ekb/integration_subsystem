@@ -126,6 +126,11 @@
 									<ContextMenu name="ПотокДанныхКонтекстноеМеню" id="17"/>
 									<ExtendedTooltip name="ПотокДанныхРасширеннаяПодсказка" id="18"/>
 								</LabelField>
+								<LabelField name="ДатаСоздания" id="53">
+									<DataPath>Список.ДатаСоздания</DataPath>
+									<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="55"/>
+								</LabelField>
 								<LabelField name="СтатусСообщения" id="26">
 									<DataPath>Список.СтатусСообщения</DataPath>
 									<ContextMenu name="СтатусСообщенияКонтекстноеМеню" id="27"/>
@@ -222,6 +227,7 @@
 				<QueryText>ВЫБРАТЬ
 	РегистрСведенийинт_ОчередьВходящихСообщений.ИдентификаторСообщения КАК ИдентификаторСообщения,
 	РегистрСведенийинт_ОчередьВходящихСообщений.ПотокДанных КАК ПотокДанных,
+	РегистрСведенийинт_ОчередьВходящихСообщений.ДатаСоздания КАК ДатаСоздания,
 	инт_ТекущийСтатусВходящихСообщений.СтатусСообщения КАК СтатусСообщения,
 	инт_ТекущийСтатусВходящихСообщений.КоличествоПопыток КАК КоличествоПопыток,
 	инт_ТекущийСтатусВходящихСообщений.ТекстОшибки КАК ТекстОшибки,
@@ -237,6 +243,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПотокДанных</dcssch:dataPath>
 					<dcssch:field>ПотокДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаСоздания</dcssch:dataPath>
+					<dcssch:field>ДатаСоздания</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ВходящееСообщение</dcssch:dataPath>

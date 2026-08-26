@@ -17,6 +17,11 @@
 			<ContextMenu name="ПотокДанныхКонтекстноеМеню" id="50"/>
 			<ExtendedTooltip name="ПотокДанныхРасширеннаяПодсказка" id="53"/>
 		</LabelField>
+		<LabelField name="ДатаСоздания" id="58">
+			<DataPath>Запись.ДатаСоздания</DataPath>
+			<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="59"/>
+			<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="60"/>
+		</LabelField>
 		<UsualGroup name="ГруппаСтатусы" id="7">
 			<Title>
 				<v8:item>
