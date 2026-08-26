@@ -112,6 +112,8 @@
 			<CommonModule>РС_инт_СообщенияКУдалению_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
 			<CommonModule>РС_инт_ТекущийСтатусИсходящихСообщений_ММ</CommonModule>
+			<CommonModule>РС_инт_ТекущийСтатусВходящихСообщений_ММ</CommonModule>
+			<CommonModule>ОМ_инт_СервисныеДействия</CommonModule>
 			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиHTTP_ММ</CommonModule>
 			<CommonModule>СПР_инт_ПодписчикиJRPC_ММ</CommonModule>
